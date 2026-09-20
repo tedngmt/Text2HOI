@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "clips": 44,
+  "frames": 13171,
+  "all_finger_limits_satisfied": true,
+  "wrist_and_object_bitwise_unchanged": true,
+  "all_tabletops_z_0_5": true,
+  "frames_worse_than_clipping_weighted_joint_objective": 0,
+  "max_joint_fit_error_mm": 36.63744777441025,
+  "mean_joint_fit_error_mm": 0.26139889687621615,
+  "naive_mean_joint_error_mm": 1.3647685639331335,
+  "mean_tip_fit_error_mm": 0.21959742631736756
+}

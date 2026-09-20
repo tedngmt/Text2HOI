@@ -1,0 +1,53 @@
+{
+  "configured_epochs_per_stage": 100,
+  "full_training_started": false,
+  "test_split_used_for_ppo_development": false,
+  "cpp_source_matches_installed": true,
+  "cpp_source_sha256": "f7b9f87e8c4fa9e78be843e4200a2f99ea491c26a44ce6a1a2261ef618de34e9",
+  "pre_commit": {
+    "passed": false,
+    "reason": "pre_commit is absent in the IsaacLab launcher environment; its automatic pip install failed because sandbox network name resolution is unavailable.",
+    "log": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/precommit_check.log"
+  },
+  "targeted_ruff_and_python_compile": "passed_after_final_code_changes",
+  "phase": "complete",
+  "launcher_gpu_preflight": {
+    "text2hoi": "1.13.0+cu116",
+    "graspxl": "2.3.0+cu118"
+  },
+  "final_pilot": {
+    "passed": true,
+    "epochs_completed": 2,
+    "resume_verified": "epoch 1 -> 2, optimizer update counters and observation moments continued",
+    "optimizer_updates": 162,
+    "environment_training_steps": 8030,
+    "policy_tensors_changed_after_resume": 13,
+    "all_policy_parameters_finite": true,
+    "all_57_train_and_18_validation_windows_visited_each_epoch": true,
+    "selected_epoch": 0,
+    "both_candidates_rejected_by_physical_validation_guard": true,
+    "test_evaluation_performed": false,
+    "prepared": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/prepared_feasible",
+    "scope": "Integration and recovery check, not evidence of improved grasp quality"
+  },
+  "reference_export_recovery": "runs/smoke_refiner_contact_guard/export_recovery_verification.json",
+  "reference_geometry_and_coverage": "runs/smoke_refiner_contact_guard/prepared_feasible/integration_verification.json",
+  "simulator_verification": "simulator_verification.json",
+  "metric_regressions_passed": 4,
+  "refiner_resume_regressions_passed": 3,
+  "script_sha256": {
+    "verify_policy_metrics.py": "97372e621b3015372f6943108437030c136af8b751f2b55252408dc02b9dd587",
+    "verify_tracking_velocity.py": "7f3cf496e51a9dc16cca0e3422713b133e59b1bc64b4e54abbe0cdf47be67404",
+    "run_pipeline.py": "b36677b7a07f646c69b83c372414d9dca07f79e21248441faaad886c6ce0dce2",
+    "train_refiner.py": "9efc2dde9585d34f79c0656203840b4b68974bd76f4e2e9f46e480bb9b770041",
+    "verify_simulator.py": "3ef6f83151b152763fcc030508c56974b731a04b69897b24253940217c34cf08",
+    "check_refiner_resume.py": "108bbc3469c32df435380d82e6708ee04e692cfe6f6c5e5ca2592717c612c92c",
+    "retarget.py": "e62eb386a223a44ea4895dadfaa45214c784c13a6ea1415ba3ff8c544e9be980",
+    "prepare.py": "0eecbb57b77795ba6050450b6b40289238af17fa8dcc08954e5d96da780fd89c",
+    "train_policy.py": "0baf53a92b17464d525ea49e7bff9929d58aebdab072d5b970e81b4836fd2ea6"
+  },
+  "git_diff_check": {
+    "passed": false,
+    "reason": "Existing CRLF line endings in .gitignore produce whitespace diagnostics. Its line endings were not changed by this setup."
+  }
+}

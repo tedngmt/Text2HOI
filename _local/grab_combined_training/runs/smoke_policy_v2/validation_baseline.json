@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "windows": 2,
+    "planned_frames": 48,
+    "completed_frames": 48,
+    "failure_rate": 0.0,
+    "mean_reward_per_planned_frame": 3.7010457130769887,
+    "mean_joint_error_m_on_completed_frames": 0.10155042474313329,
+    "mean_object_error_m_on_completed_frames": 0.018220141699809272,
+    "max_table_penetration_m": 0.007085432298481464,
+    "max_object_penetration_m": 0.005330199841409922,
+    "contact_recall": 0.6842105263157895,
+    "lift_windows": 1,
+    "lift_completion_fraction": 0.0,
+    "selection_score": 3.5593370671073594
+  },
+  "windows": [
+    {
+      "clip_id": "s5__mug_drink_1",
+      "frames": 24,
+      "completed_frames": 24,
+      "failed": false,
+      "reward": 84.27297925949097,
+      "joint_error_sum_m": 3.9303012900054455,
+      "object_error_sum_m": 0.0733509436249733,
+      "table_depth_max_m": 0.007085432298481464,
+      "object_depth_max_m": 0.0,
+      "contact_frames": 0,
+      "expected_contact_frames": 0,
+      "matched_contact_frames": 0,
+      "achieved_lift_max_m": 0.0,
+      "reference_lift_max_m": 1.1146068572998047e-05
+    },
+    {
+      "clip_id": "s5__mug_drink_1",
+      "frames": 24,
+      "completed_frames": 24,
+      "failed": false,
+      "reward": 93.3772149682045,
+      "joint_error_sum_m": 0.9441190976649523,
+      "object_error_sum_m": 0.8012158579658717,
+      "table_depth_max_m": 0.0003028344945050776,
+      "object_depth_max_m": 0.005330199841409922,
+      "contact_frames": 13,
+      "expected_contact_frames": 19,
+      "matched_contact_frames": 13,
+      "achieved_lift_max_m": 0.2791958451271057,
+      "reference_lift_max_m": 0.41315096616744995
+    }
+  ]
+}

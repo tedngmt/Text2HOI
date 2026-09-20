@@ -1,0 +1,45 @@
+{
+  "refiner": {
+    "epochs": 100,
+    "learning_rate": 0.00001,
+    "window": 96,
+    "validation_interval": 5,
+    "contact_weight": 1.0,
+    "contact_retention_max_drop": 0.02,
+    "seed": 42
+  },
+  "retarget": {
+    "iterations": 100,
+    "batch_size": 512
+  },
+  "policy": {
+    "epochs": 100,
+    "seed": 42,
+    "num_envs": 8,
+    "window_frames": 96,
+    "validation_interval": 5,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "ppo_passes": 4,
+    "minibatch_size": 256,
+    "clip_ratio": 0.2,
+    "target_kl": 0.03,
+    "value_coefficient": 0.5,
+    "entropy_coefficient": 0.001,
+    "max_grad_norm": 0.5,
+    "resource_root": "/home/nmt/Projects/GraspXL/rsc",
+    "environment": {
+      "render": false,
+      "visualize": false,
+      "num_threads": 4,
+      "simulation_dt": 0.0033333333333333335,
+      "control_dt": 0.03333333333333333,
+      "table_height": 0.5,
+      "enable_table_collision": true,
+      "hand_model_r": "rhand_mano_low_mass.urdf",
+      "load_set": "grab_mug"
+    }
+  }
+}

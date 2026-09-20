@@ -1,0 +1,17 @@
+{
+  "split_windows": {
+    "train": 57,
+    "validation": 18,
+    "test": 13
+  },
+  "covered_transitions": {
+    "train": 4205,
+    "validation": 1168,
+    "test": 955
+  },
+  "all_finger_limits_satisfied": true,
+  "all_augmented_root_targets_within_limits": true,
+  "maximum_augmented_root_displacement_m": 0.6714709997177124,
+  "root_residual_margin_m": 0.03,
+  "passed": true
+}

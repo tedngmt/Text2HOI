@@ -1,0 +1,321 @@
+{
+  "source_preprocessing": "/home/nmt/Projects/Text2HOI_Download/Preprocessing/grab/data.npz",
+  "prepared_manifest": "/home/nmt/Projects/IsaacLab/_local/grab_mug_refinement/prepared/manifest.json",
+  "prepared_manifest_sha256": "7576d16451e5e5e77641e2b41545035cea7a783bd4ef5c42d03f915a46df51b6",
+  "published_mug_sequences": 44,
+  "unique_full_object_trajectory_matches": 44,
+  "unique_local_clips": 44,
+  "matches": [
+    {
+      "upstream_index": 109,
+      "local_clip_id": "s1__mug_drink_1",
+      "start_frame_30fps": 43,
+      "frames": 231,
+      "max_abs_x_obj_error": 2.384185791015625e-07
+    },
+    {
+      "upstream_index": 110,
+      "local_clip_id": "s1__mug_drink_2",
+      "start_frame_30fps": 58,
+      "frames": 261,
+      "max_abs_x_obj_error": 2.980232238769531e-07
+    },
+    {
+      "upstream_index": 111,
+      "local_clip_id": "s1__mug_drink_3",
+      "start_frame_30fps": 41,
+      "frames": 208,
+      "max_abs_x_obj_error": 2.980232238769531e-07
+    },
+    {
+      "upstream_index": 112,
+      "local_clip_id": "s1__mug_drink_4",
+      "start_frame_30fps": 41,
+      "frames": 207,
+      "max_abs_x_obj_error": 2.980232238769531e-07
+    },
+    {
+      "upstream_index": 113,
+      "local_clip_id": "s1__mug_lift",
+      "start_frame_30fps": 46,
+      "frames": 958,
+      "max_abs_x_obj_error": 2.980232238769531e-07
+    },
+    {
+      "upstream_index": 114,
+      "local_clip_id": "s1__mug_offhand_1",
+      "start_frame_30fps": 62,
+      "frames": 160,
+      "max_abs_x_obj_error": 1.7881393432617188e-07
+    },
+    {
+      "upstream_index": 115,
+      "local_clip_id": "s1__mug_pass_1",
+      "start_frame_30fps": 48,
+      "frames": 135,
+      "max_abs_x_obj_error": 2.5331974029541016e-07
+    },
+    {
+      "upstream_index": 116,
+      "local_clip_id": "s1__mug_toast_1",
+      "start_frame_30fps": 56,
+      "frames": 229,
+      "max_abs_x_obj_error": 3.5762786865234375e-07
+    },
+    {
+      "upstream_index": 280,
+      "local_clip_id": "s10__mug_drink_1",
+      "start_frame_30fps": 36,
+      "frames": 131,
+      "max_abs_x_obj_error": 2.980232238769531e-07
+    },
+    {
+      "upstream_index": 281,
+      "local_clip_id": "s10__mug_drink_2",
+      "start_frame_30fps": 41,
+      "frames": 135,
+      "max_abs_x_obj_error": 2.980232238769531e-07
+    },
+    {
+      "upstream_index": 282,
+      "local_clip_id": "s10__mug_lift",
+      "start_frame_30fps": 47,
+      "frames": 473,
+      "max_abs_x_obj_error": 6.705522537231445e-07
+    },
+    {
+      "upstream_index": 283,
+      "local_clip_id": "s10__mug_pass_1",
+      "start_frame_30fps": 46,
+      "frames": 107,
+      "max_abs_x_obj_error": 3.8743019104003906e-07
+    },
+    {
+      "upstream_index": 284,
+      "local_clip_id": "s10__mug_toast_1",
+      "start_frame_30fps": 40,
+      "frames": 98,
+      "max_abs_x_obj_error": 3.5762786865234375e-07
+    },
+    {
+      "upstream_index": 394,
+      "local_clip_id": "s2__mug_drink_1",
+      "start_frame_30fps": 61,
+      "frames": 124,
+      "max_abs_x_obj_error": 3.2782554626464844e-07
+    },
+    {
+      "upstream_index": 395,
+      "local_clip_id": "s2__mug_drink_2",
+      "start_frame_30fps": 71,
+      "frames": 153,
+      "max_abs_x_obj_error": 2.682209014892578e-07
+    },
+    {
+      "upstream_index": 396,
+      "local_clip_id": "s2__mug_lift",
+      "start_frame_30fps": 59,
+      "frames": 406,
+      "max_abs_x_obj_error": 4.172325134277344e-07
+    },
+    {
+      "upstream_index": 397,
+      "local_clip_id": "s2__mug_pass_1",
+      "start_frame_30fps": 61,
+      "frames": 126,
+      "max_abs_x_obj_error": 4.917383193969727e-07
+    },
+    {
+      "upstream_index": 398,
+      "local_clip_id": "s2__mug_toast_1",
+      "start_frame_30fps": 64,
+      "frames": 110,
+      "max_abs_x_obj_error": 3.2782554626464844e-07
+    },
+    {
+      "upstream_index": 505,
+      "local_clip_id": "s3__mug_drink_1",
+      "start_frame_30fps": 50,
+      "frames": 105,
+      "max_abs_x_obj_error": 2.5331974029541016e-07
+    },
+    {
+      "upstream_index": 506,
+      "local_clip_id": "s3__mug_drink_2",
+      "start_frame_30fps": 50,
+      "frames": 97,
+      "max_abs_x_obj_error": 2.384185791015625e-07
+    },
+    {
+      "upstream_index": 507,
+      "local_clip_id": "s3__mug_drink_3",
+      "start_frame_30fps": 52,
+      "frames": 108,
+      "max_abs_x_obj_error": 4.023313522338867e-07
+    },
+    {
+      "upstream_index": 508,
+      "local_clip_id": "s3__mug_drink_4",
+      "start_frame_30fps": 57,
+      "frames": 111,
+      "max_abs_x_obj_error": 3.8743019104003906e-07
+    },
+    {
+      "upstream_index": 509,
+      "local_clip_id": "s3__mug_offhand_1",
+      "start_frame_30fps": 57,
+      "frames": 115,
+      "max_abs_x_obj_error": 3.2782554626464844e-07
+    },
+    {
+      "upstream_index": 510,
+      "local_clip_id": "s3__mug_pass_1",
+      "start_frame_30fps": 58,
+      "frames": 98,
+      "max_abs_x_obj_error": 6.258487701416016e-07
+    },
+    {
+      "upstream_index": 621,
+      "local_clip_id": "s4__mug_drink_2",
+      "start_frame_30fps": 32,
+      "frames": 109,
+      "max_abs_x_obj_error": 2.682209014892578e-07
+    },
+    {
+      "upstream_index": 622,
+      "local_clip_id": "s4__mug_pass_1",
+      "start_frame_30fps": 26,
+      "frames": 84,
+      "max_abs_x_obj_error": 5.662441253662109e-07
+    },
+    {
+      "upstream_index": 734,
+      "local_clip_id": "s5__mug_drink_1",
+      "start_frame_30fps": 42,
+      "frames": 88,
+      "max_abs_x_obj_error": 3.5762786865234375e-07
+    },
+    {
+      "upstream_index": 735,
+      "local_clip_id": "s5__mug_pass_1",
+      "start_frame_30fps": 59,
+      "frames": 82,
+      "max_abs_x_obj_error": 5.066394805908203e-07
+    },
+    {
+      "upstream_index": 736,
+      "local_clip_id": "s5__mug_toast_1",
+      "start_frame_30fps": 55,
+      "frames": 90,
+      "max_abs_x_obj_error": 3.5762786865234375e-07
+    },
+    {
+      "upstream_index": 865,
+      "local_clip_id": "s6__mug_drink_2",
+      "start_frame_30fps": 57,
+      "frames": 130,
+      "max_abs_x_obj_error": 3.129243850708008e-07
+    },
+    {
+      "upstream_index": 866,
+      "local_clip_id": "s6__mug_lift",
+      "start_frame_30fps": 64,
+      "frames": 451,
+      "max_abs_x_obj_error": 3.5762786865234375e-07
+    },
+    {
+      "upstream_index": 867,
+      "local_clip_id": "s6__mug_pass_1",
+      "start_frame_30fps": 67,
+      "frames": 136,
+      "max_abs_x_obj_error": 2.980232238769531e-07
+    },
+    {
+      "upstream_index": 868,
+      "local_clip_id": "s6__mug_toast_1",
+      "start_frame_30fps": 54,
+      "frames": 102,
+      "max_abs_x_obj_error": 3.5762786865234375e-07
+    },
+    {
+      "upstream_index": 1000,
+      "local_clip_id": "s7__mug_drink_1",
+      "start_frame_30fps": 53,
+      "frames": 108,
+      "max_abs_x_obj_error": 4.172325134277344e-07
+    },
+    {
+      "upstream_index": 1001,
+      "local_clip_id": "s7__mug_drink_2",
+      "start_frame_30fps": 47,
+      "frames": 145,
+      "max_abs_x_obj_error": 5.662441253662109e-07
+    },
+    {
+      "upstream_index": 1002,
+      "local_clip_id": "s7__mug_lift",
+      "start_frame_30fps": 55,
+      "frames": 553,
+      "max_abs_x_obj_error": 6.034970283508301e-07
+    },
+    {
+      "upstream_index": 1142,
+      "local_clip_id": "s8__mug_drink_1",
+      "start_frame_30fps": 43,
+      "frames": 106,
+      "max_abs_x_obj_error": 2.682209014892578e-07
+    },
+    {
+      "upstream_index": 1143,
+      "local_clip_id": "s8__mug_drink_2",
+      "start_frame_30fps": 41,
+      "frames": 143,
+      "max_abs_x_obj_error": 2.5331974029541016e-07
+    },
+    {
+      "upstream_index": 1144,
+      "local_clip_id": "s8__mug_lift",
+      "start_frame_30fps": 51,
+      "frames": 339,
+      "max_abs_x_obj_error": 2.980232238769531e-07
+    },
+    {
+      "upstream_index": 1145,
+      "local_clip_id": "s8__mug_offhand_1",
+      "start_frame_30fps": 48,
+      "frames": 142,
+      "max_abs_x_obj_error": 2.980232238769531e-07
+    },
+    {
+      "upstream_index": 1146,
+      "local_clip_id": "s8__mug_pass_1",
+      "start_frame_30fps": 47,
+      "frames": 103,
+      "max_abs_x_obj_error": 4.3213367462158203e-07
+    },
+    {
+      "upstream_index": 1147,
+      "local_clip_id": "s8__mug_toast_1",
+      "start_frame_30fps": 44,
+      "frames": 86,
+      "max_abs_x_obj_error": 7.450580596923828e-07
+    },
+    {
+      "upstream_index": 1285,
+      "local_clip_id": "s9__mug_drink_2",
+      "start_frame_30fps": 41,
+      "frames": 159,
+      "max_abs_x_obj_error": 2.8312206268310547e-07
+    },
+    {
+      "upstream_index": 1286,
+      "local_clip_id": "s9__mug_pass_1",
+      "start_frame_30fps": 62,
+      "frames": 109,
+      "max_abs_x_obj_error": 3.2782554626464844e-07
+    }
+  ],
+  "failures": [],
+  "max_abs_x_obj_error": 7.450580596923828e-07,
+  "interpretation": "All 44 local GRAB mug clips are present in the released Text2HOI preprocessing. Released checkpoint training exposure cannot be excluded; local validation/test are held out from local adaptation only."
+}

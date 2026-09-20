@@ -1,0 +1,63 @@
+{
+  "phase": "passed",
+  "epochs_completed": 3,
+  "optimizer_updates": 402,
+  "optimizer_state_steps": [
+    402
+  ],
+  "training_clips_only": 28,
+  "held_out_validation_clips": 9,
+  "held_out_test_clips": 7,
+  "every_training_frame_visited_every_epoch": true,
+  "all_losses_and_gradients_finite": true,
+  "exported_clips": 44,
+  "exported_frames": 13171,
+  "all_export_arrays_finite": true,
+  "object_trajectories_and_source_timing_unchanged": true,
+  "selected_epoch": 2,
+  "last_epoch": 3,
+  "validation_best_not_last_verified": true,
+  "test_evaluations_after_selection": 1,
+  "changed_model_tensors": 80,
+  "maximum_weight_change": 0.0010635629296302795,
+  "validation_initial": {
+    "loss": {
+      "total": 0.6804481693570434,
+      "penetration": 0.364844806707855,
+      "contact": 1.0276052152574673,
+      "displacement": 0.2419369161049419,
+      "velocity": 0.0005617720019593496,
+      "acceleration": 0.00015036820907090925
+    },
+    "vertices_deeper_than_2_mm": 4837,
+    "vertices_deeper_than_5_mm": 118,
+    "maximum_penetration_mm": 5.455656051635742,
+    "mean_vertex_displacement_mm": 0.8047709301889977,
+    "source_contact_retention": 0.9832486829237516
+  },
+  "validation_selected": {
+    "loss": {
+      "total": 0.5592838361839427,
+      "penetration": 0.30216946097071773,
+      "contact": 0.8518822701920602,
+      "displacement": 0.050936449836387496,
+      "velocity": 0.000194188542528829,
+      "acceleration": 4.35066768676858e-05
+    },
+    "vertices_deeper_than_2_mm": 4054,
+    "vertices_deeper_than_5_mm": 58,
+    "maximum_penetration_mm": 5.337213516235352,
+    "mean_vertex_displacement_mm": 0.34151187333521654,
+    "source_contact_retention": 0.9320483296003028
+  },
+  "peak_allocated_mib": 1100.7138671875,
+  "peak_reserved_mib": 1208.0,
+  "epoch_training_seconds": [
+    11.307507448000251,
+    11.741332249999687,
+    10.97643877900191
+  ],
+  "resumed_from_epoch": 2,
+  "source_refiner_unchanged": true,
+  "source_generator_unchanged": true
+}

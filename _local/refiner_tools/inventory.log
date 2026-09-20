@@ -1,0 +1,12 @@
+{"archive": "grab__s1.zip", "clips_so_far": 198}
+{"archive": "grab__s10.zip", "clips_so_far": 343}
+{"archive": "grab__s2.zip", "clips_so_far": 436}
+{"archive": "grab__s3.zip", "clips_so_far": 561}
+{"archive": "grab__s4.zip", "clips_so_far": 674}
+{"archive": "grab__s5.zip", "clips_so_far": 780}
+{"archive": "grab__s6.zip", "clips_so_far": 928}
+{"archive": "grab__s7.zip", "clips_so_far": 1048}
+{"archive": "grab__s8.zip", "clips_so_far": 1210}
+{"archive": "grab__s9.zip", "clips_so_far": 1335}
+{"clip_count": 1335, "object_count": 51, "frames_30fps": 406264, "subject_counts": {"s1": 198, "s10": 145, "s2": 93, "s3": 125, "s4": 113, "s5": 106, "s6": 148, "s7": 120, "s8": 162, "s9": 125}, "invalid_source_rates": []}
+{"geometry_issues": {"bowl": {"vertices": 25119, "faces": 50000, "watertight": false, "winding_consistent": true, "volume_m3": 0.00027846675912500846, "extent_m": [0.14892300963401794, 0.14895719289779663, 0.0765991359949112], "has_pretrained_points": true, "clips": 31}, "camera": {"vertices": 30002, "faces": 59990, "watertight": false, "winding_consistent": true, "volume_m3": 0.00022951462886813164, "extent_m": [0.11551200598478317, 0.047009482979774475, 0.06750078499317169], "has_pretrained_points": true, "clips": 46}, "headphones": {"vertices": 19966, "faces": 39997, "watertight": false, "winding_consistent": true, "volume_m3": 0.0001083333255864506, "extent_m": [0.12619565427303314, 0.13149873912334442, 0.05788431689143181], "has_pretrained_points": true, "clips": 20}, "phone": {"vertices": 16399, "faces": 32792, "watertight": false, "winding_consistent": true, "volume_m3": 0.00012614198986787942, "extent_m": [0.14852476119995117, 0.02449974976480007, 0.04949997365474701], "has_pretrained_points": true, "clips": 25}, "stapler": {"vertices": 19991, "faces": 39998, "watertight": false, "winding_consistent": true, "volume_m3": 6.566796634783914e-05, "extent_m": [0.12300000339746475, 0.029999999329447746, 0.040536001324653625], "has_pretrained_points": true, "clips": 35}}}

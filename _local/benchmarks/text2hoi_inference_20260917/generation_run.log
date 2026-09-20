@@ -1,0 +1,180 @@
+dataset:
+  name: grab
+  root: data/grab
+  obj_root: data/grab/processed_object_meshes
+  data_path: data/grab/data.npz
+  data_obj_pc_path: data/grab/obj.pkl
+  balance_weights_path: data/grab/balance_weights.pkl
+  text_json: data/grab/text.json
+  t2l_json: data/grab/text_length.json
+  t2c_json: data/grab/text_count.json
+  flat_hand: true
+  max_nframes: 150
+  data_ratio: 1
+  augm: false
+  data_num: 1335
+  text_num: 276
+clip:
+  clip_version: ViT-B/32
+diffusion:
+  beta_1: 0.0001
+  beta_T: 0.02
+  T: 1000
+  schedule_name: cosine
+mpnet:
+  version: sentence-transformers/all-mpnet-base-v2
+seq_cvae:
+  model_name: seq_cvae
+  latent_dim: 64
+  cond_dim: 512
+  encoder_layer_dims:
+  - 1
+  - 512
+  decoder_layer_dims:
+  - 512
+  - 1
+  final_sigmoid: true
+  iteration: 1000
+  lr: 0.001
+  save_root: outputs/${seq_cvae.model_name}
+  weight_path: checkpoints/${dataset.name}/${seq_cvae.model_name}.pth
+pointfeat:
+  model_name: pointfeat
+  global_feat: false
+  feature_transform: false
+  in_dim: 3
+  resume: false
+  save_root: outputs/${pointfeat.model_name}
+  weight_path: checkpoints/${dataset.name}/${pointfeat.model_name}.pth
+contact:
+  model_name: contact_estimator
+  latent_dim: 64
+  cond_dim: 1601
+  use_scale: true
+  use_dice_loss: true
+  decoder_layer_dims:
+  - 512
+  - 256
+  - 128
+  - 1
+  final_sigmoid: true
+  in_dim: 4
+  test_iteration: 1
+  iteration: 10000
+  lr: 0.001
+  save_root: data/networks/contact_estimator/${dataset.name}
+  weight_path: checkpoints/${dataset.name}/${contact.model_name}.pth
+texthom:
+  model_name: texthom
+  hand_nfeats: 99
+  obj_nfeats: 9
+  latent_dim: 512
+  ff_size: 1024
+  num_layers: 8
+  num_heads: 4
+  dropout: 0.1
+  activation: gelu
+  clip_dim: 512
+  obj_dim: 1024
+  cond_mask_prob: 0.1
+  use_cond_fc: true
+  use_obj_scale_centroid: true
+  use_frame_pos: true
+  use_contact_feat: true
+  use_inst_pos: true
+  iteration: 30000
+  lr: 0.0001
+  lambda_simple: 1.0
+  lambda_dist: 1.0
+  lambda_ro: 1.0
+  save_root: outputs/${texthom.model_name}
+  weight_path: checkpoints/${dataset.name}/${texthom.model_name}.pth
+refiner:
+  model_name: refiner
+  hand_input_nfeats: 2273
+  hand_output_nfeats: 99
+  latent_dim: 512
+  ff_size: 1024
+  num_layers: 8
+  num_heads: 4
+  dropout: 0.1
+  activation: gelu
+  clip_dim: 512
+  obj_dim: 1024
+  cond_mask_prob: 0.1
+  use_cond_fc: true
+  use_obj_scale_centroid: true
+  zero_initialized: true
+  global_feat: true
+  feature_transform: false
+  in_dim: 4
+  iteration: 3000
+  lr: 0.0001
+  contact_loss_type: l1
+  lambda_simple: 1.0
+  lambda_penet: 1.0
+  lambda_contact: 5.0
+  save_root: outputs/${refiner.model_name}
+  weight_path: checkpoints/${dataset.name}/${refiner.model_name}.pth
+project_name: texthom
+batch_size: 64
+shuffle: true
+drop_last: true
+num_workers: 4
+result_show_freq: 500
+save_pth_freq: 2000
+text:
+- Place cappuccino with right hand.
+save_demo: false
+save_obj: false
+balance_weights: true
+fps: 30
+test_text:
+- Lift a mug with the right hand.
+nsamples: 4
+
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+build refiner
+initialize refiner with zero
+load refiner, checkpoints/grab/refiner.pth
+build texthom, diffusion
+load texthom, checkpoints/grab/texthom.pth
+build mpnet sentence-transformers/all-mpnet-base-v2
+build seq cvae
+load seq cvae, checkpoints/grab/seq_cvae.pth
+build point encoder
+load point encoder, checkpoints/grab/pointfeat.pth
+build contact estimator
+load contact estimator, checkpoints/grab/contact_estimator.pth
+object name: mug
+hand type: right hand
+Batch #0 Samples #0 Text #0
+tensor([147], device='cuda:0')
+TIMING {"duration_seconds": 0.0005866899991815444, "valid_frames": 147, "contact_prediction_seconds": 0.004883437999524176, "motion_diffusion_seconds": 7.599817553000321, "refiner_features_seconds": 0.014153906002320582, "refiner_network_seconds": 0.00615889300024719, "mesh_decoding_seconds": 0.005671468999935314, "total_seconds": 7.632689482998103, "output_frames": 147, "all_output_arrays_finite": true}
+Batch #0 Samples #1 Text #0
+tensor([147], device='cuda:0')
+TIMING {"duration_seconds": 0.0005314390000421554, "valid_frames": 147, "contact_prediction_seconds": 0.0007190610012912657, "motion_diffusion_seconds": 7.448157265000191, "refiner_features_seconds": 0.011999876998743275, "refiner_network_seconds": 0.006746224000380607, "mesh_decoding_seconds": 0.006551078000484267, "total_seconds": 7.477132525000343, "output_frames": 147, "all_output_arrays_finite": true}
+Batch #0 Samples #2 Text #0
+tensor([147], device='cuda:0')
+TIMING {"duration_seconds": 0.00039534100142191164, "valid_frames": 147, "contact_prediction_seconds": 0.0012161960003140848, "motion_diffusion_seconds": 7.473335259001033, "refiner_features_seconds": 0.011430779999500373, "refiner_network_seconds": 0.005408028999227099, "mesh_decoding_seconds": 0.0053037649995530955, "total_seconds": 7.498631472997658, "output_frames": 147, "all_output_arrays_finite": true}
+Batch #0 Samples #3 Text #0
+tensor([146], device='cuda:0')
+TIMING {"duration_seconds": 0.000363262999599101, "valid_frames": 146, "contact_prediction_seconds": 0.0005645249984809197, "motion_diffusion_seconds": 7.6383732030008105, "refiner_features_seconds": 0.014473278999503236, "refiner_network_seconds": 0.009370270003273617, "mesh_decoding_seconds": 0.008811202998913359, "total_seconds": 7.673218094998447, "output_frames": 146, "all_output_arrays_finite": true}
+/home/nmt/miniconda3/envs/text2hoi/lib/python3.8/site-packages/hydra/_internal/defaults_list.py:251: UserWarning: In 'config': Defaults list is missing `_self_`. See https://hydra.cc/docs/1.2/upgrades/1.0_to_1.1/default_composition_order for more information
+  warnings.warn(msg, UserWarning)
+/home/nmt/miniconda3/envs/text2hoi/lib/python3.8/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+42.63586950302124
+Traceback (most recent call last):
+  File "_local/benchmarks/text2hoi_inference_20260917/benchmark_generation.py", line 183, in <module>
+    main()
+  File "_local/benchmarks/text2hoi_inference_20260917/benchmark_generation.py", line 176, in main
+    "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+  File "/home/nmt/miniconda3/envs/text2hoi/lib/python3.8/pathlib.py", line 1229, in read_bytes
+    with self.open(mode='rb') as f:
+  File "/home/nmt/miniconda3/envs/text2hoi/lib/python3.8/pathlib.py", line 1222, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/home/nmt/miniconda3/envs/text2hoi/lib/python3.8/pathlib.py", line 1078, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '_local/benchmarks/text2hoi_inference_20260917/benchmark_generation.py'

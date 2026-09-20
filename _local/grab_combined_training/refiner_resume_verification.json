@@ -1,0 +1,21 @@
+{
+  "phase": "passed",
+  "method": "CPU regression checks using the real saved three-epoch checkpoint; model/optimizer execution and CUDA RNG setter are inert test slots",
+  "checkpoint_fixture": "runs/smoke_refiner_contact_guard/last.pth",
+  "command": "/home/nmt/miniconda3/envs/text2hoi/bin/python _local/grab_combined_training/check_refiner_resume.py",
+  "before_fix": {
+    "equal_target_resume": "Failed with ValueError: target must exceed resumed epoch",
+    "trailing_log_recovery": "Failed because the incomplete final JSON record remained in the active log",
+    "lower_target_rejected": true
+  },
+  "after_fix": {
+    "equal_target_exports_without_optimizer_updates": true,
+    "test_export_dispatched_with_measurements_disabled": true,
+    "lower_target_rejected": true,
+    "post_checkpoint_rows_and_partial_final_row_removed_from_active_log": true,
+    "complete_original_log_preserved_in_resume_archive": true,
+    "checks_passed": 3
+  },
+  "gpu_training_performed_by_these_checks": false,
+  "targeted_ruff_and_python_compile": "passed"
+}

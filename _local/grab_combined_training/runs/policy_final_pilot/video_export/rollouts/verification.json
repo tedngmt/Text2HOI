@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "windows": 18,
+  "clips": 8,
+  "frames": 1186,
+  "planned_transitions": 1168,
+  "metric_max_absolute_difference_from_training_evaluation": {
+    "selected": 0.0,
+    "latest": 0.0
+  },
+  "checkpoint_provenance": {
+    "selected": {
+      "path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/policy_final_pilot/best.pt",
+      "sha256": "92092c5061edf84ae7e5725ed77301227168041f5b935e4a0ba50fd3a78919ee",
+      "epoch": 0,
+      "validation_selected": true,
+      "policy_kind": "zero-residual reference-PD baseline"
+    },
+    "latest": {
+      "path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/policy_final_pilot/last.pt",
+      "sha256": "9cb82a0275f450bd7b146d79d53bda531c44bd3b83b244e21490e3cbee6a632f",
+      "epoch": 2,
+      "validation_selected": false,
+      "policy_kind": "trained residual PPO"
+    }
+  },
+  "manifest_sha256": "c5c6abbb06dfef9d2ab89669961db39727437f303533235618a4fd5b2666b529",
+  "test_split_used": false,
+  "failure_freezing_verified": true
+}

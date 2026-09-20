@@ -1,0 +1,151 @@
+{
+  "epochs": [
+    {
+      "epoch": 1,
+      "step": 134,
+      "learning_rate": 1e-05,
+      "training_loss": 1.1532176473649711,
+      "epoch_training_seconds": 11.05506989800051,
+      "training_evaluation": {
+        "loss": {
+          "total": 1.3007233014070407,
+          "penetration": 0.3725574731326401,
+          "contact": 0.9269885832231295,
+          "displacement": 0.03879927686966711,
+          "velocity": 0.0001135637494617757,
+          "acceleration": 3.872049073337916e-05
+        },
+        "vertices_deeper_than_2_mm": 26246,
+        "vertices_deeper_than_5_mm": 542,
+        "maximum_penetration_mm": 5.511770725250244,
+        "mean_vertex_displacement_mm": 0.3018473250081391,
+        "source_contact_retention": 0.943802755859469
+      },
+      "validation": {
+        "loss": {
+          "total": 1.1580393092070997,
+          "penetration": 0.3151809114931316,
+          "contact": 0.8416776834035058,
+          "displacement": 0.03900345238476899,
+          "velocity": 9.49397130766643e-05,
+          "acceleration": 2.2301608116656646e-05
+        },
+        "vertices_deeper_than_2_mm": 4203,
+        "vertices_deeper_than_5_mm": 87,
+        "maximum_penetration_mm": 5.514229774475098,
+        "mean_vertex_displacement_mm": 0.2949002971371174,
+        "source_contact_retention": 0.9465125082810183
+      },
+      "validation_minus_train_loss": -0.142683992199941,
+      "selection_guard": {
+        "eligible": false,
+        "baseline_contact_retention": 0.9832486829237516,
+        "minimum_contact_retention": 0.9632486829237515,
+        "candidate_contact_retention": 0.9465125082810183,
+        "baseline_penetration": 0.364844806707855,
+        "candidate_penetration": 0.3151809114931316,
+        "rejection_reasons": [
+          "contact_retention_below_baseline_minus_allowed_drop"
+        ]
+      }
+    },
+    {
+      "epoch": 2,
+      "step": 268,
+      "learning_rate": 1e-05,
+      "training_loss": 1.0997881343742006,
+      "epoch_training_seconds": 14.289044008000928,
+      "training_evaluation": {
+        "loss": {
+          "total": 1.2764188561942003,
+          "penetration": 0.36713079333726734,
+          "contact": 0.9080910895537846,
+          "displacement": 0.03921168335119552,
+          "velocity": 0.00017669564216699074,
+          "acceleration": 5.911852321960037e-05
+        },
+        "vertices_deeper_than_2_mm": 25692,
+        "vertices_deeper_than_5_mm": 496,
+        "maximum_penetration_mm": 5.49496603012085,
+        "mean_vertex_displacement_mm": 0.30686881760991,
+        "source_contact_retention": 0.9464581771152218
+      },
+      "validation": {
+        "loss": {
+          "total": 1.1416818998259972,
+          "penetration": 0.3102818649638532,
+          "contact": 0.8301816009445937,
+          "displacement": 0.040066094545984886,
+          "velocity": 0.00014806448766448472,
+          "acceleration": 3.318086742715627e-05
+        },
+        "vertices_deeper_than_2_mm": 4164,
+        "vertices_deeper_than_5_mm": 64,
+        "maximum_penetration_mm": 5.359973907470703,
+        "mean_vertex_displacement_mm": 0.30778005926090185,
+        "source_contact_retention": 0.9453768257673744
+      },
+      "validation_minus_train_loss": -0.13473695636820304,
+      "selection_guard": {
+        "eligible": false,
+        "baseline_contact_retention": 0.9832486829237516,
+        "minimum_contact_retention": 0.9632486829237515,
+        "candidate_contact_retention": 0.9453768257673744,
+        "baseline_penetration": 0.364844806707855,
+        "candidate_penetration": 0.3102818649638532,
+        "rejection_reasons": [
+          "contact_retention_below_baseline_minus_allowed_drop"
+        ]
+      }
+    },
+    {
+      "epoch": 3,
+      "step": 402,
+      "learning_rate": 1e-05,
+      "training_loss": 1.0825154531491683,
+      "epoch_training_seconds": 19.991702289000386,
+      "training_evaluation": {
+        "loss": {
+          "total": 1.2618129125724349,
+          "penetration": 0.3508758736860946,
+          "contact": 0.909398899774426,
+          "displacement": 0.050211382109709275,
+          "velocity": 0.0002707279615049572,
+          "acceleration": 9.44043292652476e-05
+        },
+        "vertices_deeper_than_2_mm": 24402,
+        "vertices_deeper_than_5_mm": 446,
+        "maximum_penetration_mm": 5.52305793762207,
+        "mean_vertex_displacement_mm": 0.3316496548636979,
+        "source_contact_retention": 0.9344606261565873
+      },
+      "validation": {
+        "loss": {
+          "total": 1.1632302278245774,
+          "penetration": 0.30597145454216174,
+          "contact": 0.8558918042717693,
+          "displacement": 0.04478360426872902,
+          "velocity": 0.00020840466079222552,
+          "acceleration": 5.1472487096349324e-05
+        },
+        "vertices_deeper_than_2_mm": 4121,
+        "vertices_deeper_than_5_mm": 62,
+        "maximum_penetration_mm": 5.381274223327637,
+        "mean_vertex_displacement_mm": 0.3197086335130411,
+        "source_contact_retention": 0.9355026972459699
+      },
+      "validation_minus_train_loss": -0.09858268474785747,
+      "selection_guard": {
+        "eligible": false,
+        "baseline_contact_retention": 0.9832486829237516,
+        "minimum_contact_retention": 0.9632486829237515,
+        "candidate_contact_retention": 0.9355026972459699,
+        "baseline_penetration": 0.364844806707855,
+        "candidate_penetration": 0.30597145454216174,
+        "rejection_reasons": [
+          "contact_retention_below_baseline_minus_allowed_drop"
+        ]
+      }
+    }
+  ]
+}

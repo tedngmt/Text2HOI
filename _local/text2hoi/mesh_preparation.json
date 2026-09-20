@@ -1,0 +1,36 @@
+{
+  "source_archive": "/mnt/c/Linux/Grab Dataset/tools__object_meshes__contact_meshes.zip",
+  "source_member": "contact_meshes/mug.ply",
+  "source_sha256": "a33bc0d4425523f8006b58dc4986c0d19cf8bc5be960449a70121d7c61a030d7",
+  "processed_sha256": "03fc823a9ee8a1bdc1ee9dd27a85f26295afb5865bd5262b23161be7fd21a0c3",
+  "vertices": 4000,
+  "faces": 8000,
+  "point_count": 1024,
+  "point_index_max_error_m": 2.9816870751943665e-09,
+  "point_surface_max_error_m": 2.4221342636473993e-09,
+  "point_surface_mean_error_m": 7.316072324259265e-10,
+  "mesh_bounds_m": [
+    [
+      -0.0579444388858974,
+      -0.04110508086159825,
+      -0.052488505840301514
+    ],
+    [
+      0.05791856907308102,
+      0.04111771285533905,
+      0.052488505840301514
+    ]
+  ],
+  "point_bounds_m": [
+    [
+      -0.057942938059568405,
+      -0.041086167097091675,
+      -0.052475444972515106
+    ],
+    [
+      0.05787138640880585,
+      0.04110965132713318,
+      0.05233524367213249
+    ]
+  ]
+}

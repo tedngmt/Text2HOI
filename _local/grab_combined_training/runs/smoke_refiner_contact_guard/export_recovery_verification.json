@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "clips": 44,
+  "frames": 13171,
+  "selected_epoch": 0,
+  "resumed_at_completed_epoch": 3,
+  "additional_training_updates": 0,
+  "test_metrics_computed": false,
+  "object_motion_and_timing_unchanged": true,
+  "all_reference_arrays_finite": true,
+  "export_sha256_verified": true
+}

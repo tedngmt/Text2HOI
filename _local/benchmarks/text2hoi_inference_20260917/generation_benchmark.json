@@ -1,0 +1,117 @@
+{
+  "complete": true,
+  "prompt": [
+    "Lift a mug with the right hand."
+  ],
+  "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+  "torch": "1.13.0+cu116",
+  "cuda_runtime": "11.6",
+  "model_dtype": "float32; upstream CLIP uses its own evaluation dtype",
+  "batch_size": 1,
+  "cpu_threads": 2,
+  "diffusion_steps": 1000,
+  "padded_frames_per_sample": 150,
+  "warmups": 1,
+  "repeats": 3,
+  "generated_valid_frames": 440,
+  "measured_seconds": 23.413823870996566,
+  "valid_generated_frames_per_second": 18.792316984371002,
+  "padded_frames_per_second": 19.219415097652163,
+  "stage_statistics": {
+    "duration_seconds": {
+      "mean_seconds": 0.0004411673338230078,
+      "median_seconds": 0.0003634999993664678,
+      "min_seconds": 0.00033206900116056204,
+      "max_seconds": 0.0006279330009419937
+    },
+    "contact_prediction_seconds": {
+      "mean_seconds": 0.0008667916651271904,
+      "median_seconds": 0.0006226019977475516,
+      "min_seconds": 0.0005827029999636579,
+      "max_seconds": 0.0013950699976703618
+    },
+    "motion_diffusion_seconds": {
+      "mean_seconds": 7.776508485665545,
+      "median_seconds": 7.740904950998811,
+      "min_seconds": 7.547852984997007,
+      "max_seconds": 8.040767521000816
+    },
+    "refiner_features_seconds": {
+      "mean_seconds": 0.013597713666968048,
+      "median_seconds": 0.013715073000639677,
+      "min_seconds": 0.012984343000425724,
+      "max_seconds": 0.014093724999838741
+    },
+    "refiner_network_seconds": {
+      "mean_seconds": 0.005841652334008056,
+      "median_seconds": 0.0058134840001002885,
+      "min_seconds": 0.005787150003015995,
+      "max_seconds": 0.005924322998907883
+    },
+    "mesh_decoding_seconds": {
+      "mean_seconds": 0.006068026334105525,
+      "median_seconds": 0.0060664340016955975,
+      "min_seconds": 0.006007857999065891,
+      "max_seconds": 0.006129787001555087
+    },
+    "total_seconds": {
+      "mean_seconds": 7.804607956998855,
+      "median_seconds": 7.769412310997723,
+      "min_seconds": 7.575474248998944,
+      "max_seconds": 8.0689373109999
+    }
+  },
+  "timing_scope": "Warm loaded models, cached text/object features; duration and contact prediction, 1000-step diffusion, refiner feature construction, refiner, MANO/object mesh decoding. Synchronized wall-clock with synchronization at stage boundaries. Excludes model loading, initial object selection/mesh loading/text and PointNet encoding, rendering, video/mesh export. Whole-sequence throughput, not a causal streaming controller.",
+  "all_trials_including_warmup": [
+    {
+      "duration_seconds": 0.0008991329996206332,
+      "valid_frames": 147,
+      "contact_prediction_seconds": 0.0048158569989027455,
+      "motion_diffusion_seconds": 7.728973279998172,
+      "refiner_features_seconds": 0.03584241399948951,
+      "refiner_network_seconds": 0.01512319299945375,
+      "mesh_decoding_seconds": 0.015600786999129923,
+      "total_seconds": 7.803189849000773,
+      "output_frames": 147,
+      "all_output_arrays_finite": true
+    },
+    {
+      "duration_seconds": 0.0006279330009419937,
+      "valid_frames": 147,
+      "contact_prediction_seconds": 0.0013950699976703618,
+      "motion_diffusion_seconds": 7.740904950998811,
+      "refiner_features_seconds": 0.012984343000425724,
+      "refiner_network_seconds": 0.005924322998907883,
+      "mesh_decoding_seconds": 0.006007857999065891,
+      "total_seconds": 7.769412310997723,
+      "output_frames": 147,
+      "all_output_arrays_finite": true
+    },
+    {
+      "duration_seconds": 0.00033206900116056204,
+      "valid_frames": 147,
+      "contact_prediction_seconds": 0.0006226019977475516,
+      "motion_diffusion_seconds": 8.040767521000816,
+      "refiner_features_seconds": 0.014093724999838741,
+      "refiner_network_seconds": 0.005787150003015995,
+      "mesh_decoding_seconds": 0.0060664340016955975,
+      "total_seconds": 8.0689373109999,
+      "output_frames": 147,
+      "all_output_arrays_finite": true
+    },
+    {
+      "duration_seconds": 0.0003634999993664678,
+      "valid_frames": 146,
+      "contact_prediction_seconds": 0.0005827029999636579,
+      "motion_diffusion_seconds": 7.547852984997007,
+      "refiner_features_seconds": 0.013715073000639677,
+      "refiner_network_seconds": 0.0058134840001002885,
+      "mesh_decoding_seconds": 0.006129787001555087,
+      "total_seconds": 7.575474248998944,
+      "output_frames": 146,
+      "all_output_arrays_finite": true
+    }
+  ],
+  "overall_seconds_including_model_setup_and_warmup": 42.50979196700064,
+  "script_sha256": "5d5302591e44091d2ca95fe68464fb6061503d4529fbaf517004943f672e0908"
+}

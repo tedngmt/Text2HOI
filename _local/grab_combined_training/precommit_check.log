@@ -1,0 +1,12 @@
+WARNING: The directory '/home/nmt/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Defaulting to user installation because normal site-packages is not writeable
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7f83cc973620>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/pre-commit/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7f83cc9525d0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/pre-commit/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7f83cc952850>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/pre-commit/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7f83cc952ad0>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/pre-commit/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7f83cc952d50>: Failed to establish a new connection: [Errno -2] Name or service not known')': /simple/pre-commit/
+ERROR: Could not find a version that satisfies the requirement pre-commit (from versions: none)
+ERROR: No matching distribution found for pre-commit
+[ERROR] Command failed with code 1: "/home/nmt/miniconda3/bin/python -m pip install pre-commit"
+[INFO] Using Python: "/home/nmt/miniconda3/bin/python"
+[INFO] Pre-commit not found. Installing "pre-commit" module...

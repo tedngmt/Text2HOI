@@ -1,0 +1,19 @@
+{
+  "epoch": 0,
+  "summary": {
+    "windows": 18,
+    "planned_frames": 1168,
+    "completed_frames": 1136,
+    "failure_rate": 0.05555555555555555,
+    "mean_reward_per_planned_frame": 4.263697582973193,
+    "mean_joint_error_m_on_completed_frames": 0.008958042067475412,
+    "mean_object_error_m_on_completed_frames": 0.16996021562267807,
+    "max_table_penetration_m": 0.00012357073137536645,
+    "max_object_penetration_m": 0.018926318734884262,
+    "contact_recall": 0.5339074273412271,
+    "lift_windows": 11,
+    "lift_completion_fraction": 0.36363636363636365,
+    "selection_score": 4.150115057234575
+  },
+  "baseline": true
+}

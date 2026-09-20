@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "frames": 13171,
+  "clips": 44,
+  "finger_limits_satisfied": true,
+  "wrist_object_and_timing_unchanged": true,
+  "all_tabletops_z_m": 0.5,
+  "window_transition_coverage": {
+    "train": {
+      "windows": 57,
+      "planned_transitions": 4205
+    },
+    "validation": {
+      "windows": 18,
+      "planned_transitions": 1168
+    },
+    "test": {
+      "windows": 13,
+      "planned_transitions": 955
+    }
+  },
+  "root_bounds_allow_residual_for_10_augmentation_seeds": true,
+  "maximum_centered_root_displacement_m": 0.671124279499054
+}

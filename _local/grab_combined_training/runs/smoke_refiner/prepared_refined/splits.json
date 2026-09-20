@@ -1,0 +1,74 @@
+{
+  "train": {
+    "subjects": [
+      "s1",
+      "s2",
+      "s3",
+      "s4",
+      "s6",
+      "s7"
+    ],
+    "clip_ids": [
+      "s1__mug_drink_1",
+      "s1__mug_drink_2",
+      "s1__mug_drink_3",
+      "s1__mug_drink_4",
+      "s1__mug_lift",
+      "s1__mug_offhand_1",
+      "s1__mug_pass_1",
+      "s1__mug_toast_1",
+      "s2__mug_drink_1",
+      "s2__mug_drink_2",
+      "s2__mug_lift",
+      "s2__mug_pass_1",
+      "s2__mug_toast_1",
+      "s3__mug_drink_1",
+      "s3__mug_drink_2",
+      "s3__mug_drink_3",
+      "s3__mug_drink_4",
+      "s3__mug_offhand_1",
+      "s3__mug_pass_1",
+      "s4__mug_drink_2",
+      "s4__mug_pass_1",
+      "s6__mug_drink_2",
+      "s6__mug_lift",
+      "s6__mug_pass_1",
+      "s6__mug_toast_1",
+      "s7__mug_drink_1",
+      "s7__mug_drink_2",
+      "s7__mug_lift"
+    ]
+  },
+  "validation": {
+    "subjects": [
+      "s5",
+      "s8"
+    ],
+    "clip_ids": [
+      "s5__mug_drink_1",
+      "s5__mug_pass_1",
+      "s5__mug_toast_1",
+      "s8__mug_drink_1",
+      "s8__mug_drink_2",
+      "s8__mug_lift",
+      "s8__mug_offhand_1",
+      "s8__mug_pass_1",
+      "s8__mug_toast_1"
+    ]
+  },
+  "test": {
+    "subjects": [
+      "s9",
+      "s10"
+    ],
+    "clip_ids": [
+      "s10__mug_drink_1",
+      "s10__mug_drink_2",
+      "s10__mug_lift",
+      "s10__mug_pass_1",
+      "s10__mug_toast_1",
+      "s9__mug_drink_2",
+      "s9__mug_pass_1"
+    ]
+  }
+}

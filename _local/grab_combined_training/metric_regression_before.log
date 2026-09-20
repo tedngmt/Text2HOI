@@ -1,0 +1,33 @@
+test_early_failure_preserves_future_contact_and_lift_targets (__main__.suite.<locals>.PolicyMetricRegression) ... FAIL
+test_equally_physical_candidate_remains_eligible (__main__.suite.<locals>.PolicyMetricRegression) ... ok
+test_rejects_fewer_completed_lifts_despite_unchanged_other_metrics (__main__.suite.<locals>.PolicyMetricRegression) ... FAIL
+test_rejects_more_object_penetration_despite_unchanged_other_metrics (__main__.suite.<locals>.PolicyMetricRegression) ... FAIL
+
+======================================================================
+FAIL: test_early_failure_preserves_future_contact_and_lift_targets (__main__.suite.<locals>.PolicyMetricRegression)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "_local/grab_combined_training/verify_policy_metrics.py", line 74, in test_early_failure_preserves_future_contact_and_lift_targets
+    self.assertEqual(rows[0]["expected_contact_frames"], 3)
+AssertionError: 0 != 3
+
+======================================================================
+FAIL: test_rejects_fewer_completed_lifts_despite_unchanged_other_metrics (__main__.suite.<locals>.PolicyMetricRegression)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "_local/grab_combined_training/verify_policy_metrics.py", line 105, in test_rejects_fewer_completed_lifts_despite_unchanged_other_metrics
+    self.assertIn(
+AssertionError: 'fewer_planned_lifts_completed_than_reference_controller' not found in []
+
+======================================================================
+FAIL: test_rejects_more_object_penetration_despite_unchanged_other_metrics (__main__.suite.<locals>.PolicyMetricRegression)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "_local/grab_combined_training/verify_policy_metrics.py", line 97, in test_rejects_more_object_penetration_despite_unchanged_other_metrics
+    self.assertIn(
+AssertionError: 'maximum_hand_object_penetration_worsened_more_than_two_mm' not found in []
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.007s
+
+FAILED (failures=3)

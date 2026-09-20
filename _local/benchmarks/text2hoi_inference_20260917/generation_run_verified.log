@@ -1,0 +1,169 @@
+dataset:
+  name: grab
+  root: data/grab
+  obj_root: data/grab/processed_object_meshes
+  data_path: data/grab/data.npz
+  data_obj_pc_path: data/grab/obj.pkl
+  balance_weights_path: data/grab/balance_weights.pkl
+  text_json: data/grab/text.json
+  t2l_json: data/grab/text_length.json
+  t2c_json: data/grab/text_count.json
+  flat_hand: true
+  max_nframes: 150
+  data_ratio: 1
+  augm: false
+  data_num: 1335
+  text_num: 276
+clip:
+  clip_version: ViT-B/32
+diffusion:
+  beta_1: 0.0001
+  beta_T: 0.02
+  T: 1000
+  schedule_name: cosine
+mpnet:
+  version: sentence-transformers/all-mpnet-base-v2
+seq_cvae:
+  model_name: seq_cvae
+  latent_dim: 64
+  cond_dim: 512
+  encoder_layer_dims:
+  - 1
+  - 512
+  decoder_layer_dims:
+  - 512
+  - 1
+  final_sigmoid: true
+  iteration: 1000
+  lr: 0.001
+  save_root: outputs/${seq_cvae.model_name}
+  weight_path: checkpoints/${dataset.name}/${seq_cvae.model_name}.pth
+pointfeat:
+  model_name: pointfeat
+  global_feat: false
+  feature_transform: false
+  in_dim: 3
+  resume: false
+  save_root: outputs/${pointfeat.model_name}
+  weight_path: checkpoints/${dataset.name}/${pointfeat.model_name}.pth
+contact:
+  model_name: contact_estimator
+  latent_dim: 64
+  cond_dim: 1601
+  use_scale: true
+  use_dice_loss: true
+  decoder_layer_dims:
+  - 512
+  - 256
+  - 128
+  - 1
+  final_sigmoid: true
+  in_dim: 4
+  test_iteration: 1
+  iteration: 10000
+  lr: 0.001
+  save_root: data/networks/contact_estimator/${dataset.name}
+  weight_path: checkpoints/${dataset.name}/${contact.model_name}.pth
+texthom:
+  model_name: texthom
+  hand_nfeats: 99
+  obj_nfeats: 9
+  latent_dim: 512
+  ff_size: 1024
+  num_layers: 8
+  num_heads: 4
+  dropout: 0.1
+  activation: gelu
+  clip_dim: 512
+  obj_dim: 1024
+  cond_mask_prob: 0.1
+  use_cond_fc: true
+  use_obj_scale_centroid: true
+  use_frame_pos: true
+  use_contact_feat: true
+  use_inst_pos: true
+  iteration: 30000
+  lr: 0.0001
+  lambda_simple: 1.0
+  lambda_dist: 1.0
+  lambda_ro: 1.0
+  save_root: outputs/${texthom.model_name}
+  weight_path: checkpoints/${dataset.name}/${texthom.model_name}.pth
+refiner:
+  model_name: refiner
+  hand_input_nfeats: 2273
+  hand_output_nfeats: 99
+  latent_dim: 512
+  ff_size: 1024
+  num_layers: 8
+  num_heads: 4
+  dropout: 0.1
+  activation: gelu
+  clip_dim: 512
+  obj_dim: 1024
+  cond_mask_prob: 0.1
+  use_cond_fc: true
+  use_obj_scale_centroid: true
+  zero_initialized: true
+  global_feat: true
+  feature_transform: false
+  in_dim: 4
+  iteration: 3000
+  lr: 0.0001
+  contact_loss_type: l1
+  lambda_simple: 1.0
+  lambda_penet: 1.0
+  lambda_contact: 5.0
+  save_root: outputs/${refiner.model_name}
+  weight_path: checkpoints/${dataset.name}/${refiner.model_name}.pth
+project_name: texthom
+batch_size: 64
+shuffle: true
+drop_last: true
+num_workers: 4
+result_show_freq: 500
+save_pth_freq: 2000
+text:
+- Place cappuccino with right hand.
+save_demo: false
+save_obj: false
+balance_weights: true
+fps: 30
+test_text:
+- Lift a mug with the right hand.
+nsamples: 4
+
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+build refiner
+initialize refiner with zero
+load refiner, checkpoints/grab/refiner.pth
+build texthom, diffusion
+load texthom, checkpoints/grab/texthom.pth
+build mpnet sentence-transformers/all-mpnet-base-v2
+build seq cvae
+load seq cvae, checkpoints/grab/seq_cvae.pth
+build point encoder
+load point encoder, checkpoints/grab/pointfeat.pth
+build contact estimator
+load contact estimator, checkpoints/grab/contact_estimator.pth
+object name: mug
+hand type: right hand
+Batch #0 Samples #0 Text #0
+tensor([147], device='cuda:0')
+TIMING {"duration_seconds": 0.0008991329996206332, "valid_frames": 147, "contact_prediction_seconds": 0.0048158569989027455, "motion_diffusion_seconds": 7.728973279998172, "refiner_features_seconds": 0.03584241399948951, "refiner_network_seconds": 0.01512319299945375, "mesh_decoding_seconds": 0.015600786999129923, "total_seconds": 7.803189849000773, "output_frames": 147, "all_output_arrays_finite": true}
+Batch #0 Samples #1 Text #0
+tensor([147], device='cuda:0')
+TIMING {"duration_seconds": 0.0006279330009419937, "valid_frames": 147, "contact_prediction_seconds": 0.0013950699976703618, "motion_diffusion_seconds": 7.740904950998811, "refiner_features_seconds": 0.012984343000425724, "refiner_network_seconds": 0.005924322998907883, "mesh_decoding_seconds": 0.006007857999065891, "total_seconds": 7.769412310997723, "output_frames": 147, "all_output_arrays_finite": true}
+Batch #0 Samples #2 Text #0
+tensor([147], device='cuda:0')
+TIMING {"duration_seconds": 0.00033206900116056204, "valid_frames": 147, "contact_prediction_seconds": 0.0006226019977475516, "motion_diffusion_seconds": 8.040767521000816, "refiner_features_seconds": 0.014093724999838741, "refiner_network_seconds": 0.005787150003015995, "mesh_decoding_seconds": 0.0060664340016955975, "total_seconds": 8.0689373109999, "output_frames": 147, "all_output_arrays_finite": true}
+Batch #0 Samples #3 Text #0
+tensor([146], device='cuda:0')
+TIMING {"duration_seconds": 0.0003634999993664678, "valid_frames": 146, "contact_prediction_seconds": 0.0005827029999636579, "motion_diffusion_seconds": 7.547852984997007, "refiner_features_seconds": 0.013715073000639677, "refiner_network_seconds": 0.0058134840001002885, "mesh_decoding_seconds": 0.006129787001555087, "total_seconds": 7.575474248998944, "output_frames": 146, "all_output_arrays_finite": true}
+42.50527000427246
+RESULT {"complete": true, "prompt": ["Lift a mug with the right hand."], "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU", "torch": "1.13.0+cu116", "cuda_runtime": "11.6", "model_dtype": "float32; upstream CLIP uses its own evaluation dtype", "batch_size": 1, "cpu_threads": 2, "diffusion_steps": 1000, "padded_frames_per_sample": 150, "warmups": 1, "repeats": 3, "generated_valid_frames": 440, "measured_seconds": 23.413823870996566, "valid_generated_frames_per_second": 18.792316984371002, "padded_frames_per_second": 19.219415097652163, "stage_statistics": {"duration_seconds": {"mean_seconds": 0.0004411673338230078, "median_seconds": 0.0003634999993664678, "min_seconds": 0.00033206900116056204, "max_seconds": 0.0006279330009419937}, "contact_prediction_seconds": {"mean_seconds": 0.0008667916651271904, "median_seconds": 0.0006226019977475516, "min_seconds": 0.0005827029999636579, "max_seconds": 0.0013950699976703618}, "motion_diffusion_seconds": {"mean_seconds": 7.776508485665545, "median_seconds": 7.740904950998811, "min_seconds": 7.547852984997007, "max_seconds": 8.040767521000816}, "refiner_features_seconds": {"mean_seconds": 0.013597713666968048, "median_seconds": 0.013715073000639677, "min_seconds": 0.012984343000425724, "max_seconds": 0.014093724999838741}, "refiner_network_seconds": {"mean_seconds": 0.005841652334008056, "median_seconds": 0.0058134840001002885, "min_seconds": 0.005787150003015995, "max_seconds": 0.005924322998907883}, "mesh_decoding_seconds": {"mean_seconds": 0.006068026334105525, "median_seconds": 0.0060664340016955975, "min_seconds": 0.006007857999065891, "max_seconds": 0.006129787001555087}, "total_seconds": {"mean_seconds": 7.804607956998855, "median_seconds": 7.769412310997723, "min_seconds": 7.575474248998944, "max_seconds": 8.0689373109999}}, "timing_scope": "Warm loaded models, cached text/object features; duration and contact prediction, 1000-step diffusion, refiner feature construction, refiner, MANO/object mesh decoding. Synchronized wall-clock with synchronization at stage boundaries. Excludes model loading, initial object selection/mesh loading/text and PointNet encoding, rendering, video/mesh export. Whole-sequence throughput, not a causal streaming controller.", "all_trials_including_warmup": [{"duration_seconds": 0.0008991329996206332, "valid_frames": 147, "contact_prediction_seconds": 0.0048158569989027455, "motion_diffusion_seconds": 7.728973279998172, "refiner_features_seconds": 0.03584241399948951, "refiner_network_seconds": 0.01512319299945375, "mesh_decoding_seconds": 0.015600786999129923, "total_seconds": 7.803189849000773, "output_frames": 147, "all_output_arrays_finite": true}, {"duration_seconds": 0.0006279330009419937, "valid_frames": 147, "contact_prediction_seconds": 0.0013950699976703618, "motion_diffusion_seconds": 7.740904950998811, "refiner_features_seconds": 0.012984343000425724, "refiner_network_seconds": 0.005924322998907883, "mesh_decoding_seconds": 0.006007857999065891, "total_seconds": 7.769412310997723, "output_frames": 147, "all_output_arrays_finite": true}, {"duration_seconds": 0.00033206900116056204, "valid_frames": 147, "contact_prediction_seconds": 0.0006226019977475516, "motion_diffusion_seconds": 8.040767521000816, "refiner_features_seconds": 0.014093724999838741, "refiner_network_seconds": 0.005787150003015995, "mesh_decoding_seconds": 0.0060664340016955975, "total_seconds": 8.0689373109999, "output_frames": 147, "all_output_arrays_finite": true}, {"duration_seconds": 0.0003634999993664678, "valid_frames": 146, "contact_prediction_seconds": 0.0005827029999636579, "motion_diffusion_seconds": 7.547852984997007, "refiner_features_seconds": 0.013715073000639677, "refiner_network_seconds": 0.0058134840001002885, "mesh_decoding_seconds": 0.006129787001555087, "total_seconds": 7.575474248998944, "output_frames": 146, "all_output_arrays_finite": true}], "overall_seconds_including_model_setup_and_warmup": 42.50979196700064, "script_sha256": "5d5302591e44091d2ca95fe68464fb6061503d4529fbaf517004943f672e0908"}
+/home/nmt/miniconda3/envs/text2hoi/lib/python3.8/site-packages/hydra/_internal/defaults_list.py:251: UserWarning: In 'config': Defaults list is missing `_self_`. See https://hydra.cc/docs/1.2/upgrades/1.0_to_1.1/default_composition_order for more information
+  warnings.warn(msg, UserWarning)
+/home/nmt/miniconda3/envs/text2hoi/lib/python3.8/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(

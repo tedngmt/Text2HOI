@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "epochs": 650,
+  "microbatch": 8,
+  "effective_batch": 64,
+  "learning_rate": 0.0001,
+  "validation_interval": 5,
+  "initialization": "fresh upstream zero_initialized refiner; never all-data weights",
+  "selection_metric": "minimum deterministic validation combined loss",
+  "test_policy": "evaluate once after completing training and selecting on validation",
+  "scope": "unseen subjects to refiner; frozen pretrained components may have seen them"
+}

@@ -1,0 +1,54 @@
+{
+  "complete": false,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "renderer": {
+    "api": "OpenGL ES 3 / EGL",
+    "renderer": "llvmpipe (LLVM 15.0.7, 256 bits)",
+    "native_meshes": true
+  },
+  "windows": [
+    {
+      "window_index": 0,
+      "clip_id": "s5__mug_drink_1",
+      "frames": 97,
+      "overview_camera": {
+        "target": [
+          0.7781869949591332,
+          0.24892329450247525,
+          0.7284500498077211
+        ],
+        "view_direction": [
+          0.47853661299100175,
+          -0.7362101738323104,
+          0.47853661299100175
+        ],
+        "up": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "height": 1.30267961991179,
+        "width": 1.985035611294156,
+        "eye": [
+          1.7352602209411367,
+          -1.2234970531621454,
+          1.6855232757897247
+        ],
+        "znear": 0.01,
+        "zfar": 4.654652001476901
+      }
+    }
+  ],
+  "selected_epoch": 0,
+  "latest_epoch": 2,
+  "full_100_epoch_training_completed": false,
+  "failure_display": "Hold last valid state with red FAILED label; never show automatic reset as motion",
+  "overview": "Same fixed camera and scale across all columns within each window",
+  "detail": "Each column follows its own mug with world-up yaw camera; actual mug tilt is retained",
+  "elapsed_seconds": 0.6783578210015548,
+  "compilation_frames": null
+}

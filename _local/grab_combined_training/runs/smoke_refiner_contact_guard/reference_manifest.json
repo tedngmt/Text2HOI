@@ -1,0 +1,2401 @@
+{
+  "schema_version": 1,
+  "source": "Recorded GRAB clips refined by validation-selected Text2HOI refiner",
+  "checkpoint": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/best.pth",
+  "checkpoint_sha256": "4a2519471032e5f9b03bbe99e8c996b9505f925eb743730344b7e1380cc54c2c",
+  "best_epoch": 0,
+  "prepared_root": "/home/nmt/Projects/IsaacLab/_local/grab_mug_refinement/prepared",
+  "split_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/prepared/splits.json",
+  "split_sha256": "0a744d5311aca4812033aad1029ce8a682a003aa989219f51424d2ffaa57bb5b",
+  "clips": [
+    {
+      "clip_id": "s1__mug_drink_1",
+      "subject": "s1",
+      "gender": "male",
+      "action": "drink",
+      "frames": 334,
+      "original_frames": 1334,
+      "clip_path": "clips/s1__mug_drink_1.npz",
+      "subject_path": "subjects/s1.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_drink_1.npz",
+      "source_member_sha256": "4b89d7cef41974a0fc29950a795bf4db7ea392667dd22881a0f86d999088afdf",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s1__mug_drink_1.npz",
+      "reference_cache_sha256": "b7a2401a0dbf77727a1e88e3dbf60f507a45220779db3dfe56e34e6ec8a61fa8",
+      "clip_sha256": "a1139c3bdfcb610069ed8c3a35455df2367ddc8ad01a4e55432846395dc1bbda",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010877996683120728,
+          "personalized_mano_vs_smplx_p95_m": 0.002064829063601791,
+          "personalized_mano_vs_smplx_max_m": 0.004298600368201733,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005138046108186245,
+          "standard_mano_vs_smplx_sampled_max_m": 0.012434828095138073,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0012255185283720493,
+          "personalized_mano_vs_smplx_p95_m": 0.00269845132716,
+          "personalized_mano_vs_smplx_max_m": 0.005554798524826765,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.00535290502011776,
+          "standard_mano_vs_smplx_sampled_max_m": 0.01481099333614111,
+          "joint_contact_frames": 239
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_drink_1.npz",
+      "reference_sha256": "13dc5734b2bd2b1500d99a82ee4dea4fd8a3280f6f2bcad9cabec3db303975a3",
+      "metrics": {
+        "clip_id": "s1__mug_drink_1",
+        "frames": 334,
+        "loss": {
+          "total": 1.3661630153656006,
+          "penetration": 0.39154812693595886,
+          "contact": 0.9687270522117615,
+          "displacement": 0.19457849860191345,
+          "velocity": 0.00044338800944387913,
+          "acceleration": 0.00012281311501283199
+        },
+        "vertices_deeper_than_2_mm": 1424,
+        "vertices_deeper_than_5_mm": 22,
+        "maximum_penetration_mm": 5.394374847412109,
+        "mean_vertex_displacement_mm": 0.722038984298706,
+        "maximum_vertex_displacement_mm": 1.731726050376892,
+        "source_contact_vertices": 10972,
+        "retained_source_contact_vertices": 10523
+      }
+    },
+    {
+      "clip_id": "s1__mug_drink_2",
+      "subject": "s1",
+      "gender": "male",
+      "action": "drink",
+      "frames": 377,
+      "original_frames": 1508,
+      "clip_path": "clips/s1__mug_drink_2.npz",
+      "subject_path": "subjects/s1.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_drink_2.npz",
+      "source_member_sha256": "96a3122339436f913ce3b9b95d3de8ff73cf6583174aeddbc78c520ab509342b",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s1__mug_drink_2.npz",
+      "reference_cache_sha256": "477cd21ef1e8bbecae9fd1aed4ec0bc57fd081e71724b66e4d53b430563574d1",
+      "clip_sha256": "76d386be113423c48d951391d81dc78f4d456bbcba0a2dcda092747544dc5f38",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0011153417872264981,
+          "personalized_mano_vs_smplx_p95_m": 0.0022837630240246654,
+          "personalized_mano_vs_smplx_max_m": 0.004998484626412392,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005463901907205582,
+          "standard_mano_vs_smplx_sampled_max_m": 0.015601934865117073,
+          "joint_contact_frames": 212
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.001259242300875485,
+          "personalized_mano_vs_smplx_p95_m": 0.0026045205304399133,
+          "personalized_mano_vs_smplx_max_m": 0.005823716055601835,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005189706105738878,
+          "standard_mano_vs_smplx_sampled_max_m": 0.014503460377454758,
+          "joint_contact_frames": 265
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_drink_2.npz",
+      "reference_sha256": "960c8d1b4d1e8ff06a5e91afb792d004545dfd04991bc0303f5d7833fd708c33",
+      "metrics": {
+        "clip_id": "s1__mug_drink_2",
+        "frames": 377,
+        "loss": {
+          "total": 1.550625205039978,
+          "penetration": 0.39945054054260254,
+          "contact": 1.1459845304489136,
+          "displacement": 0.1715725064277649,
+          "velocity": 0.0003847231564577669,
+          "acceleration": 8.788103150436655e-05
+        },
+        "vertices_deeper_than_2_mm": 1076,
+        "vertices_deeper_than_5_mm": 0,
+        "maximum_penetration_mm": 2.8238492012023926,
+        "mean_vertex_displacement_mm": 0.6608358025550842,
+        "maximum_vertex_displacement_mm": 1.5129656791687012,
+        "source_contact_vertices": 33368,
+        "retained_source_contact_vertices": 32915
+      }
+    },
+    {
+      "clip_id": "s1__mug_drink_3",
+      "subject": "s1",
+      "gender": "male",
+      "action": "drink",
+      "frames": 309,
+      "original_frames": 1236,
+      "clip_path": "clips/s1__mug_drink_3.npz",
+      "subject_path": "subjects/s1.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_drink_3.npz",
+      "source_member_sha256": "e9d7dac9caf088d05bb2d9b4a9df7d1fd088c00c7252ed58fe7f6e2aef7a9bd9",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s1__mug_drink_3.npz",
+      "reference_cache_sha256": "63af416a58b40a40a12501c2e440d2cc47a6ed7145c5d2ecc7dd461300cfd168",
+      "clip_sha256": "167033151042e350f5dd5bcab52f6d53b84000387f04f77c706c6dc85022a700",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010296204127371311,
+          "personalized_mano_vs_smplx_p95_m": 0.0019974566064774974,
+          "personalized_mano_vs_smplx_max_m": 0.005025358404964209,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.0053588324226439,
+          "standard_mano_vs_smplx_sampled_max_m": 0.012693946249783039,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0013125844998285174,
+          "personalized_mano_vs_smplx_p95_m": 0.0027282537310384207,
+          "personalized_mano_vs_smplx_max_m": 0.0051500131376087666,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005459620151668787,
+          "standard_mano_vs_smplx_sampled_max_m": 0.014640412293374538,
+          "joint_contact_frames": 221
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_drink_3.npz",
+      "reference_sha256": "5f0128040b5a339a8016c847e523a783ac14c5e2340e095b004e3faed263ca7c",
+      "metrics": {
+        "clip_id": "s1__mug_drink_3",
+        "frames": 309,
+        "loss": {
+          "total": 1.4783391952514648,
+          "penetration": 0.49759653210639954,
+          "contact": 0.9748006463050842,
+          "displacement": 0.19673429429531097,
+          "velocity": 0.00035589386243373156,
+          "acceleration": 8.604713366366923e-05
+        },
+        "vertices_deeper_than_2_mm": 1774,
+        "vertices_deeper_than_5_mm": 71,
+        "maximum_penetration_mm": 5.503753185272217,
+        "mean_vertex_displacement_mm": 0.7330233454704285,
+        "maximum_vertex_displacement_mm": 1.7546998262405396,
+        "source_contact_vertices": 15127,
+        "retained_source_contact_vertices": 14602
+      }
+    },
+    {
+      "clip_id": "s1__mug_drink_4",
+      "subject": "s1",
+      "gender": "male",
+      "action": "drink",
+      "frames": 300,
+      "original_frames": 1198,
+      "clip_path": "clips/s1__mug_drink_4.npz",
+      "subject_path": "subjects/s1.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_drink_4.npz",
+      "source_member_sha256": "1b2ce160b01a27e94c301912becf93879e09f97b1057ac7cb78653f68ad96f89",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s1__mug_drink_4.npz",
+      "reference_cache_sha256": "fcb8796ad430c52b29b807b9ddc346f2381aca50cef78bbd656a00aa3d715603",
+      "clip_sha256": "34cd4668dedec8270084a527fdf9e98b46cbaf0da7337a6d843ee92c6a2b807d",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010206990409642458,
+          "personalized_mano_vs_smplx_p95_m": 0.001973441406153142,
+          "personalized_mano_vs_smplx_max_m": 0.004301536362618208,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005131597630679607,
+          "standard_mano_vs_smplx_sampled_max_m": 0.012642771005630493,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.00124198361299932,
+          "personalized_mano_vs_smplx_p95_m": 0.0026508985902182754,
+          "personalized_mano_vs_smplx_max_m": 0.006409079302102327,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005179255269467831,
+          "standard_mano_vs_smplx_sampled_max_m": 0.014266285113990307,
+          "joint_contact_frames": 211
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_drink_4.npz",
+      "reference_sha256": "27e07aeac06e2a1aaf85339247ba3e12f5134dc5c7d58ae02d21d4abfada01dc",
+      "metrics": {
+        "clip_id": "s1__mug_drink_4",
+        "frames": 300,
+        "loss": {
+          "total": 1.5286048650741577,
+          "penetration": 0.3883013427257538,
+          "contact": 1.135552167892456,
+          "displacement": 0.1568511426448822,
+          "velocity": 0.00039273194852285087,
+          "acceleration": 0.0001304241450270638
+        },
+        "vertices_deeper_than_2_mm": 880,
+        "vertices_deeper_than_5_mm": 0,
+        "maximum_penetration_mm": 4.9938859939575195,
+        "mean_vertex_displacement_mm": 0.6312885284423828,
+        "maximum_vertex_displacement_mm": 1.6030535697937012,
+        "source_contact_vertices": 21497,
+        "retained_source_contact_vertices": 21356
+      }
+    },
+    {
+      "clip_id": "s1__mug_lift",
+      "subject": "s1",
+      "gender": "male",
+      "action": "lift",
+      "frames": 1062,
+      "original_frames": 4246,
+      "clip_path": "clips/s1__mug_lift.npz",
+      "subject_path": "subjects/s1.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_lift.npz",
+      "source_member_sha256": "61e9a4ad573fa1682b12bf656cc9e4d9b1c479b169e3e69bc13f666c27531ade",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s1__mug_lift.npz",
+      "reference_cache_sha256": "0973454d12ef6a1d275c50f05625c5032e3eb0df275ea96ca9fa79dc35ddcec8",
+      "clip_sha256": "eaeaf2fb06a328f32421b9ce15a2f6899c6a8658285baaf844808ad8a98b701d",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010427345987409353,
+          "personalized_mano_vs_smplx_p95_m": 0.001998832041863352,
+          "personalized_mano_vs_smplx_max_m": 0.004858358297497034,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005167506635189056,
+          "standard_mano_vs_smplx_sampled_max_m": 0.012425771914422512,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0012146177468821406,
+          "personalized_mano_vs_smplx_p95_m": 0.0024989318917505443,
+          "personalized_mano_vs_smplx_max_m": 0.005957196932286024,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005100998096168041,
+          "standard_mano_vs_smplx_sampled_max_m": 0.01458891574293375,
+          "joint_contact_frames": 913
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_lift.npz",
+      "reference_sha256": "8a3b79c7b31f3c9d9f18d32de548cc26d2073bd09248de1ea756daa34f38c3c9",
+      "metrics": {
+        "clip_id": "s1__mug_lift",
+        "frames": 1062,
+        "loss": {
+          "total": 1.6808717250823975,
+          "penetration": 0.4024258852005005,
+          "contact": 1.2730295658111572,
+          "displacement": 0.1790771186351776,
+          "velocity": 0.0003836398245766759,
+          "acceleration": 0.00011110353079857305
+        },
+        "vertices_deeper_than_2_mm": 3233,
+        "vertices_deeper_than_5_mm": 18,
+        "maximum_penetration_mm": 5.466550350189209,
+        "mean_vertex_displacement_mm": 0.702372670173645,
+        "maximum_vertex_displacement_mm": 1.9954860210418701,
+        "source_contact_vertices": 63840,
+        "retained_source_contact_vertices": 63226
+      }
+    },
+    {
+      "clip_id": "s1__mug_offhand_1",
+      "subject": "s1",
+      "gender": "male",
+      "action": "offhand",
+      "frames": 274,
+      "original_frames": 1093,
+      "clip_path": "clips/s1__mug_offhand_1.npz",
+      "subject_path": "subjects/s1.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_offhand_1.npz",
+      "source_member_sha256": "e83711bb5b27fad668c22cc4441d9ade8a850290f43be47adcdd5e4cdc034f8b",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s1__mug_offhand_1.npz",
+      "reference_cache_sha256": "7fc17451be2177e37c02659e66607d654af52f89421302b8576807c2abd07aa9",
+      "clip_sha256": "c82a4ee8d170a2a3da3361e58397dce9db2b17098d068c573e24ffee9b426830",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010857973247766495,
+          "personalized_mano_vs_smplx_p95_m": 0.002198130660690367,
+          "personalized_mano_vs_smplx_max_m": 0.005998983047902584,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005577327683568001,
+          "standard_mano_vs_smplx_sampled_max_m": 0.01622590236365795,
+          "joint_contact_frames": 126
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.000985696678981185,
+          "personalized_mano_vs_smplx_p95_m": 0.0020183793501928437,
+          "personalized_mano_vs_smplx_max_m": 0.003954715095460415,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.004945439286530018,
+          "standard_mano_vs_smplx_sampled_max_m": 0.013076375238597393,
+          "joint_contact_frames": 90
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_offhand_1.npz",
+      "reference_sha256": "4f6df264932a2ec1e3b299b88d5f1adef6878f9208af7f2bcdfeb71b4943b487",
+      "metrics": {
+        "clip_id": "s1__mug_offhand_1",
+        "frames": 274,
+        "loss": {
+          "total": 2.036278247833252,
+          "penetration": 0.6068627238273621,
+          "contact": 1.420710802078247,
+          "displacement": 0.28614869713783264,
+          "velocity": 0.0010857392335310578,
+          "acceleration": 0.00023293828417081386
+        },
+        "vertices_deeper_than_2_mm": 1266,
+        "vertices_deeper_than_5_mm": 52,
+        "maximum_penetration_mm": 5.498803615570068,
+        "mean_vertex_displacement_mm": 0.8579825758934021,
+        "maximum_vertex_displacement_mm": 2.507148027420044,
+        "source_contact_vertices": 11209,
+        "retained_source_contact_vertices": 11069
+      }
+    },
+    {
+      "clip_id": "s1__mug_pass_1",
+      "subject": "s1",
+      "gender": "male",
+      "action": "pass",
+      "frames": 234,
+      "original_frames": 936,
+      "clip_path": "clips/s1__mug_pass_1.npz",
+      "subject_path": "subjects/s1.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_pass_1.npz",
+      "source_member_sha256": "7ef79c2434f5e043bc9f09c05036d609df0992de3feea556d1b79b11e0be9099",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s1__mug_pass_1.npz",
+      "reference_cache_sha256": "8437823a57665e6d972d3d5820af82ddb450f76a4dd7928889fc6f9407ae8d37",
+      "clip_sha256": "6252a38ff9dda835407e3dd67f199efae389698d0b435455d0df9606cca08a46",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010198287200182676,
+          "personalized_mano_vs_smplx_p95_m": 0.001942516065901145,
+          "personalized_mano_vs_smplx_max_m": 0.0035794551949948072,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.0051813069730997086,
+          "standard_mano_vs_smplx_sampled_max_m": 0.012300487607717514,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.001071528997272253,
+          "personalized_mano_vs_smplx_p95_m": 0.0022076288703829034,
+          "personalized_mano_vs_smplx_max_m": 0.005079655442386866,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005270712077617645,
+          "standard_mano_vs_smplx_sampled_max_m": 0.015077995136380196,
+          "joint_contact_frames": 143
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_pass_1.npz",
+      "reference_sha256": "1498e27efef324e18c21a1810150871e31f1ec414cf4c79e753fa7f8dc027612",
+      "metrics": {
+        "clip_id": "s1__mug_pass_1",
+        "frames": 234,
+        "loss": {
+          "total": 1.4177459478378296,
+          "penetration": 0.3115386962890625,
+          "contact": 1.0992127656936646,
+          "displacement": 0.2303437888622284,
+          "velocity": 0.0007446357049047947,
+          "acceleration": 0.00019275382510386407
+        },
+        "vertices_deeper_than_2_mm": 294,
+        "vertices_deeper_than_5_mm": 0,
+        "maximum_penetration_mm": 2.250869035720825,
+        "mean_vertex_displacement_mm": 0.7912677526473999,
+        "maximum_vertex_displacement_mm": 1.9723663330078125,
+        "source_contact_vertices": 10166,
+        "retained_source_contact_vertices": 10088
+      }
+    },
+    {
+      "clip_id": "s1__mug_toast_1",
+      "subject": "s1",
+      "gender": "male",
+      "action": "toast",
+      "frames": 337,
+      "original_frames": 1347,
+      "clip_path": "clips/s1__mug_toast_1.npz",
+      "subject_path": "subjects/s1.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_toast_1.npz",
+      "source_member_sha256": "b6843bc7a5cd1b2781652cfacb73651310525662cf28ca5ac5d3e6f3b6d03c86",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s1__mug_toast_1.npz",
+      "reference_cache_sha256": "521399e898ec12a7e000e63ff4d454d9f64e623df2e5f0e35f9e49a663f45639",
+      "clip_sha256": "028d1c1c44b324382434c30d9f7c2e96e5ca583849f255961f9f5aca71ad357e",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0009636188042350113,
+          "personalized_mano_vs_smplx_p95_m": 0.0018516630225349218,
+          "personalized_mano_vs_smplx_max_m": 0.0036086426116526127,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.0050493404269218445,
+          "standard_mano_vs_smplx_sampled_max_m": 0.012745113112032413,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0011148665798828006,
+          "personalized_mano_vs_smplx_p95_m": 0.0023254763800650835,
+          "personalized_mano_vs_smplx_max_m": 0.005038233008235693,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005640053655952215,
+          "standard_mano_vs_smplx_sampled_max_m": 0.015119615010917187,
+          "joint_contact_frames": 235
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_toast_1.npz",
+      "reference_sha256": "4a3718e7477c5f4a1f7242aee51525054fd1c8ae2bd59b0b33d174ba3536d73a",
+      "metrics": {
+        "clip_id": "s1__mug_toast_1",
+        "frames": 337,
+        "loss": {
+          "total": 1.4809401035308838,
+          "penetration": 0.4284718632698059,
+          "contact": 1.0477038621902466,
+          "displacement": 0.15727686882019043,
+          "velocity": 0.00040819586138240993,
+          "acceleration": 0.00010401161125628278
+        },
+        "vertices_deeper_than_2_mm": 1224,
+        "vertices_deeper_than_5_mm": 9,
+        "maximum_penetration_mm": 5.341908931732178,
+        "mean_vertex_displacement_mm": 0.64700847864151,
+        "maximum_vertex_displacement_mm": 1.523406982421875,
+        "source_contact_vertices": 12309,
+        "retained_source_contact_vertices": 11950
+      }
+    },
+    {
+      "clip_id": "s2__mug_drink_1",
+      "subject": "s2",
+      "gender": "male",
+      "action": "drink",
+      "frames": 249,
+      "original_frames": 994,
+      "clip_path": "clips/s2__mug_drink_1.npz",
+      "subject_path": "subjects/s2.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s2.zip",
+      "source_member": "s2/mug_drink_1.npz",
+      "source_member_sha256": "42aebcb12a6cb2a1b7801ab40551f3f30645d3e214cb95039abe8d0b711477f1",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s2__mug_drink_1.npz",
+      "reference_cache_sha256": "37d2ee5df11110447d132ca9229542d61d56b0c54d3d85051a5ad6884db807b3",
+      "clip_sha256": "f60c04b253ca1939cd6f8b8f0648a98d9a168df28feaed6d753f4a00a7448d4a",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010530271101742983,
+          "personalized_mano_vs_smplx_p95_m": 0.0020481641986407335,
+          "personalized_mano_vs_smplx_max_m": 0.005414347629994154,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.006345313508063555,
+          "standard_mano_vs_smplx_sampled_max_m": 0.02038421295583248,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0012074054684489965,
+          "personalized_mano_vs_smplx_p95_m": 0.0025712153874337673,
+          "personalized_mano_vs_smplx_max_m": 0.008603745140135288,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005828424822539091,
+          "standard_mano_vs_smplx_sampled_max_m": 0.019606297835707664,
+          "joint_contact_frames": 131
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s2__mug_drink_1.npz",
+      "reference_sha256": "9eaa1d93c95e669e646f1a6fb286fc9fe104401ac9f447d075d4ce37bc613081",
+      "metrics": {
+        "clip_id": "s2__mug_drink_1",
+        "frames": 249,
+        "loss": {
+          "total": 1.2862727642059326,
+          "penetration": 0.22791817784309387,
+          "contact": 1.0482103824615479,
+          "displacement": 0.33477166295051575,
+          "velocity": 0.0008583781309425831,
+          "acceleration": 0.00030586495995521545
+        },
+        "vertices_deeper_than_2_mm": 281,
+        "vertices_deeper_than_5_mm": 0,
+        "maximum_penetration_mm": 2.25008225440979,
+        "mean_vertex_displacement_mm": 0.9325772523880005,
+        "maximum_vertex_displacement_mm": 2.0507006645202637,
+        "source_contact_vertices": 9592,
+        "retained_source_contact_vertices": 9482
+      }
+    },
+    {
+      "clip_id": "s2__mug_drink_2",
+      "subject": "s2",
+      "gender": "male",
+      "action": "drink",
+      "frames": 286,
+      "original_frames": 1142,
+      "clip_path": "clips/s2__mug_drink_2.npz",
+      "subject_path": "subjects/s2.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s2.zip",
+      "source_member": "s2/mug_drink_2.npz",
+      "source_member_sha256": "940e35c88598464c38864d1496edf6e812b4eecacc07de3eebd5d73aae5ed3c0",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s2__mug_drink_2.npz",
+      "reference_cache_sha256": "74ffe50c599306ad33e9e6d5e24b5c4a0141ec1d20d4b1ab978274c45ff989fa",
+      "clip_sha256": "26b32329ad8763dfe3ce7e108d1f2e6119d9bc1577fea698f603cac802ba8476",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010013998253270984,
+          "personalized_mano_vs_smplx_p95_m": 0.0019563745241612195,
+          "personalized_mano_vs_smplx_max_m": 0.004070078954100609,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.006224165204912424,
+          "standard_mano_vs_smplx_sampled_max_m": 0.019915809854865074,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0012978938175365329,
+          "personalized_mano_vs_smplx_p95_m": 0.002667637169361114,
+          "personalized_mano_vs_smplx_max_m": 0.004637469071894884,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.00601081270724535,
+          "standard_mano_vs_smplx_sampled_max_m": 0.018991120159626007,
+          "joint_contact_frames": 160
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s2__mug_drink_2.npz",
+      "reference_sha256": "2a123d8f2e3bfeb6395c4f77a77525933190716cda2df4e26bb584609a7ec34a",
+      "metrics": {
+        "clip_id": "s2__mug_drink_2",
+        "frames": 286,
+        "loss": {
+          "total": 1.76237952709198,
+          "penetration": 0.4668199121952057,
+          "contact": 1.287399172782898,
+          "displacement": 0.26956185698509216,
+          "velocity": 0.0006335566285997629,
+          "acceleration": 0.00020791195856872946
+        },
+        "vertices_deeper_than_2_mm": 666,
+        "vertices_deeper_than_5_mm": 13,
+        "maximum_penetration_mm": 5.392243385314941,
+        "mean_vertex_displacement_mm": 0.8382235169410706,
+        "maximum_vertex_displacement_mm": 1.9917900562286377,
+        "source_contact_vertices": 3965,
+        "retained_source_contact_vertices": 3883
+      }
+    },
+    {
+      "clip_id": "s2__mug_lift",
+      "subject": "s2",
+      "gender": "male",
+      "action": "lift",
+      "frames": 502,
+      "original_frames": 2006,
+      "clip_path": "clips/s2__mug_lift.npz",
+      "subject_path": "subjects/s2.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s2.zip",
+      "source_member": "s2/mug_lift.npz",
+      "source_member_sha256": "e30b9406982a84d6dfbc52638417f22f9c6aa84e82f80e31d0e9d1f5c26bbaba",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s2__mug_lift.npz",
+      "reference_cache_sha256": "922bda19fefb81f5dc335ab6eaa89011bc2a6c2b719292979380222ab0d2489b",
+      "clip_sha256": "50a2cb138262615fb3e09c3fc936a2a74fe8dda9700e1e4311b5ed3f69c1e355",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010651563061401248,
+          "personalized_mano_vs_smplx_p95_m": 0.0020699157612398267,
+          "personalized_mano_vs_smplx_max_m": 0.005830391775816679,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.006355879362672567,
+          "standard_mano_vs_smplx_sampled_max_m": 0.02086600847542286,
+          "joint_contact_frames": 109
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0013285293243825436,
+          "personalized_mano_vs_smplx_p95_m": 0.0027462777215987444,
+          "personalized_mano_vs_smplx_max_m": 0.007291435729712248,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005802884232252836,
+          "standard_mano_vs_smplx_sampled_max_m": 0.018871629610657692,
+          "joint_contact_frames": 380
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s2__mug_lift.npz",
+      "reference_sha256": "106a0bd830ae2e7b7e5aee537f8f1919e82b3de5affd827ad7bac8570b3ab106",
+      "metrics": {
+        "clip_id": "s2__mug_lift",
+        "frames": 502,
+        "loss": {
+          "total": 1.516477108001709,
+          "penetration": 0.3413829207420349,
+          "contact": 1.1700568199157715,
+          "displacement": 0.16591660678386688,
+          "velocity": 0.0005129938363097608,
+          "acceleration": 0.00017073613707907498
+        },
+        "vertices_deeper_than_2_mm": 1584,
+        "vertices_deeper_than_5_mm": 27,
+        "maximum_penetration_mm": 5.380947113037109,
+        "mean_vertex_displacement_mm": 0.6633239388465881,
+        "maximum_vertex_displacement_mm": 1.8022184371948242,
+        "source_contact_vertices": 22107,
+        "retained_source_contact_vertices": 21935
+      }
+    },
+    {
+      "clip_id": "s2__mug_pass_1",
+      "subject": "s2",
+      "gender": "male",
+      "action": "pass",
+      "frames": 259,
+      "original_frames": 1034,
+      "clip_path": "clips/s2__mug_pass_1.npz",
+      "subject_path": "subjects/s2.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s2.zip",
+      "source_member": "s2/mug_pass_1.npz",
+      "source_member_sha256": "0b88eba82ae1b836b7e2cef041f7598af1c4306e98918eebae331a8be315c79b",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s2__mug_pass_1.npz",
+      "reference_cache_sha256": "ef41f1310f7d14c7a986edb15e9c45bdc2ad1100476b0197a5febbf454a7ebbd",
+      "clip_sha256": "e7870fae49961fbba71533d68d84f4ec766b0957e7018cef57039a2c314430ab",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.001085765426978469,
+          "personalized_mano_vs_smplx_p95_m": 0.0021680796286091195,
+          "personalized_mano_vs_smplx_max_m": 0.006274995859712362,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.006825556512922049,
+          "standard_mano_vs_smplx_sampled_max_m": 0.021071895956993103,
+          "joint_contact_frames": 61
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.001107705058529973,
+          "personalized_mano_vs_smplx_p95_m": 0.0023646563640795644,
+          "personalized_mano_vs_smplx_max_m": 0.006104848813265562,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005912057124078274,
+          "standard_mano_vs_smplx_sampled_max_m": 0.018680604174733162,
+          "joint_contact_frames": 119
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s2__mug_pass_1.npz",
+      "reference_sha256": "f4e9b66c243156242dacf5e0ce9e8ead4edd04f6562258d6f8c78db6949c89fc",
+      "metrics": {
+        "clip_id": "s2__mug_pass_1",
+        "frames": 259,
+        "loss": {
+          "total": 1.5964068174362183,
+          "penetration": 0.26865270733833313,
+          "contact": 1.3186126947402954,
+          "displacement": 0.3002321422100067,
+          "velocity": 0.001180034363642335,
+          "acceleration": 0.00032896213815547526
+        },
+        "vertices_deeper_than_2_mm": 354,
+        "vertices_deeper_than_5_mm": 0,
+        "maximum_penetration_mm": 4.813841819763184,
+        "mean_vertex_displacement_mm": 0.8935317397117615,
+        "maximum_vertex_displacement_mm": 2.4184768199920654,
+        "source_contact_vertices": 8374,
+        "retained_source_contact_vertices": 8232
+      }
+    },
+    {
+      "clip_id": "s2__mug_toast_1",
+      "subject": "s2",
+      "gender": "male",
+      "action": "toast",
+      "frames": 239,
+      "original_frames": 956,
+      "clip_path": "clips/s2__mug_toast_1.npz",
+      "subject_path": "subjects/s2.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s2.zip",
+      "source_member": "s2/mug_toast_1.npz",
+      "source_member_sha256": "d11ead35765a5b794f9520112b9d66a805a9d8de15ecd3b9ef1355b49ebf5787",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s2__mug_toast_1.npz",
+      "reference_cache_sha256": "889f3afdb8d5dff7c46e350e8a0750aaef1e85918c200308fc3acffd9b8c9298",
+      "clip_sha256": "3bc0128a6d8fb9882fc25d9a86366ab8649fc7e935907648967bdb0e7d7a02c8",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010153244948014617,
+          "personalized_mano_vs_smplx_p95_m": 0.0019499241607263684,
+          "personalized_mano_vs_smplx_max_m": 0.00508939428254962,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.006231722887605429,
+          "standard_mano_vs_smplx_sampled_max_m": 0.01960952766239643,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0011138863628730178,
+          "personalized_mano_vs_smplx_p95_m": 0.002311319240834562,
+          "personalized_mano_vs_smplx_max_m": 0.007024620659649372,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.006062191911041737,
+          "standard_mano_vs_smplx_sampled_max_m": 0.019118160009384155,
+          "joint_contact_frames": 115
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s2__mug_toast_1.npz",
+      "reference_sha256": "9647437fac84578655c04bcd6ed0dc11d5a08fcb9e460f1b93f65fa93b6956d9",
+      "metrics": {
+        "clip_id": "s2__mug_toast_1",
+        "frames": 239,
+        "loss": {
+          "total": 1.715948462486267,
+          "penetration": 0.39703240990638733,
+          "contact": 1.310079574584961,
+          "displacement": 0.2916128933429718,
+          "velocity": 0.0007577713113278151,
+          "acceleration": 0.0002453384513501078
+        },
+        "vertices_deeper_than_2_mm": 531,
+        "vertices_deeper_than_5_mm": 16,
+        "maximum_penetration_mm": 5.40986967086792,
+        "mean_vertex_displacement_mm": 0.8988491296768188,
+        "maximum_vertex_displacement_mm": 1.9678597450256348,
+        "source_contact_vertices": 8878,
+        "retained_source_contact_vertices": 8741
+      }
+    },
+    {
+      "clip_id": "s3__mug_drink_1",
+      "subject": "s3",
+      "gender": "female",
+      "action": "drink",
+      "frames": 239,
+      "original_frames": 956,
+      "clip_path": "clips/s3__mug_drink_1.npz",
+      "subject_path": "subjects/s3.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s3.zip",
+      "source_member": "s3/mug_drink_1.npz",
+      "source_member_sha256": "12338a33e31d88e2a1c563511276494e00a241654d53214bf547c8d0b83a19a4",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s3__mug_drink_1.npz",
+      "reference_cache_sha256": "37a3506086d5847f47dbd1cfe8f8b3361ba04bebf15217dcccd0092f6e022432",
+      "clip_sha256": "cfe88cd05d9a5c2ae3a2af3b04bcd3b0ab7973370465b5bb5c85ea11e19a5692",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.000924202031455934,
+          "personalized_mano_vs_smplx_p95_m": 0.0019550661672838032,
+          "personalized_mano_vs_smplx_max_m": 0.003988681361079216,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.006974858231842518,
+          "standard_mano_vs_smplx_sampled_max_m": 0.014722236432135105,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010272928047925234,
+          "personalized_mano_vs_smplx_p95_m": 0.002370444044936448,
+          "personalized_mano_vs_smplx_max_m": 0.0068760220892727375,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.0070413947105407715,
+          "standard_mano_vs_smplx_sampled_max_m": 0.017006253823637962,
+          "joint_contact_frames": 110
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s3__mug_drink_1.npz",
+      "reference_sha256": "4f04a14c00e3df0990f71279773e1faa0342ea2cc622f30fdf13d6bc91245148",
+      "metrics": {
+        "clip_id": "s3__mug_drink_1",
+        "frames": 239,
+        "loss": {
+          "total": 1.5712522268295288,
+          "penetration": 0.307098388671875,
+          "contact": 1.2579783201217651,
+          "displacement": 0.2035212367773056,
+          "velocity": 0.0006121965125203133,
+          "acceleration": 0.00017260947788599879
+        },
+        "vertices_deeper_than_2_mm": 428,
+        "vertices_deeper_than_5_mm": 0,
+        "maximum_penetration_mm": 4.938168525695801,
+        "mean_vertex_displacement_mm": 0.7458710670471191,
+        "maximum_vertex_displacement_mm": 1.7893251180648804,
+        "source_contact_vertices": 11275,
+        "retained_source_contact_vertices": 11206
+      }
+    },
+    {
+      "clip_id": "s3__mug_drink_2",
+      "subject": "s3",
+      "gender": "female",
+      "action": "drink",
+      "frames": 206,
+      "original_frames": 822,
+      "clip_path": "clips/s3__mug_drink_2.npz",
+      "subject_path": "subjects/s3.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s3.zip",
+      "source_member": "s3/mug_drink_2.npz",
+      "source_member_sha256": "7c4f88fd2efeeb0686770e69bf24ed6221d172bcfd589b7137967c22994c341c",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s3__mug_drink_2.npz",
+      "reference_cache_sha256": "3ded21f1d39d319592d28cf3404298e6fa57602b717c5c5222f937a6ae94050a",
+      "clip_sha256": "1d74a531a007abfe0411abddf9dced9617b1ffb591bc51ce6b2e392969c4bd62",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0009485659538768232,
+          "personalized_mano_vs_smplx_p95_m": 0.0019971289904788135,
+          "personalized_mano_vs_smplx_max_m": 0.0036169346421957016,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.006704682484269142,
+          "standard_mano_vs_smplx_sampled_max_m": 0.014959060586988926,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0011663873447105289,
+          "personalized_mano_vs_smplx_p95_m": 0.002569750254042446,
+          "personalized_mano_vs_smplx_max_m": 0.006273339036852121,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.00801230501383543,
+          "standard_mano_vs_smplx_sampled_max_m": 0.016681211069226265,
+          "joint_contact_frames": 101
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s3__mug_drink_2.npz",
+      "reference_sha256": "4744090073d5546133f163fdfd52512bd073bce57d22c73c3686d07623ce975d",
+      "metrics": {
+        "clip_id": "s3__mug_drink_2",
+        "frames": 206,
+        "loss": {
+          "total": 1.2815552949905396,
+          "penetration": 0.32774999737739563,
+          "contact": 0.9480379819869995,
+          "displacement": 0.18974663317203522,
+          "velocity": 0.0006410569185391068,
+          "acceleration": 0.00021619068866129965
+        },
+        "vertices_deeper_than_2_mm": 694,
+        "vertices_deeper_than_5_mm": 11,
+        "maximum_penetration_mm": 5.418525218963623,
+        "mean_vertex_displacement_mm": 0.7145385146141052,
+        "maximum_vertex_displacement_mm": 1.7022123336791992,
+        "source_contact_vertices": 10516,
+        "retained_source_contact_vertices": 10174
+      }
+    },
+    {
+      "clip_id": "s3__mug_drink_3",
+      "subject": "s3",
+      "gender": "female",
+      "action": "drink",
+      "frames": 229,
+      "original_frames": 914,
+      "clip_path": "clips/s3__mug_drink_3.npz",
+      "subject_path": "subjects/s3.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s3.zip",
+      "source_member": "s3/mug_drink_3.npz",
+      "source_member_sha256": "c78ff3a65e6d8190de41456c7d3c01a2eb64a2fc872bd0a269b12e0e40b63e76",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s3__mug_drink_3.npz",
+      "reference_cache_sha256": "b5cfd3d802561768cd3a4de22ad9b0aaabe307daa8a0e2af4624857ad4a492d1",
+      "clip_sha256": "0f55be0f3797d18e633e3d78f31af369a0ba78f5134e905ac69b8a3d5bfeee2d",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0009328003507107496,
+          "personalized_mano_vs_smplx_p95_m": 0.0019220367597881703,
+          "personalized_mano_vs_smplx_max_m": 0.003713801270350814,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.007453479804098606,
+          "standard_mano_vs_smplx_sampled_max_m": 0.014896750450134277,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.001132260076701641,
+          "personalized_mano_vs_smplx_p95_m": 0.0023893010686151677,
+          "personalized_mano_vs_smplx_max_m": 0.0061051626689732075,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.007830759510397911,
+          "standard_mano_vs_smplx_sampled_max_m": 0.016357487067580223,
+          "joint_contact_frames": 115
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s3__mug_drink_3.npz",
+      "reference_sha256": "22aeb24f2628acb285074e5df11515da41bc3552dd63aeeaccad3bdb9de52c29",
+      "metrics": {
+        "clip_id": "s3__mug_drink_3",
+        "frames": 229,
+        "loss": {
+          "total": 2.5539557933807373,
+          "penetration": 1.044110894203186,
+          "contact": 1.502255916595459,
+          "displacement": 0.2501983642578125,
+          "velocity": 0.0007202144479379058,
+          "acceleration": 0.00022283967700786889
+        },
+        "vertices_deeper_than_2_mm": 1676,
+        "vertices_deeper_than_5_mm": 86,
+        "maximum_penetration_mm": 5.441930294036865,
+        "mean_vertex_displacement_mm": 0.8360872864723206,
+        "maximum_vertex_displacement_mm": 1.6642876863479614,
+        "source_contact_vertices": 5856,
+        "retained_source_contact_vertices": 5617
+      }
+    },
+    {
+      "clip_id": "s3__mug_drink_4",
+      "subject": "s3",
+      "gender": "female",
+      "action": "drink",
+      "frames": 226,
+      "original_frames": 902,
+      "clip_path": "clips/s3__mug_drink_4.npz",
+      "subject_path": "subjects/s3.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s3.zip",
+      "source_member": "s3/mug_drink_4.npz",
+      "source_member_sha256": "c596f2563ffdd3eb3fc0516400647d86e233905379811776ceba5777a2e7c292",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s3__mug_drink_4.npz",
+      "reference_cache_sha256": "286c628363a960c5906df258465cf513f270e15a197b29821262c8a75eae5b07",
+      "clip_sha256": "efab8db6e603a631ad6b8b8e96a53bb0d1eb77cb7fae8cc32be38f2a8a746b38",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0008907961891964078,
+          "personalized_mano_vs_smplx_p95_m": 0.001896221953211352,
+          "personalized_mano_vs_smplx_max_m": 0.0034751843195408583,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.007231715600937605,
+          "standard_mano_vs_smplx_sampled_max_m": 0.015854086726903915,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010325924959033728,
+          "personalized_mano_vs_smplx_p95_m": 0.002196085383184254,
+          "personalized_mano_vs_smplx_max_m": 0.0052801212295889854,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.010075319558382034,
+          "standard_mano_vs_smplx_sampled_max_m": 0.019695715978741646,
+          "joint_contact_frames": 117
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s3__mug_drink_4.npz",
+      "reference_sha256": "694c86758ea295f3151c58f1138de7efb39f0c7563dbb1255db05f65c691a46f",
+      "metrics": {
+        "clip_id": "s3__mug_drink_4",
+        "frames": 226,
+        "loss": {
+          "total": 1.270819902420044,
+          "penetration": 0.34197375178337097,
+          "contact": 0.9234233498573303,
+          "displacement": 0.17850086092948914,
+          "velocity": 0.0005944995209574699,
+          "acceleration": 0.0001667753967922181
+        },
+        "vertices_deeper_than_2_mm": 162,
+        "vertices_deeper_than_5_mm": 0,
+        "maximum_penetration_mm": 2.2525527477264404,
+        "mean_vertex_displacement_mm": 0.7097350358963013,
+        "maximum_vertex_displacement_mm": 1.6711598634719849,
+        "source_contact_vertices": 5800,
+        "retained_source_contact_vertices": 5750
+      }
+    },
+    {
+      "clip_id": "s3__mug_offhand_1",
+      "subject": "s3",
+      "gender": "female",
+      "action": "offhand",
+      "frames": 246,
+      "original_frames": 984,
+      "clip_path": "clips/s3__mug_offhand_1.npz",
+      "subject_path": "subjects/s3.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s3.zip",
+      "source_member": "s3/mug_offhand_1.npz",
+      "source_member_sha256": "c1b150f5fcb4cf56ed215a22363462fd1438e61fad9e8625279ff86933ffce5a",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s3__mug_offhand_1.npz",
+      "reference_cache_sha256": "b7e94ccd155a3982ec75a3535582aa2e3ed9cbad170c06a12ea62369dc399ba5",
+      "clip_sha256": "452df248de8bf7f11344f879dc473e81a4bf86d735ed669d577dd8b6323edd7d",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010870433179661632,
+          "personalized_mano_vs_smplx_p95_m": 0.002448622032534331,
+          "personalized_mano_vs_smplx_max_m": 0.006369844079017639,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.009235822595655918,
+          "standard_mano_vs_smplx_sampled_max_m": 0.018900876864790916,
+          "joint_contact_frames": 41
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0012544230557978153,
+          "personalized_mano_vs_smplx_p95_m": 0.0028110746527090663,
+          "personalized_mano_vs_smplx_max_m": 0.006672331597656012,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.007600846234709024,
+          "standard_mano_vs_smplx_sampled_max_m": 0.014437536709010601,
+          "joint_contact_frames": 96
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s3__mug_offhand_1.npz",
+      "reference_sha256": "d9ed93e8d846faa3199310cb46736937aabec088da52937fdcc2eafd79064efb",
+      "metrics": {
+        "clip_id": "s3__mug_offhand_1",
+        "frames": 246,
+        "loss": {
+          "total": 1.5845404863357544,
+          "penetration": 0.5298953056335449,
+          "contact": 1.046839714050293,
+          "displacement": 0.2554377317428589,
+          "velocity": 0.0011978312395513058,
+          "acceleration": 0.00045135937398299575
+        },
+        "vertices_deeper_than_2_mm": 1205,
+        "vertices_deeper_than_5_mm": 80,
+        "maximum_penetration_mm": 5.512128829956055,
+        "mean_vertex_displacement_mm": 0.8161643147468567,
+        "maximum_vertex_displacement_mm": 1.9887306690216064,
+        "source_contact_vertices": 8301,
+        "retained_source_contact_vertices": 8042
+      }
+    },
+    {
+      "clip_id": "s3__mug_pass_1",
+      "subject": "s3",
+      "gender": "female",
+      "action": "pass",
+      "frames": 283,
+      "original_frames": 1130,
+      "clip_path": "clips/s3__mug_pass_1.npz",
+      "subject_path": "subjects/s3.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s3.zip",
+      "source_member": "s3/mug_pass_1.npz",
+      "source_member_sha256": "97a94478ecd48a8a5eecedc96566d9204b52e3b2a03bb7138f248081c3817dc7",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s3__mug_pass_1.npz",
+      "reference_cache_sha256": "5e7cd45369aa862b324e795dd05f45fb6a67d567fa5e190de4912ee38fa7fc5a",
+      "clip_sha256": "28bf976dd535428d9a29bab0ab474670df7ba6392fd4ee5ccd8fc95870a49235",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0008764066733419895,
+          "personalized_mano_vs_smplx_p95_m": 0.0018065566604491322,
+          "personalized_mano_vs_smplx_max_m": 0.003556526731699705,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.007406802382320166,
+          "standard_mano_vs_smplx_sampled_max_m": 0.014539468102157116,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0009256614139303565,
+          "personalized_mano_vs_smplx_p95_m": 0.002074312698096033,
+          "personalized_mano_vs_smplx_max_m": 0.0056741684675216675,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.007934659719467163,
+          "standard_mano_vs_smplx_sampled_max_m": 0.0168053787201643,
+          "joint_contact_frames": 103
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s3__mug_pass_1.npz",
+      "reference_sha256": "e987f2fde04a6139e20d7b04e47f0ba0246136da363bee90e6dea9d1d79474e1",
+      "metrics": {
+        "clip_id": "s3__mug_pass_1",
+        "frames": 283,
+        "loss": {
+          "total": 1.88186776638031,
+          "penetration": 0.3919965922832489,
+          "contact": 1.481756329536438,
+          "displacement": 0.2677313983440399,
+          "velocity": 0.000730063475202769,
+          "acceleration": 0.00019724611775018275
+        },
+        "vertices_deeper_than_2_mm": 494,
+        "vertices_deeper_than_5_mm": 1,
+        "maximum_penetration_mm": 5.1717753410339355,
+        "mean_vertex_displacement_mm": 0.8586370944976807,
+        "maximum_vertex_displacement_mm": 1.6613037586212158,
+        "source_contact_vertices": 9578,
+        "retained_source_contact_vertices": 9463
+      }
+    },
+    {
+      "clip_id": "s4__mug_drink_2",
+      "subject": "s4",
+      "gender": "female",
+      "action": "drink",
+      "frames": 181,
+      "original_frames": 724,
+      "clip_path": "clips/s4__mug_drink_2.npz",
+      "subject_path": "subjects/s4.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s4.zip",
+      "source_member": "s4/mug_drink_2.npz",
+      "source_member_sha256": "122706c7ae4122bc447f45d8169a147b90dbf35e56ad822b0834d3f83d3d313b",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s4__mug_drink_2.npz",
+      "reference_cache_sha256": "2c3dfb169fc4297555bf5ef38f020faafaa87a3fc8fc13e3ef337afa2e138665",
+      "clip_sha256": "469245f2ff2ab37f12fe28ef23a2b4c63d2cb8dfaa30198555b021db0016f347",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0011033157352358103,
+          "personalized_mano_vs_smplx_p95_m": 0.002218394016381353,
+          "personalized_mano_vs_smplx_max_m": 0.004974391311407089,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.008263761177659035,
+          "standard_mano_vs_smplx_sampled_max_m": 0.018361475318670273,
+          "joint_contact_frames": 17
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010155070340260863,
+          "personalized_mano_vs_smplx_p95_m": 0.002199451753403991,
+          "personalized_mano_vs_smplx_max_m": 0.004837144166231155,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.009340216405689716,
+          "standard_mano_vs_smplx_sampled_max_m": 0.0200023353099823,
+          "joint_contact_frames": 112
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s4__mug_drink_2.npz",
+      "reference_sha256": "5ab9d1c5b76557aeb0b9b6a911055ac0161b972cfc3fc0aeb40b8b069cfb8391",
+      "metrics": {
+        "clip_id": "s4__mug_drink_2",
+        "frames": 181,
+        "loss": {
+          "total": 1.4568628072738647,
+          "penetration": 0.3089826703071594,
+          "contact": 1.1417254209518433,
+          "displacement": 0.20042933523654938,
+          "velocity": 0.0012137232115492225,
+          "acceleration": 0.00040769411134533584
+        },
+        "vertices_deeper_than_2_mm": 310,
+        "vertices_deeper_than_5_mm": 0,
+        "maximum_penetration_mm": 2.8963804244995117,
+        "mean_vertex_displacement_mm": 0.7248276472091675,
+        "maximum_vertex_displacement_mm": 1.8105056285858154,
+        "source_contact_vertices": 10468,
+        "retained_source_contact_vertices": 10347
+      }
+    },
+    {
+      "clip_id": "s4__mug_pass_1",
+      "subject": "s4",
+      "gender": "female",
+      "action": "pass",
+      "frames": 156,
+      "original_frames": 622,
+      "clip_path": "clips/s4__mug_pass_1.npz",
+      "subject_path": "subjects/s4.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s4.zip",
+      "source_member": "s4/mug_pass_1.npz",
+      "source_member_sha256": "4f61a7706cf23931badfddd6e07ae6bed06dfe3cbdf9342fddf554c83a52983e",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s4__mug_pass_1.npz",
+      "reference_cache_sha256": "5ecf9ae4a15e7138d827eadd35826ae22ecbf9826d59a969a826af279bb0c7f9",
+      "clip_sha256": "28adcaa0cd113ee80c6443e806fb9b7c1750ec3971774144be12d3f57558e4af",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010084952227771282,
+          "personalized_mano_vs_smplx_p95_m": 0.0019876017468050122,
+          "personalized_mano_vs_smplx_max_m": 0.004018894396722317,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.0077591254375875,
+          "standard_mano_vs_smplx_sampled_max_m": 0.0163219403475523,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.001058958936482668,
+          "personalized_mano_vs_smplx_p95_m": 0.0020516180898994207,
+          "personalized_mano_vs_smplx_max_m": 0.0036867051385343075,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.008510012179613113,
+          "standard_mano_vs_smplx_sampled_max_m": 0.018560238182544708,
+          "joint_contact_frames": 89
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s4__mug_pass_1.npz",
+      "reference_sha256": "2d6fb404e029368860c39916f653aa5dcac4e1c5e70eea5953e27a2714fd042c",
+      "metrics": {
+        "clip_id": "s4__mug_pass_1",
+        "frames": 156,
+        "loss": {
+          "total": 2.285184621810913,
+          "penetration": 0.9120005965232849,
+          "contact": 1.3659483194351196,
+          "displacement": 0.23762747645378113,
+          "velocity": 0.0009335256763733923,
+          "acceleration": 0.0002710506960283965
+        },
+        "vertices_deeper_than_2_mm": 684,
+        "vertices_deeper_than_5_mm": 23,
+        "maximum_penetration_mm": 5.428086280822754,
+        "mean_vertex_displacement_mm": 0.8121193051338196,
+        "maximum_vertex_displacement_mm": 1.6662957668304443,
+        "source_contact_vertices": 2780,
+        "retained_source_contact_vertices": 2633
+      }
+    },
+    {
+      "clip_id": "s6__mug_drink_2",
+      "subject": "s6",
+      "gender": "female",
+      "action": "drink",
+      "frames": 259,
+      "original_frames": 1034,
+      "clip_path": "clips/s6__mug_drink_2.npz",
+      "subject_path": "subjects/s6.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s6.zip",
+      "source_member": "s6/mug_drink_2.npz",
+      "source_member_sha256": "29fd87d03a76bd97b7151b342a06458f3fbb34c1816590cf95c3a8bffd4748c2",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s6__mug_drink_2.npz",
+      "reference_cache_sha256": "b57484c1213e19e36655c971a79ee41ac272ec6b1e724ee2d75241a14eb7fd2a",
+      "clip_sha256": "507b577e31f79905beb1f1d3a65f4317889c1ee02bc6c522ed71b968f5108dc3",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.001016073627397418,
+          "personalized_mano_vs_smplx_p95_m": 0.0020149389631114894,
+          "personalized_mano_vs_smplx_max_m": 0.0033642833586782217,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.006890860851854086,
+          "standard_mano_vs_smplx_sampled_max_m": 0.013183079659938812,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0011615724069997668,
+          "personalized_mano_vs_smplx_p95_m": 0.0023525182274170215,
+          "personalized_mano_vs_smplx_max_m": 0.005301616620272398,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.008569924160838127,
+          "standard_mano_vs_smplx_sampled_max_m": 0.017498699948191643,
+          "joint_contact_frames": 134
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s6__mug_drink_2.npz",
+      "reference_sha256": "9b387b5ce1f0afd642b2fe4d5a9570baf80abe48e24cf0ee10bde85d86bad14f",
+      "metrics": {
+        "clip_id": "s6__mug_drink_2",
+        "frames": 259,
+        "loss": {
+          "total": 2.5018906593322754,
+          "penetration": 0.9576515555381775,
+          "contact": 1.5376613140106201,
+          "displacement": 0.21634441614151,
+          "velocity": 0.0007387320511043072,
+          "acceleration": 0.00027176900766789913
+        },
+        "vertices_deeper_than_2_mm": 1691,
+        "vertices_deeper_than_5_mm": 49,
+        "maximum_penetration_mm": 5.3257341384887695,
+        "mean_vertex_displacement_mm": 0.7709839344024658,
+        "maximum_vertex_displacement_mm": 1.7126708030700684,
+        "source_contact_vertices": 6776,
+        "retained_source_contact_vertices": 6561
+      }
+    },
+    {
+      "clip_id": "s6__mug_lift",
+      "subject": "s6",
+      "gender": "female",
+      "action": "lift",
+      "frames": 581,
+      "original_frames": 2321,
+      "clip_path": "clips/s6__mug_lift.npz",
+      "subject_path": "subjects/s6.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s6.zip",
+      "source_member": "s6/mug_lift.npz",
+      "source_member_sha256": "f041fe09fac89bf0906d75e8dbb5a311c04bc0c1ed3879750ec5d555eddca19f",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s6__mug_lift.npz",
+      "reference_cache_sha256": "c45c4ecd2601c6ecb5656b3ff7a4f19101b7c5e204fd386849238d6c3f1db84b",
+      "clip_sha256": "559aeff457f1b09cf3d11fcaeed65d48008c46522956426b220f0783ac57b8d9",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010956355836242437,
+          "personalized_mano_vs_smplx_p95_m": 0.0022572616231627753,
+          "personalized_mano_vs_smplx_max_m": 0.006361279170960188,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.008883904665708542,
+          "standard_mano_vs_smplx_sampled_max_m": 0.019174840301275253,
+          "joint_contact_frames": 138
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0012105531059205532,
+          "personalized_mano_vs_smplx_p95_m": 0.00263489888748154,
+          "personalized_mano_vs_smplx_max_m": 0.00866935309022665,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.007684333249926567,
+          "standard_mano_vs_smplx_sampled_max_m": 0.017651794478297234,
+          "joint_contact_frames": 365
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s6__mug_lift.npz",
+      "reference_sha256": "dfffbe100f3097f8fb7d14c005517faa6eb0dcb1d01d5a23a26a83ff995026a8",
+      "metrics": {
+        "clip_id": "s6__mug_lift",
+        "frames": 581,
+        "loss": {
+          "total": 1.5501121282577515,
+          "penetration": 0.31149381399154663,
+          "contact": 1.2341433763504028,
+          "displacement": 0.14587117731571198,
+          "velocity": 0.0008400147198699415,
+          "acceleration": 0.00029504988924600184
+        },
+        "vertices_deeper_than_2_mm": 1625,
+        "vertices_deeper_than_5_mm": 25,
+        "maximum_penetration_mm": 5.504897594451904,
+        "mean_vertex_displacement_mm": 0.6244070529937744,
+        "maximum_vertex_displacement_mm": 1.9737000465393066,
+        "source_contact_vertices": 25004,
+        "retained_source_contact_vertices": 24662
+      }
+    },
+    {
+      "clip_id": "s6__mug_pass_1",
+      "subject": "s6",
+      "gender": "female",
+      "action": "pass",
+      "frames": 283,
+      "original_frames": 1130,
+      "clip_path": "clips/s6__mug_pass_1.npz",
+      "subject_path": "subjects/s6.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s6.zip",
+      "source_member": "s6/mug_pass_1.npz",
+      "source_member_sha256": "e3a2d14e30f47229311dadf17df73e0a8d45fcfad9045428acfbbadc755b5906",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s6__mug_pass_1.npz",
+      "reference_cache_sha256": "1add924f17b7cae2a5c57ea6233d7f079d4152880a04ec4af6ee313adf42fe2d",
+      "clip_sha256": "ceb34837c8606fe44593382738a152b0b3418c32131bb0c0293495c423b8bced",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010469561675563455,
+          "personalized_mano_vs_smplx_p95_m": 0.002079697034787386,
+          "personalized_mano_vs_smplx_max_m": 0.004581494722515345,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.0068666208535432816,
+          "standard_mano_vs_smplx_sampled_max_m": 0.014050834812223911,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0011583835585042834,
+          "personalized_mano_vs_smplx_p95_m": 0.0023522626841440777,
+          "personalized_mano_vs_smplx_max_m": 0.007106052245944738,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.00889503676444292,
+          "standard_mano_vs_smplx_sampled_max_m": 0.019922511652112007,
+          "joint_contact_frames": 145
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s6__mug_pass_1.npz",
+      "reference_sha256": "30c57a26bd343f5268599c60669ca5d4e00fb9f9c0905088d98c12cdbef06e36",
+      "metrics": {
+        "clip_id": "s6__mug_pass_1",
+        "frames": 283,
+        "loss": {
+          "total": 1.61759614944458,
+          "penetration": 0.42521601915359497,
+          "contact": 1.1857420206069946,
+          "displacement": 0.21895655989646912,
+          "velocity": 0.0005810937145724893,
+          "acceleration": 0.00022763833112549037
+        },
+        "vertices_deeper_than_2_mm": 928,
+        "vertices_deeper_than_5_mm": 1,
+        "maximum_penetration_mm": 5.0440802574157715,
+        "mean_vertex_displacement_mm": 0.7751554846763611,
+        "maximum_vertex_displacement_mm": 1.7434247732162476,
+        "source_contact_vertices": 8217,
+        "retained_source_contact_vertices": 8056
+      }
+    },
+    {
+      "clip_id": "s6__mug_toast_1",
+      "subject": "s6",
+      "gender": "female",
+      "action": "toast",
+      "frames": 224,
+      "original_frames": 893,
+      "clip_path": "clips/s6__mug_toast_1.npz",
+      "subject_path": "subjects/s6.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s6.zip",
+      "source_member": "s6/mug_toast_1.npz",
+      "source_member_sha256": "f6d7991e8741d5d47314c4f4c83f012bc4b25b18061158e052404ae120ba2cb9",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s6__mug_toast_1.npz",
+      "reference_cache_sha256": "17598ef168e741b8e3bf3002a671bb2ec7f53d3c0241cbc120182ab94ccdc3eb",
+      "clip_sha256": "ed01e8a8da31e631e0b4fda40bdced4267a7d862e268030369801746a232f888",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.00101397221442312,
+          "personalized_mano_vs_smplx_p95_m": 0.002019452454987913,
+          "personalized_mano_vs_smplx_max_m": 0.00346841081045568,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.006995565257966518,
+          "standard_mano_vs_smplx_sampled_max_m": 0.01342037320137024,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0011998612899333239,
+          "personalized_mano_vs_smplx_p95_m": 0.0025611262535676334,
+          "personalized_mano_vs_smplx_max_m": 0.007030176464468241,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.007814440876245499,
+          "standard_mano_vs_smplx_sampled_max_m": 0.016336310654878616,
+          "joint_contact_frames": 110
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s6__mug_toast_1.npz",
+      "reference_sha256": "92d148c7bbe752e18dd9b37e0b3135ef1a94f288930c48ba5ec089fd2d6d2d8a",
+      "metrics": {
+        "clip_id": "s6__mug_toast_1",
+        "frames": 224,
+        "loss": {
+          "total": 1.1573784351348877,
+          "penetration": 0.25887832045555115,
+          "contact": 0.8933025598526001,
+          "displacement": 0.17103461921215057,
+          "velocity": 0.0005663601332344115,
+          "acceleration": 0.00019778510613832623
+        },
+        "vertices_deeper_than_2_mm": 518,
+        "vertices_deeper_than_5_mm": 2,
+        "maximum_penetration_mm": 5.2862653732299805,
+        "mean_vertex_displacement_mm": 0.6836903095245361,
+        "maximum_vertex_displacement_mm": 1.5979585647583008,
+        "source_contact_vertices": 10717,
+        "retained_source_contact_vertices": 10528
+      }
+    },
+    {
+      "clip_id": "s7__mug_drink_1",
+      "subject": "s7",
+      "gender": "female",
+      "action": "drink",
+      "frames": 228,
+      "original_frames": 910,
+      "clip_path": "clips/s7__mug_drink_1.npz",
+      "subject_path": "subjects/s7.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s7.zip",
+      "source_member": "s7/mug_drink_1.npz",
+      "source_member_sha256": "9fe5c23d9c2123c1bf2199d44b75a3cbf7920ff7f61fe2326548f25f2d77a4e2",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s7__mug_drink_1.npz",
+      "reference_cache_sha256": "027e84195ee440b3c36db9a1a1558c87d1211ae156044feed2fd3ea346f8d6fb",
+      "clip_sha256": "0f607657920e3d2a4243159d5b501e4f0d5b08faaaae5cb94bed9e75b161326e",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010369615629315376,
+          "personalized_mano_vs_smplx_p95_m": 0.002062103827483952,
+          "personalized_mano_vs_smplx_max_m": 0.00351664493791759,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.009801090694963932,
+          "standard_mano_vs_smplx_sampled_max_m": 0.020032981410622597,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010856357403099537,
+          "personalized_mano_vs_smplx_p95_m": 0.0022760309046134354,
+          "personalized_mano_vs_smplx_max_m": 0.005549126770347357,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.010976104065775871,
+          "standard_mano_vs_smplx_sampled_max_m": 0.02072138525545597,
+          "joint_contact_frames": 111
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s7__mug_drink_1.npz",
+      "reference_sha256": "36fc86f936842ed92a1cb94dbf112403dc7f9c3494eb0c7164d4c2e0c4eb62b6",
+      "metrics": {
+        "clip_id": "s7__mug_drink_1",
+        "frames": 228,
+        "loss": {
+          "total": 1.4982506036758423,
+          "penetration": 0.39538413286209106,
+          "contact": 1.0981786251068115,
+          "displacement": 0.15370352566242218,
+          "velocity": 0.0006369831971824169,
+          "acceleration": 0.000262984714936465
+        },
+        "vertices_deeper_than_2_mm": 499,
+        "vertices_deeper_than_5_mm": 0,
+        "maximum_penetration_mm": 2.248265266418457,
+        "mean_vertex_displacement_mm": 0.6479949355125427,
+        "maximum_vertex_displacement_mm": 1.5157239437103271,
+        "source_contact_vertices": 18375,
+        "retained_source_contact_vertices": 18307
+      }
+    },
+    {
+      "clip_id": "s7__mug_drink_2",
+      "subject": "s7",
+      "gender": "female",
+      "action": "drink",
+      "frames": 268,
+      "original_frames": 1071,
+      "clip_path": "clips/s7__mug_drink_2.npz",
+      "subject_path": "subjects/s7.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s7.zip",
+      "source_member": "s7/mug_drink_2.npz",
+      "source_member_sha256": "6d3d83c96e9132594d3771259c182fa2eb99e0637b489f1723cbed639e99c98a",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s7__mug_drink_2.npz",
+      "reference_cache_sha256": "4199be4d63bfd82a7eb3e96ed36821d7662b72f1a78f3c0f2fc0836ab6867512",
+      "clip_sha256": "15d092f76138e92d7507e5e7b9395ca618b81d284f12696f0a784e7013506ccd",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010348297655582428,
+          "personalized_mano_vs_smplx_p95_m": 0.00204664715565741,
+          "personalized_mano_vs_smplx_max_m": 0.003438223386183381,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.010705088265240192,
+          "standard_mano_vs_smplx_sampled_max_m": 0.020246529951691628,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.001186877372674644,
+          "personalized_mano_vs_smplx_p95_m": 0.002409944415558129,
+          "personalized_mano_vs_smplx_max_m": 0.004928839858621359,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.012698665261268616,
+          "standard_mano_vs_smplx_sampled_max_m": 0.025265414267778397,
+          "joint_contact_frames": 151
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s7__mug_drink_2.npz",
+      "reference_sha256": "5f5e4a3cdd6078b821916bc0bd4128b2954f351177285260633d5774fc55af2b",
+      "metrics": {
+        "clip_id": "s7__mug_drink_2",
+        "frames": 268,
+        "loss": {
+          "total": 2.246408700942993,
+          "penetration": 0.835631251335144,
+          "contact": 1.4056918621063232,
+          "displacement": 0.16568347811698914,
+          "velocity": 0.0009274071198888123,
+          "acceleration": 0.0004492448060773313
+        },
+        "vertices_deeper_than_2_mm": 2184,
+        "vertices_deeper_than_5_mm": 63,
+        "maximum_penetration_mm": 5.462856292724609,
+        "mean_vertex_displacement_mm": 0.6709210276603699,
+        "maximum_vertex_displacement_mm": 1.6437842845916748,
+        "source_contact_vertices": 8686,
+        "retained_source_contact_vertices": 8337
+      }
+    },
+    {
+      "clip_id": "s7__mug_lift",
+      "subject": "s7",
+      "gender": "female",
+      "action": "lift",
+      "frames": 682,
+      "original_frames": 2728,
+      "clip_path": "clips/s7__mug_lift.npz",
+      "subject_path": "subjects/s7.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s7.zip",
+      "source_member": "s7/mug_lift.npz",
+      "source_member_sha256": "c5f0bf6fe314f6a886c5144994b03a68506420157b1b27109b4e53b388a1c91a",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s7__mug_lift.npz",
+      "reference_cache_sha256": "ca34d372b79479c39a0b31fe73ad38a57b673bd8c73a79544af3d55c6ee06c09",
+      "clip_sha256": "acf902fd8e365f4b98f69ada11fa9e5c392bd369c5e08b2e583e83452c8ce742",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010953957680612803,
+          "personalized_mano_vs_smplx_p95_m": 0.002187211823184043,
+          "personalized_mano_vs_smplx_max_m": 0.007296210154891014,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.010399873368442059,
+          "standard_mano_vs_smplx_sampled_max_m": 0.023264775052666664,
+          "joint_contact_frames": 162
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0011136917164549232,
+          "personalized_mano_vs_smplx_p95_m": 0.00228646129835397,
+          "personalized_mano_vs_smplx_max_m": 0.006596715189516544,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.011588407680392265,
+          "standard_mano_vs_smplx_sampled_max_m": 0.02467392198741436,
+          "joint_contact_frames": 540
+        }
+      },
+      "split": "train",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s7__mug_lift.npz",
+      "reference_sha256": "37a9ff777d35a58f45592c998c6755b62c6bf32562f78326af2cd67e496d0cd4",
+      "metrics": {
+        "clip_id": "s7__mug_lift",
+        "frames": 682,
+        "loss": {
+          "total": 1.5302144289016724,
+          "penetration": 0.41797491908073425,
+          "contact": 1.1086444854736328,
+          "displacement": 0.11777187138795853,
+          "velocity": 0.0005289430264383554,
+          "acceleration": 0.00017972067871596664
+        },
+        "vertices_deeper_than_2_mm": 3701,
+        "vertices_deeper_than_5_mm": 58,
+        "maximum_penetration_mm": 5.7270026206970215,
+        "mean_vertex_displacement_mm": 0.5627187490463257,
+        "maximum_vertex_displacement_mm": 1.604965090751648,
+        "source_contact_vertices": 62336,
+        "retained_source_contact_vertices": 61650
+      }
+    },
+    {
+      "clip_id": "s5__mug_drink_1",
+      "subject": "s5",
+      "gender": "female",
+      "action": "drink",
+      "frames": 182,
+      "original_frames": 726,
+      "clip_path": "clips/s5__mug_drink_1.npz",
+      "subject_path": "subjects/s5.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s5.zip",
+      "source_member": "s5/mug_drink_1.npz",
+      "source_member_sha256": "c1554ff59522dd5ae365a28f8b5aba99f5459a6b275bcf6e68ce1ec22f8a3e1e",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s5__mug_drink_1.npz",
+      "reference_cache_sha256": "5252334ff7d6989b1cca8b1bbde8e900390911b97e752ddccd49976678ad9fb2",
+      "clip_sha256": "6547b12c52efcbf64077bba8bf25148c3e0721844af5dd878248222804c13743",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010051308199763298,
+          "personalized_mano_vs_smplx_p95_m": 0.0020038490765728056,
+          "personalized_mano_vs_smplx_max_m": 0.0029997057281434536,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.008431818336248398,
+          "standard_mano_vs_smplx_sampled_max_m": 0.015943806618452072,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010504266247153282,
+          "personalized_mano_vs_smplx_p95_m": 0.002310621435754001,
+          "personalized_mano_vs_smplx_max_m": 0.0066618178971111774,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.009418877772986889,
+          "standard_mano_vs_smplx_sampled_max_m": 0.018926333636045456,
+          "joint_contact_frames": 95
+        }
+      },
+      "split": "validation",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s5__mug_drink_1.npz",
+      "reference_sha256": "de4a55508678c450145a4f1b8bcdd78aa47d51f55f559af0857d90eaf741cca2",
+      "metrics": {
+        "clip_id": "s5__mug_drink_1",
+        "frames": 182,
+        "loss": {
+          "total": 1.4758943319320679,
+          "penetration": 0.4118812680244446,
+          "contact": 1.0573147535324097,
+          "displacement": 0.22061319649219513,
+          "velocity": 0.0007031949353404343,
+          "acceleration": 0.0001913356245495379
+        },
+        "vertices_deeper_than_2_mm": 296,
+        "vertices_deeper_than_5_mm": 0,
+        "maximum_penetration_mm": 2.733861207962036,
+        "mean_vertex_displacement_mm": 0.7381123304367065,
+        "maximum_vertex_displacement_mm": 1.946099877357483,
+        "source_contact_vertices": 9230,
+        "retained_source_contact_vertices": 9206
+      }
+    },
+    {
+      "clip_id": "s5__mug_pass_1",
+      "subject": "s5",
+      "gender": "female",
+      "action": "pass",
+      "frames": 202,
+      "original_frames": 806,
+      "clip_path": "clips/s5__mug_pass_1.npz",
+      "subject_path": "subjects/s5.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s5.zip",
+      "source_member": "s5/mug_pass_1.npz",
+      "source_member_sha256": "2996e126f8374098faa759353398b135b7b26718edd2e3963be0bb3fe2c82a32",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s5__mug_pass_1.npz",
+      "reference_cache_sha256": "61b6d8faa9600b87b5f5432597ab0f510fc5ac0fda050a4ddb5095f16d2f89d8",
+      "clip_sha256": "ec031c04cae2b32f4ec4debc6f7e9d2109419316810a9d22eb2d5fe3d2999e23",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.00088839465752244,
+          "personalized_mano_vs_smplx_p95_m": 0.0018042274459730834,
+          "personalized_mano_vs_smplx_max_m": 0.0029733446426689625,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.00880076177418232,
+          "standard_mano_vs_smplx_sampled_max_m": 0.0162045918405056,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0009121932671405375,
+          "personalized_mano_vs_smplx_p95_m": 0.0019892524578608572,
+          "personalized_mano_vs_smplx_max_m": 0.005311514250934124,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.009370271116495132,
+          "standard_mano_vs_smplx_sampled_max_m": 0.0203629769384861,
+          "joint_contact_frames": 88
+        }
+      },
+      "split": "validation",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s5__mug_pass_1.npz",
+      "reference_sha256": "5175623e55c285f6079fc2cc81b36c5efdf8d21a74f84bbe15aa923d4d0173fd",
+      "metrics": {
+        "clip_id": "s5__mug_pass_1",
+        "frames": 202,
+        "loss": {
+          "total": 1.409972071647644,
+          "penetration": 0.2986787259578705,
+          "contact": 1.1042529344558716,
+          "displacement": 0.23160570859909058,
+          "velocity": 0.0008287260425277054,
+          "acceleration": 0.000188615289516747
+        },
+        "vertices_deeper_than_2_mm": 235,
+        "vertices_deeper_than_5_mm": 0,
+        "maximum_penetration_mm": 2.228142023086548,
+        "mean_vertex_displacement_mm": 0.7889790534973145,
+        "maximum_vertex_displacement_mm": 1.774598479270935,
+        "source_contact_vertices": 7094,
+        "retained_source_contact_vertices": 7064
+      }
+    },
+    {
+      "clip_id": "s5__mug_toast_1",
+      "subject": "s5",
+      "gender": "female",
+      "action": "toast",
+      "frames": 201,
+      "original_frames": 804,
+      "clip_path": "clips/s5__mug_toast_1.npz",
+      "subject_path": "subjects/s5.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s5.zip",
+      "source_member": "s5/mug_toast_1.npz",
+      "source_member_sha256": "25408b870e159cd4fbcc4307a8b2a8717683e5f9722a1a0cc0e79d760ba88250",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s5__mug_toast_1.npz",
+      "reference_cache_sha256": "7ae2b145935e4e2bc30ec4152d41010b61b4581bc527292e8d02444e7f5f8be4",
+      "clip_sha256": "301564151597ad5f5644f39a6a3f48cb4cc62a86190ee01dfe48296b05d74eb6",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0009224546956829727,
+          "personalized_mano_vs_smplx_p95_m": 0.0018755152414087206,
+          "personalized_mano_vs_smplx_max_m": 0.003050867235288024,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.0092769805341959,
+          "standard_mano_vs_smplx_sampled_max_m": 0.016353227198123932,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0009450005600228906,
+          "personalized_mano_vs_smplx_p95_m": 0.001989759935531765,
+          "personalized_mano_vs_smplx_max_m": 0.0043126740492880344,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.010868938639760017,
+          "standard_mano_vs_smplx_sampled_max_m": 0.019519539549946785,
+          "joint_contact_frames": 97
+        }
+      },
+      "split": "validation",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s5__mug_toast_1.npz",
+      "reference_sha256": "8403654ca898737be3a92ba1fc0d69365838f1bcfb91be24aea18b7aedcc60e6",
+      "metrics": {
+        "clip_id": "s5__mug_toast_1",
+        "frames": 201,
+        "loss": {
+          "total": 1.6417192220687866,
+          "penetration": 0.5906211137771606,
+          "contact": 1.0437614917755127,
+          "displacement": 0.24191394448280334,
+          "velocity": 0.0006737472140230238,
+          "acceleration": 0.00023535323271062225
+        },
+        "vertices_deeper_than_2_mm": 944,
+        "vertices_deeper_than_5_mm": 41,
+        "maximum_penetration_mm": 5.455656051635742,
+        "mean_vertex_displacement_mm": 0.7762419581413269,
+        "maximum_vertex_displacement_mm": 1.760867953300476,
+        "source_contact_vertices": 6492,
+        "retained_source_contact_vertices": 6385
+      }
+    },
+    {
+      "clip_id": "s8__mug_drink_1",
+      "subject": "s8",
+      "gender": "male",
+      "action": "drink",
+      "frames": 220,
+      "original_frames": 880,
+      "clip_path": "clips/s8__mug_drink_1.npz",
+      "subject_path": "subjects/s8.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s8.zip",
+      "source_member": "s8/mug_drink_1.npz",
+      "source_member_sha256": "5f51c09381d47ef407a14957941e4020bd4afc6d1f43422e37ce02a0e6a96181",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s8__mug_drink_1.npz",
+      "reference_cache_sha256": "affc88ffdb68b9cc263ac2620055f168cab4d07646b05eb44257859e3ec31eed",
+      "clip_sha256": "b05a27e7185332db37ed02662d6407fe8e762679eb7d7d4583972eb368be24ef",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0009714059415273368,
+          "personalized_mano_vs_smplx_p95_m": 0.0018781273800414044,
+          "personalized_mano_vs_smplx_max_m": 0.004153626970946789,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005475145764648914,
+          "standard_mano_vs_smplx_sampled_max_m": 0.015114384703338146,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0011494249338284135,
+          "personalized_mano_vs_smplx_p95_m": 0.0024234412354417136,
+          "personalized_mano_vs_smplx_max_m": 0.005371249280869961,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005847095511853695,
+          "standard_mano_vs_smplx_sampled_max_m": 0.01692146249115467,
+          "joint_contact_frames": 114
+        }
+      },
+      "split": "validation",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s8__mug_drink_1.npz",
+      "reference_sha256": "fc01e6460b4a4811463e6574899e5402045479ba5528d3a345a08b241540dea5",
+      "metrics": {
+        "clip_id": "s8__mug_drink_1",
+        "frames": 220,
+        "loss": {
+          "total": 1.0977181196212769,
+          "penetration": 0.19303013384342194,
+          "contact": 0.8973916172981262,
+          "displacement": 0.24171118438243866,
+          "velocity": 0.00040191071457229555,
+          "acceleration": 9.439156565349549e-05
+        },
+        "vertices_deeper_than_2_mm": 158,
+        "vertices_deeper_than_5_mm": 0,
+        "maximum_penetration_mm": 2.2555277347564697,
+        "mean_vertex_displacement_mm": 0.8033656477928162,
+        "maximum_vertex_displacement_mm": 1.7802218198776245,
+        "source_contact_vertices": 5827,
+        "retained_source_contact_vertices": 5594
+      }
+    },
+    {
+      "clip_id": "s8__mug_drink_2",
+      "subject": "s8",
+      "gender": "male",
+      "action": "drink",
+      "frames": 263,
+      "original_frames": 1052,
+      "clip_path": "clips/s8__mug_drink_2.npz",
+      "subject_path": "subjects/s8.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s8.zip",
+      "source_member": "s8/mug_drink_2.npz",
+      "source_member_sha256": "916a917b9d90cc27fd15539819ea9b134e998e5fa9b8365cd2f90a83160708fb",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s8__mug_drink_2.npz",
+      "reference_cache_sha256": "be88659b25976f564054de1768acc723121a61d0ff4c764fa4c050887b9d20b8",
+      "clip_sha256": "11190242f7023bb0ca23c73db503dd0f5482b126e1f73f26de71deac058f719e",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0009691002778708935,
+          "personalized_mano_vs_smplx_p95_m": 0.0018715678597800425,
+          "personalized_mano_vs_smplx_max_m": 0.0035858110059052706,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005622043274343014,
+          "standard_mano_vs_smplx_sampled_max_m": 0.015372985042631626,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0012117739534005523,
+          "personalized_mano_vs_smplx_p95_m": 0.002496106759645042,
+          "personalized_mano_vs_smplx_max_m": 0.004456757102161646,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005955623462796211,
+          "standard_mano_vs_smplx_sampled_max_m": 0.01787172257900238,
+          "joint_contact_frames": 149
+        }
+      },
+      "split": "validation",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s8__mug_drink_2.npz",
+      "reference_sha256": "2d36d8ec1cd4c95e55408c8614f2b40a604ad9f802b99e2be6582f1a9240d03d",
+      "metrics": {
+        "clip_id": "s8__mug_drink_2",
+        "frames": 263,
+        "loss": {
+          "total": 1.2318766117095947,
+          "penetration": 0.3087627589702606,
+          "contact": 0.9157117009162903,
+          "displacement": 0.2447546124458313,
+          "velocity": 0.000522835471201688,
+          "acceleration": 0.0001438267936464399
+        },
+        "vertices_deeper_than_2_mm": 711,
+        "vertices_deeper_than_5_mm": 0,
+        "maximum_penetration_mm": 4.894880771636963,
+        "mean_vertex_displacement_mm": 0.8230604529380798,
+        "maximum_vertex_displacement_mm": 1.5911153554916382,
+        "source_contact_vertices": 8297,
+        "retained_source_contact_vertices": 7969
+      }
+    },
+    {
+      "clip_id": "s8__mug_lift",
+      "subject": "s8",
+      "gender": "male",
+      "action": "lift",
+      "frames": 459,
+      "original_frames": 1836,
+      "clip_path": "clips/s8__mug_lift.npz",
+      "subject_path": "subjects/s8.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s8.zip",
+      "source_member": "s8/mug_lift.npz",
+      "source_member_sha256": "c5f81489b8d80ff82d4e583c5f30906a0ab0685c329819e8de18aa120246c86c",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s8__mug_lift.npz",
+      "reference_cache_sha256": "9f27a752ab0b242a150ff9f23fc02af3f80c9d37ee2e8694765d627785015e09",
+      "clip_sha256": "482053eca9d8a85c53f7bf2c3be3b02553512b8f6164e4ca873f83ec8b7eafb7",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.000986015424132347,
+          "personalized_mano_vs_smplx_p95_m": 0.0018841523036826403,
+          "personalized_mano_vs_smplx_max_m": 0.003980186302214861,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005500815808773041,
+          "standard_mano_vs_smplx_sampled_max_m": 0.016027534380555153,
+          "joint_contact_frames": 84
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010284349555149674,
+          "personalized_mano_vs_smplx_p95_m": 0.0021123941172845663,
+          "personalized_mano_vs_smplx_max_m": 0.0040778229013085365,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.0059219044633209705,
+          "standard_mano_vs_smplx_sampled_max_m": 0.017094573006033897,
+          "joint_contact_frames": 302
+        }
+      },
+      "split": "validation",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s8__mug_lift.npz",
+      "reference_sha256": "3c62c3c9acbf8a88d5e18c12cf845ef24874ba0f0a89fa7627bb2bec6f84a904",
+      "metrics": {
+        "clip_id": "s8__mug_lift",
+        "frames": 459,
+        "loss": {
+          "total": 1.475731611251831,
+          "penetration": 0.353494256734848,
+          "contact": 1.1153234243392944,
+          "displacement": 0.2288586050271988,
+          "velocity": 0.00043074318091385067,
+          "acceleration": 0.00010258968541165814
+        },
+        "vertices_deeper_than_2_mm": 950,
+        "vertices_deeper_than_5_mm": 28,
+        "maximum_penetration_mm": 5.291252613067627,
+        "mean_vertex_displacement_mm": 0.7992939352989197,
+        "maximum_vertex_displacement_mm": 2.0156099796295166,
+        "source_contact_vertices": 11863,
+        "retained_source_contact_vertices": 11814
+      }
+    },
+    {
+      "clip_id": "s8__mug_offhand_1",
+      "subject": "s8",
+      "gender": "male",
+      "action": "offhand",
+      "frames": 272,
+      "original_frames": 1088,
+      "clip_path": "clips/s8__mug_offhand_1.npz",
+      "subject_path": "subjects/s8.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s8.zip",
+      "source_member": "s8/mug_offhand_1.npz",
+      "source_member_sha256": "e1f7a167dc5ce3b2c053f0fb26fea1258af5b542747961cb6c6ff6748f2a5fa3",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s8__mug_offhand_1.npz",
+      "reference_cache_sha256": "97a2619c9281de9e5fbb5e4a7521da6929374c444129f96fe03c3d9e8166c512",
+      "clip_sha256": "d70674903938269b0d73591651080c04c9cd1d3982cc5d7bcfbc70a045d487a1",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0009687494020909071,
+          "personalized_mano_vs_smplx_p95_m": 0.0018738389189820737,
+          "personalized_mano_vs_smplx_max_m": 0.004690732806921005,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005605056416243315,
+          "standard_mano_vs_smplx_sampled_max_m": 0.015764812007546425,
+          "joint_contact_frames": 54
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0011944372672587633,
+          "personalized_mano_vs_smplx_p95_m": 0.002471281972248107,
+          "personalized_mano_vs_smplx_max_m": 0.004932052455842495,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.0058729397132992744,
+          "standard_mano_vs_smplx_sampled_max_m": 0.017139943316578865,
+          "joint_contact_frames": 120
+        }
+      },
+      "split": "validation",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s8__mug_offhand_1.npz",
+      "reference_sha256": "2b804004731eaee40626a964a2dea82208070e2fdc7e57b610d4619b049b57a3",
+      "metrics": {
+        "clip_id": "s8__mug_offhand_1",
+        "frames": 272,
+        "loss": {
+          "total": 1.0595005750656128,
+          "penetration": 0.21650387346744537,
+          "contact": 0.8349762558937073,
+          "displacement": 0.2644544541835785,
+          "velocity": 0.0007766599883325398,
+          "acceleration": 0.00018132507102563977
+        },
+        "vertices_deeper_than_2_mm": 359,
+        "vertices_deeper_than_5_mm": 2,
+        "maximum_penetration_mm": 5.230141639709473,
+        "mean_vertex_displacement_mm": 0.8312627673149109,
+        "maximum_vertex_displacement_mm": 2.076749801635742,
+        "source_contact_vertices": 5739,
+        "retained_source_contact_vertices": 5651
+      }
+    },
+    {
+      "clip_id": "s8__mug_pass_1",
+      "subject": "s8",
+      "gender": "male",
+      "action": "pass",
+      "frames": 245,
+      "original_frames": 980,
+      "clip_path": "clips/s8__mug_pass_1.npz",
+      "subject_path": "subjects/s8.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s8.zip",
+      "source_member": "s8/mug_pass_1.npz",
+      "source_member_sha256": "c82d8ac0392125403cf21139477d902feebdde1c8d7300c84c4d7da9ebc83c5e",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s8__mug_pass_1.npz",
+      "reference_cache_sha256": "058dce60e8b6f118fe71f388b6aa68efe6655469e7b51cafaf7d378821d4c00c",
+      "clip_sha256": "7bf638d4a656bf8590dc06d7141581fd83e17f7a52d1b7ad96c172f1bb6425e5",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010036214953288436,
+          "personalized_mano_vs_smplx_p95_m": 0.0019029996183235194,
+          "personalized_mano_vs_smplx_max_m": 0.0033294616732746363,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005562379024922848,
+          "standard_mano_vs_smplx_sampled_max_m": 0.015821926295757294,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.001061438350006938,
+          "personalized_mano_vs_smplx_p95_m": 0.002144939312711357,
+          "personalized_mano_vs_smplx_max_m": 0.004202686715871096,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005809110123664141,
+          "standard_mano_vs_smplx_sampled_max_m": 0.015550543554127216,
+          "joint_contact_frames": 112
+        }
+      },
+      "split": "validation",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s8__mug_pass_1.npz",
+      "reference_sha256": "5dc94878d0f604bf2e52e6e24d5f643552eadc56e9625607228c96da45ef05f4",
+      "metrics": {
+        "clip_id": "s8__mug_pass_1",
+        "frames": 245,
+        "loss": {
+          "total": 1.8251984119415283,
+          "penetration": 0.5338804125785828,
+          "contact": 1.2833856344223022,
+          "displacement": 0.2626306116580963,
+          "velocity": 0.00046761558041907847,
+          "acceleration": 0.00013700872659683228
+        },
+        "vertices_deeper_than_2_mm": 699,
+        "vertices_deeper_than_5_mm": 24,
+        "maximum_penetration_mm": 5.333460807800293,
+        "mean_vertex_displacement_mm": 0.8517526388168335,
+        "maximum_vertex_displacement_mm": 1.7384041547775269,
+        "source_contact_vertices": 4901,
+        "retained_source_contact_vertices": 4763
+      }
+    },
+    {
+      "clip_id": "s8__mug_toast_1",
+      "subject": "s8",
+      "gender": "male",
+      "action": "toast",
+      "frames": 203,
+      "original_frames": 812,
+      "clip_path": "clips/s8__mug_toast_1.npz",
+      "subject_path": "subjects/s8.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s8.zip",
+      "source_member": "s8/mug_toast_1.npz",
+      "source_member_sha256": "2c0d08f7edcb15abe226f1545d628eac2063145a3fb4c57d7f8f5b74d7cd4145",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s8__mug_toast_1.npz",
+      "reference_cache_sha256": "561424df61e0b9f4ea4f4f693f15e920f78e74e17f5cb20006cdb463266be163",
+      "clip_sha256": "598a187362b90d5c9547acd88bcd4e63150602974c34eda6e7d35b97d2593eaf",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010106110712513328,
+          "personalized_mano_vs_smplx_p95_m": 0.0018878852832131103,
+          "personalized_mano_vs_smplx_max_m": 0.003690052544698119,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.00550940353423357,
+          "standard_mano_vs_smplx_sampled_max_m": 0.015309302136301994,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.001161851454526186,
+          "personalized_mano_vs_smplx_p95_m": 0.0023087747278623286,
+          "personalized_mano_vs_smplx_max_m": 0.004713035188615322,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005856054835021496,
+          "standard_mano_vs_smplx_sampled_max_m": 0.01597394049167633,
+          "joint_contact_frames": 94
+        }
+      },
+      "split": "validation",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s8__mug_toast_1.npz",
+      "reference_sha256": "74431066776305c6ed03c0ca21ec4d3b7ec1162aabbddeec408cbedc929962c2",
+      "metrics": {
+        "clip_id": "s8__mug_toast_1",
+        "frames": 203,
+        "loss": {
+          "total": 1.3974112272262573,
+          "penetration": 0.44424182176589966,
+          "contact": 0.9458506107330322,
+          "displacement": 0.2423766404390335,
+          "velocity": 0.00040413704118691385,
+          "acceleration": 0.00014324719086289406
+        },
+        "vertices_deeper_than_2_mm": 485,
+        "vertices_deeper_than_5_mm": 23,
+        "maximum_penetration_mm": 5.439312934875488,
+        "mean_vertex_displacement_mm": 0.8065088987350464,
+        "maximum_vertex_displacement_mm": 1.6904157400131226,
+        "source_contact_vertices": 3955,
+        "retained_source_contact_vertices": 3890
+      }
+    },
+    {
+      "clip_id": "s10__mug_drink_1",
+      "subject": "s10",
+      "gender": "male",
+      "action": "drink",
+      "frames": 202,
+      "original_frames": 808,
+      "clip_path": "clips/s10__mug_drink_1.npz",
+      "subject_path": "subjects/s10.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s10.zip",
+      "source_member": "s10/mug_drink_1.npz",
+      "source_member_sha256": "0c485a953e062206a98e9aecd0ed985995d07efa723327883155f0cc01337225",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s10__mug_drink_1.npz",
+      "reference_cache_sha256": "c88186e3be9ca4556a1501ddd7f131562721c3d73bf647829a1e1de0c37b75d2",
+      "clip_sha256": "64315f2c2c78d3e60d5b0b26d851e480767dc8b86d0103c6e74b16b74158090f",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010700705461204052,
+          "personalized_mano_vs_smplx_p95_m": 0.0020272761466912925,
+          "personalized_mano_vs_smplx_max_m": 0.0043708854354918,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005996673833578825,
+          "standard_mano_vs_smplx_sampled_max_m": 0.01479682233184576,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0012892666272819042,
+          "personalized_mano_vs_smplx_p95_m": 0.0027544855838641524,
+          "personalized_mano_vs_smplx_max_m": 0.006195118185132742,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.0056368643417954445,
+          "standard_mano_vs_smplx_sampled_max_m": 0.01727694272994995,
+          "joint_contact_frames": 135
+        }
+      },
+      "split": "test",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s10__mug_drink_1.npz",
+      "reference_sha256": "11ab6d00b324f08fd2d1ca74e087f2260c1324ca5f49cdbd9f29dc59bec3f06f",
+      "metrics": null
+    },
+    {
+      "clip_id": "s10__mug_drink_2",
+      "subject": "s10",
+      "gender": "male",
+      "action": "drink",
+      "frames": 220,
+      "original_frames": 880,
+      "clip_path": "clips/s10__mug_drink_2.npz",
+      "subject_path": "subjects/s10.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s10.zip",
+      "source_member": "s10/mug_drink_2.npz",
+      "source_member_sha256": "ec9a9c806167676f0abd5ab99907c7ceeccd7f587652fadf92b098632da8ed7c",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s10__mug_drink_2.npz",
+      "reference_cache_sha256": "2e900dcb8aab30fcc03f1eaaa040edf8e3c655ea4f837d9d0f3cd0db32b80689",
+      "clip_sha256": "d6d2bef1c01c61ebf325bd03ca309d2efc9292f342aed4f5d762f58fbe72f35d",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.00105471711140126,
+          "personalized_mano_vs_smplx_p95_m": 0.0019924351247027506,
+          "personalized_mano_vs_smplx_max_m": 0.0036644921638071537,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.006048943381756544,
+          "standard_mano_vs_smplx_sampled_max_m": 0.014858896844089031,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.001248554908670485,
+          "personalized_mano_vs_smplx_p95_m": 0.002594263770151883,
+          "personalized_mano_vs_smplx_max_m": 0.0045248959213495255,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005749750882387161,
+          "standard_mano_vs_smplx_sampled_max_m": 0.01803719811141491,
+          "joint_contact_frames": 139
+        }
+      },
+      "split": "test",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s10__mug_drink_2.npz",
+      "reference_sha256": "1b3176214e1c725fe1be315475274fc4c7a23739b42ba1ecc5865e7e4c8729fb",
+      "metrics": null
+    },
+    {
+      "clip_id": "s10__mug_lift",
+      "subject": "s10",
+      "gender": "male",
+      "action": "lift",
+      "frames": 571,
+      "original_frames": 2284,
+      "clip_path": "clips/s10__mug_lift.npz",
+      "subject_path": "subjects/s10.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s10.zip",
+      "source_member": "s10/mug_lift.npz",
+      "source_member_sha256": "6f2be8ac985fc1cdd417aa95b63df542b54a9b232735885b8b632342cef7119d",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s10__mug_lift.npz",
+      "reference_cache_sha256": "620f1dc3917a0b2d4ba432987a2b147936f341f8cea97987d4adba03c6e65126",
+      "clip_sha256": "ca9785eba6cdd7a0d380ad2cef97c4771a82332e1f40a9d47c5716e27fcb2eb4",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0011380997020751238,
+          "personalized_mano_vs_smplx_p95_m": 0.0022459205356426533,
+          "personalized_mano_vs_smplx_max_m": 0.008884410373866558,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.006089404225349426,
+          "standard_mano_vs_smplx_sampled_max_m": 0.01791267842054367,
+          "joint_contact_frames": 218
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0013615768402814865,
+          "personalized_mano_vs_smplx_p95_m": 0.002795534825418143,
+          "personalized_mano_vs_smplx_max_m": 0.006692216265946627,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.00567643903195858,
+          "standard_mano_vs_smplx_sampled_max_m": 0.015746798366308212,
+          "joint_contact_frames": 202
+        }
+      },
+      "split": "test",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s10__mug_lift.npz",
+      "reference_sha256": "4f77fc8b4977d41903e7c0b0b956341d2093bd8957c9c4b46aa9eb481f8f1ec0",
+      "metrics": null
+    },
+    {
+      "clip_id": "s10__mug_pass_1",
+      "subject": "s10",
+      "gender": "male",
+      "action": "pass",
+      "frames": 196,
+      "original_frames": 784,
+      "clip_path": "clips/s10__mug_pass_1.npz",
+      "subject_path": "subjects/s10.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s10.zip",
+      "source_member": "s10/mug_pass_1.npz",
+      "source_member_sha256": "21410a52e379109312f2960d6d91b5b3640de9d549c32f3ce6d52346cc9a9362",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s10__mug_pass_1.npz",
+      "reference_cache_sha256": "daa291a2e714883540ca697d241d35497b91699f0429f611931d20b16d3b3c6b",
+      "clip_sha256": "1ac4f7ea502109127b38bb2a13f58a012ac1122fbecb6ba8b275ad251b85369a",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010063545778393745,
+          "personalized_mano_vs_smplx_p95_m": 0.0018790593952871858,
+          "personalized_mano_vs_smplx_max_m": 0.0035328043159097433,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005798728670924902,
+          "standard_mano_vs_smplx_sampled_max_m": 0.01401221752166748,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0011685724603012204,
+          "personalized_mano_vs_smplx_p95_m": 0.002356768329627812,
+          "personalized_mano_vs_smplx_max_m": 0.004051862750202417,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005617152433842421,
+          "standard_mano_vs_smplx_sampled_max_m": 0.016743557527661324,
+          "joint_contact_frames": 113
+        }
+      },
+      "split": "test",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s10__mug_pass_1.npz",
+      "reference_sha256": "2399cd7cc0b6ad926578a826349b489e99cb7d7b0125a61bb0b9dfb414308178",
+      "metrics": null
+    },
+    {
+      "clip_id": "s10__mug_toast_1",
+      "subject": "s10",
+      "gender": "male",
+      "action": "toast",
+      "frames": 181,
+      "original_frames": 724,
+      "clip_path": "clips/s10__mug_toast_1.npz",
+      "subject_path": "subjects/s10.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s10.zip",
+      "source_member": "s10/mug_toast_1.npz",
+      "source_member_sha256": "16287d30f0bbed8fa2d5b5fe12578cca5651e27695ad71a2e7b78a6ae7103916",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s10__mug_toast_1.npz",
+      "reference_cache_sha256": "13f5d5602ddb09c977637ffc701729c24d750a704a269580576a6e81a738e391",
+      "clip_sha256": "067855d548d76bb521418aba0cf21e3616a1ffd53c609a4cae291c609edaea85",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010313987731933594,
+          "personalized_mano_vs_smplx_p95_m": 0.001995113526936619,
+          "personalized_mano_vs_smplx_max_m": 0.004110771231353283,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.00583851570263505,
+          "standard_mano_vs_smplx_sampled_max_m": 0.014552014879882336,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.001229984569363296,
+          "personalized_mano_vs_smplx_p95_m": 0.0025283689727075395,
+          "personalized_mano_vs_smplx_max_m": 0.00506832730025053,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005799625534564257,
+          "standard_mano_vs_smplx_sampled_max_m": 0.017207901924848557,
+          "joint_contact_frames": 101
+        }
+      },
+      "split": "test",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s10__mug_toast_1.npz",
+      "reference_sha256": "f01b22d45101c779da8fccb4715c6ded31184b6c33a5e6c398f56dde99a59ab8",
+      "metrics": null
+    },
+    {
+      "clip_id": "s9__mug_drink_2",
+      "subject": "s9",
+      "gender": "male",
+      "action": "drink",
+      "frames": 273,
+      "original_frames": 1092,
+      "clip_path": "clips/s9__mug_drink_2.npz",
+      "subject_path": "subjects/s9.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s9.zip",
+      "source_member": "s9/mug_drink_2.npz",
+      "source_member_sha256": "d8f0741e0085da93746263646ac8cfa78c61029e2bc83e501eb935eeacf98ea9",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s9__mug_drink_2.npz",
+      "reference_cache_sha256": "e179221ec8d9b4ae5da1091addaa1c5c29e29f98766a9547d1b7f6c95ffbdf99",
+      "clip_sha256": "bd5ff5c932b6aee8ef0c7389af145112ba221d43b280254df94b02ca32522cd0",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010656783124431968,
+          "personalized_mano_vs_smplx_p95_m": 0.002097057504579424,
+          "personalized_mano_vs_smplx_max_m": 0.004598655737936497,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.00556183559820056,
+          "standard_mano_vs_smplx_sampled_max_m": 0.019354673102498055,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0013724238378927112,
+          "personalized_mano_vs_smplx_p95_m": 0.0029420215054415154,
+          "personalized_mano_vs_smplx_max_m": 0.009523673914372921,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.006554947234690189,
+          "standard_mano_vs_smplx_sampled_max_m": 0.019622759893536568,
+          "joint_contact_frames": 144
+        }
+      },
+      "split": "test",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s9__mug_drink_2.npz",
+      "reference_sha256": "3c534c9cbc9e7df66cd0dc40df69cdc40d0ca6f3afaba14f3852c94e18eea516",
+      "metrics": null
+    },
+    {
+      "clip_id": "s9__mug_pass_1",
+      "subject": "s9",
+      "gender": "male",
+      "action": "pass",
+      "frames": 228,
+      "original_frames": 912,
+      "clip_path": "clips/s9__mug_pass_1.npz",
+      "subject_path": "subjects/s9.npz",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s9.zip",
+      "source_member": "s9/mug_pass_1.npz",
+      "source_member_sha256": "1e0f504ef6bd45ff979c937b3dc96dfc6387ccfb2fd97aef07a3e0c0804ba567",
+      "reference_cache": "/home/nmt/Projects/IsaacLab/_local/mug_comparisons/cache/GRAB/s9__mug_pass_1.npz",
+      "reference_cache_sha256": "504a997b87563ea186469b8413622f2ed96095bfb70b376ec4643f3c62d60791",
+      "clip_sha256": "e86820c8f6457c623845d34e4f718c52bae44c21dfd4ca28a3d535b9bca28d37",
+      "object_roundtrip_max_abs_error_m": 1.1920928955078125e-07,
+      "representation_comparison": {
+        "lhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0010274517117068172,
+          "personalized_mano_vs_smplx_p95_m": 0.0020261667319573465,
+          "personalized_mano_vs_smplx_max_m": 0.0038893071468919516,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.005691546946763992,
+          "standard_mano_vs_smplx_sampled_max_m": 0.021878181025385857,
+          "joint_contact_frames": 0
+        },
+        "rhand": {
+          "personalized_mano_vs_smplx_mean_m": 0.0011746907839551568,
+          "personalized_mano_vs_smplx_p95_m": 0.002494274987839163,
+          "personalized_mano_vs_smplx_max_m": 0.004486298654228449,
+          "standard_mano_vs_smplx_sampled_mean_m": 0.006477085407823324,
+          "standard_mano_vs_smplx_sampled_max_m": 0.020607786253094673,
+          "joint_contact_frames": 112
+        }
+      },
+      "split": "test",
+      "reference_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s9__mug_pass_1.npz",
+      "reference_sha256": "47b3381b2d12b120261991bb1a24bd94cf76b0441a2072ecd68182dd6eae7e29",
+      "metrics": null
+    }
+  ],
+  "object_path": "/home/nmt/Projects/IsaacLab/_local/grab_mug_refinement/prepared/object.npz",
+  "source_fps": 120,
+  "playback_fps": 30,
+  "joint_order": "MANO joints 0..15, then index/middle/pinky/ring/thumb tips at 16..20",
+  "pretraining_exposure": "Validation/test are excluded from local adaptation only. The released upstream preprocessing contains all 44 mug clips, and checkpoint training exposure cannot be excluded.",
+  "generator_trained": false,
+  "test_evaluation_enabled": false
+}

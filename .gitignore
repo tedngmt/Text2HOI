@@ -6,3 +6,21 @@ outputs
 __pycache__
 *.pyc
 wandb
+
+# Local experiment area moved from IsaacLab/_local: keep code and notes, skip large artifacts
+/_local/**/cache/
+/_local/**/prepared/
+/_local/**/share/
+/_local/**/share_qa/
+/_local/**/geometry/
+/_local/**/*.npz
+/_local/**/*.npy
+/_local/**/*.pkl
+/_local/**/*.pt
+/_local/**/*.pth
+/_local/**/*.bin
+/_local/**/*.mp4
+/_local/**/*.png
+/_local/**/*.zip
+/_local/**/*.sha256
+*.Zone.Identifier

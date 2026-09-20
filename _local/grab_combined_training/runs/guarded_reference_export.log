@@ -1,0 +1,72 @@
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+WARNING: You are using a MANO model, with only 10 shape coefficients.
+/home/nmt/miniconda3/envs/text2hoi/lib/python3.8/site-packages/hydra/_internal/defaults_list.py:251: UserWarning: In 'config': Defaults list is missing `_self_`. See https://hydra.cc/docs/1.2/upgrades/1.0_to_1.1/default_composition_order for more information
+  warnings.warn(msg, UserWarning)
+build refiner
+initialize refiner with zero
+load refiner, checkpoints/grab/refiner.pth
+{"features": "s10__mug_drink_1", "split": "test", "frames": 202}
+{"features": "s10__mug_drink_2", "split": "test", "frames": 220}
+{"features": "s10__mug_lift", "split": "test", "frames": 571}
+{"features": "s10__mug_pass_1", "split": "test", "frames": 196}
+{"features": "s10__mug_toast_1", "split": "test", "frames": 181}
+{"features": "s1__mug_drink_1", "split": "train", "frames": 334}
+{"features": "s1__mug_drink_2", "split": "train", "frames": 377}
+{"features": "s1__mug_drink_3", "split": "train", "frames": 309}
+{"features": "s1__mug_drink_4", "split": "train", "frames": 300}
+{"features": "s1__mug_lift", "split": "train", "frames": 1062}
+{"features": "s1__mug_offhand_1", "split": "train", "frames": 274}
+{"features": "s1__mug_pass_1", "split": "train", "frames": 234}
+{"features": "s1__mug_toast_1", "split": "train", "frames": 337}
+{"features": "s2__mug_drink_1", "split": "train", "frames": 249}
+{"features": "s2__mug_drink_2", "split": "train", "frames": 286}
+{"features": "s2__mug_lift", "split": "train", "frames": 502}
+{"features": "s2__mug_pass_1", "split": "train", "frames": 259}
+{"features": "s2__mug_toast_1", "split": "train", "frames": 239}
+{"features": "s3__mug_drink_1", "split": "train", "frames": 239}
+{"features": "s3__mug_drink_2", "split": "train", "frames": 206}
+{"features": "s3__mug_drink_3", "split": "train", "frames": 229}
+{"features": "s3__mug_drink_4", "split": "train", "frames": 226}
+{"features": "s3__mug_offhand_1", "split": "train", "frames": 246}
+{"features": "s3__mug_pass_1", "split": "train", "frames": 283}
+{"features": "s4__mug_drink_2", "split": "train", "frames": 181}
+{"features": "s4__mug_pass_1", "split": "train", "frames": 156}
+{"features": "s5__mug_drink_1", "split": "validation", "frames": 182}
+{"features": "s5__mug_pass_1", "split": "validation", "frames": 202}
+{"features": "s5__mug_toast_1", "split": "validation", "frames": 201}
+{"features": "s6__mug_drink_2", "split": "train", "frames": 259}
+{"features": "s6__mug_lift", "split": "train", "frames": 581}
+{"features": "s6__mug_pass_1", "split": "train", "frames": 283}
+{"features": "s6__mug_toast_1", "split": "train", "frames": 224}
+{"features": "s7__mug_drink_1", "split": "train", "frames": 228}
+{"features": "s7__mug_drink_2", "split": "train", "frames": 268}
+{"features": "s7__mug_lift", "split": "train", "frames": 682}
+{"features": "s8__mug_drink_1", "split": "validation", "frames": 220}
+{"features": "s8__mug_drink_2", "split": "validation", "frames": 263}
+{"features": "s8__mug_lift", "split": "validation", "frames": 459}
+{"features": "s8__mug_offhand_1", "split": "validation", "frames": 272}
+{"features": "s8__mug_pass_1", "split": "validation", "frames": 245}
+{"features": "s8__mug_toast_1", "split": "validation", "frames": 203}
+{"features": "s9__mug_drink_2", "split": "test", "frames": 273}
+{"features": "s9__mug_pass_1", "split": "test", "frames": 228}
+EVALUATION {"split": "train", "stage": "selected_best", "epoch": 3, "loss": {"total": 1.6399339875976882, "penetration": 0.4409538778227152, "contact": 1.192932484921047, "displacement": 0.1990889586523911, "velocity": 0.0006457857207358513, "acceleration": 0.00020743588570354}, "vertices_deeper_than_2_mm": 31386, "vertices_deeper_than_5_mm": 627, "maximum_penetration_mm": 5.7270026206970215, "mean_vertex_displacement_mm": 0.7253790502191103, "source_contact_retention": 0.9845123357846678}
+EVALUATION {"split": "validation", "stage": "selected_best", "epoch": 3, "loss": {"total": 1.3997718209842602, "penetration": 0.364844806707855, "contact": 1.0276052152574673, "displacement": 0.2419369161049419, "velocity": 0.0005617720019593496, "acceleration": 0.00015036820907090925}, "vertices_deeper_than_2_mm": 4837, "vertices_deeper_than_5_mm": 118, "maximum_penetration_mm": 5.455656051635742, "mean_vertex_displacement_mm": 0.8047709301889977, "source_contact_retention": 0.9832486829237516}
+COMPLETE /home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard

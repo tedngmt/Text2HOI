@@ -1,0 +1,4 @@
+{"api": "OpenGL ES 3 / EGL", "renderer": "llvmpipe (LLVM 15.0.7, 256 bits)", "native_meshes": true}
+{"rendered_window": 0, "clip": "s5__mug_drink_1", "frames": 97}
+_local/grab_combined_training/render_results.py:51: DeprecationWarning: Please use `csc_matrix` from the `scipy.sparse` namespace, the `scipy.sparse.csc` namespace is deprecated.
+  self.recorded_faces = np.asarray(pickle.load(stream, encoding="latin1")["f"])

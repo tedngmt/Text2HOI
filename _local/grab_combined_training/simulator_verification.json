@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "scope": "Mechanics regression with a rigid box; not native-mug grasp performance.",
+  "enabled": {
+    "table_collision": true,
+    "reference_only_does_not_change_state": true,
+    "wrist_frame_matches_state": true,
+    "final_wrist_z_m": 0.5402036309242249,
+    "target_wrist_z_m": 0.3499999940395355,
+    "table_contacts": 112,
+    "maximum_table_contact_depth_m": 0.0047487374395132065,
+    "final_object_z_m": 0.5399999618530273,
+    "maximum_object_displacement_m": 0.26705002784729004
+  },
+  "disabled_regression_control": {
+    "table_collision": false,
+    "reference_only_does_not_change_state": true,
+    "wrist_frame_matches_state": true,
+    "final_wrist_z_m": 0.3499999940395355,
+    "target_wrist_z_m": 0.3499999940395355,
+    "table_contacts": 0,
+    "maximum_table_contact_depth_m": 0.0,
+    "final_object_z_m": 0.5399812459945679,
+    "maximum_object_displacement_m": 0.26705002784729004
+  },
+  "recorded_table": {
+    "passed": true,
+    "dimensions_m": [
+      0.45001497864723206,
+      0.5400180220603943,
+      0.005481000058352947
+    ],
+    "table_top_z_m": 0.5,
+    "box_center_supported_z_m": 0.5399832725524902,
+    "outside_footprint_falls": true,
+    "table_pose_and_dimensions_observable": true
+  },
+  "elapsed_seconds": 0.7364041360015108,
+  "native_grab_pose_validation": {
+    "passed": true,
+    "clips": 44,
+    "poses_including_equivalent_full_turns": 264,
+    "maximum_absolute_joint_coordinate_error_m": 2.384185791015625e-07,
+    "explicit_base_origin_preserves_world_pose": true,
+    "object_urdf": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/prepared/assets/mug/mug.urdf"
+  }
+}

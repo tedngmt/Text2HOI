@@ -1,0 +1,220 @@
+{
+  "experiment": "grab_mug_combined_validated_refiner_v1",
+  "scope": "Recorded GRAB motion -> Text2HOI refiner -> reference tracking; generator is frozen.",
+  "pretraining_exposure": "Validation/test are excluded from local adaptation only. The released upstream preprocessing contains all 44 mug clips, and checkpoint training exposure cannot be excluded.",
+  "generator_trained": false,
+  "refiner_trained": true,
+  "physics_simulation_in_this_stage": false,
+  "source_checkpoint": "/home/nmt/Projects/Text2HOI/checkpoints/grab/refiner.pth",
+  "source_checkpoint_sha256": "41f63132fc4ca31529566c7b0dc7fc924545d457ec8eebf9eed4b1a435533b42",
+  "generator_checkpoint": "/home/nmt/Projects/Text2HOI/checkpoints/grab/texthom.pth",
+  "generator_checkpoint_sha256": "1924d50d4b6400b96cb852b27fcd9ca1d601a21160fb9d2b8d7682b832418045",
+  "prepared_manifest_sha256": "7576d16451e5e5e77641e2b41545035cea7a783bd4ef5c42d03f915a46df51b6",
+  "split_path": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/prepared/splits.json",
+  "split_sha256": "0a744d5311aca4812033aad1029ce8a682a003aa989219f51424d2ffaa57bb5b",
+  "sdf_sha256": "37b2e756054afa8f15191214c12b723b58fa1245e59953a4c0f85faeb5e23e60",
+  "splits": {
+    "train": {
+      "subjects": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s6",
+        "s7"
+      ],
+      "clip_ids": [
+        "s1__mug_drink_1",
+        "s1__mug_drink_2",
+        "s1__mug_drink_3",
+        "s1__mug_drink_4",
+        "s1__mug_lift",
+        "s1__mug_offhand_1",
+        "s1__mug_pass_1",
+        "s1__mug_toast_1",
+        "s2__mug_drink_1",
+        "s2__mug_drink_2",
+        "s2__mug_lift",
+        "s2__mug_pass_1",
+        "s2__mug_toast_1",
+        "s3__mug_drink_1",
+        "s3__mug_drink_2",
+        "s3__mug_drink_3",
+        "s3__mug_drink_4",
+        "s3__mug_offhand_1",
+        "s3__mug_pass_1",
+        "s4__mug_drink_2",
+        "s4__mug_pass_1",
+        "s6__mug_drink_2",
+        "s6__mug_lift",
+        "s6__mug_pass_1",
+        "s6__mug_toast_1",
+        "s7__mug_drink_1",
+        "s7__mug_drink_2",
+        "s7__mug_lift"
+      ]
+    },
+    "validation": {
+      "subjects": [
+        "s5",
+        "s8"
+      ],
+      "clip_ids": [
+        "s5__mug_drink_1",
+        "s5__mug_pass_1",
+        "s5__mug_toast_1",
+        "s8__mug_drink_1",
+        "s8__mug_drink_2",
+        "s8__mug_lift",
+        "s8__mug_offhand_1",
+        "s8__mug_pass_1",
+        "s8__mug_toast_1"
+      ]
+    },
+    "test": {
+      "subjects": [
+        "s9",
+        "s10"
+      ],
+      "clip_ids": [
+        "s10__mug_drink_1",
+        "s10__mug_drink_2",
+        "s10__mug_lift",
+        "s10__mug_pass_1",
+        "s10__mug_toast_1",
+        "s9__mug_drink_2",
+        "s9__mug_pass_1"
+      ]
+    }
+  },
+  "epochs_requested": 3,
+  "validation_every": 5,
+  "selection": "Minimum complete validation objective; test evaluated only after selection.",
+  "early_stopping": false,
+  "overfitting_policy": "Complete the requested epoch budget, reduce LR on validation plateaus, retain the best validation checkpoint, and report the train/validation curves. These controls cannot guarantee absence of overfitting.",
+  "seed": 42,
+  "window_frames": 96,
+  "batch_size": 1,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "dropout": "Upstream 0.1 active during training; disabled during validation/export",
+  "gradient_clip_norm": 10.0,
+  "checkpoint_residual_wrapper": "0.1 scale; tanh cap 0.015 m translation / 0.15 rotation-6D components",
+  "loss": "SDF penetration + .3 contact + .03 displacement + .1 correction velocity + .05 acceleration",
+  "units": "Positions are metres; loss displacement terms use millimetres and source 30 FPS frame intervals.",
+  "trainable_parameters": 20838607,
+  "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+  "torch": "1.13.0+cu116",
+  "phase": "complete",
+  "output": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner",
+  "epoch_completed": 3,
+  "steps_completed": 402,
+  "elapsed_seconds": 54.804777751000074,
+  "peak_allocated_mib": 1100.7138671875,
+  "peak_reserved_mib": 1208.0,
+  "windows_per_epoch": 134,
+  "clips_per_split": {
+    "train": 28,
+    "validation": 9,
+    "test": 7
+  },
+  "frames_per_split": {
+    "train": 9053,
+    "validation": 2247,
+    "test": 1871
+  },
+  "resume_checkpoint": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner/last.pth",
+  "resume_checkpoint_sha256": "4d401a5059fbbfb2c7fde8ccae69603f60aebd86d5c776bcad54d6451ca5c9de",
+  "resumed_from_epoch": 2,
+  "best_epoch": 2,
+  "best_validation_loss": 0.5592838361839427,
+  "latest_epoch": {
+    "epoch": 3,
+    "step": 402,
+    "learning_rate": 1e-05,
+    "training_loss": 0.5388371722508611,
+    "epoch_training_seconds": 10.97643877900191,
+    "training_evaluation": {
+      "loss": {
+        "total": 0.6197121890522453,
+        "penetration": 0.3307178697918023,
+        "contact": 0.9555227925313134,
+        "displacement": 0.07622757211441127,
+        "velocity": 0.0004317916791104914,
+        "acceleration": 0.00014919016286618376
+      },
+      "vertices_deeper_than_2_mm": 22738,
+      "vertices_deeper_than_5_mm": 370,
+      "maximum_penetration_mm": 5.509504795074463,
+      "mean_vertex_displacement_mm": 0.3926619609475702,
+      "source_contact_retention": 0.9115318203394261
+    },
+    "validation": {
+      "loss": {
+        "total": 0.5702388165365286,
+        "penetration": 0.29514953702303587,
+        "contact": 0.9104665137419554,
+        "displacement": 0.06384145291410237,
+        "velocity": 0.00030284709614633386,
+        "acceleration": 7.5112968313856e-05
+      },
+      "vertices_deeper_than_2_mm": 3991,
+      "vertices_deeper_than_5_mm": 60,
+      "maximum_penetration_mm": 5.385562896728516,
+      "mean_vertex_displacement_mm": 0.3723178329895378,
+      "source_contact_retention": 0.9130256474967665
+    },
+    "validation_minus_train_loss": -0.04947337251571671
+  },
+  "selected_checkpoint": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner/best.pth",
+  "selected_checkpoint_sha256": "3537d4eb37d595c252f6d3e4d68af88bfcc75c527d83da2de9fb50919e2ce5b2",
+  "last_checkpoint": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner/last.pth",
+  "selected_train": {
+    "loss": {
+      "total": 0.6339626521263863,
+      "penetration": 0.3565161539321708,
+      "contact": 0.9196452349704181,
+      "displacement": 0.050828367556463507,
+      "velocity": 0.00024041966399678186,
+      "acceleration": 8.021004338395174e-05
+    },
+    "vertices_deeper_than_2_mm": 24846,
+    "vertices_deeper_than_5_mm": 466,
+    "maximum_penetration_mm": 5.505705833435059,
+    "mean_vertex_displacement_mm": 0.34248775914665297,
+    "source_contact_retention": 0.9355636120149786
+  },
+  "selected_validation": {
+    "loss": {
+      "total": 0.5592838361839427,
+      "penetration": 0.30216946097071773,
+      "contact": 0.8518822701920602,
+      "displacement": 0.050936449836387496,
+      "velocity": 0.000194188542528829,
+      "acceleration": 4.35066768676858e-05
+    },
+    "vertices_deeper_than_2_mm": 4054,
+    "vertices_deeper_than_5_mm": 58,
+    "maximum_penetration_mm": 5.337213516235352,
+    "mean_vertex_displacement_mm": 0.34151187333521654,
+    "source_contact_retention": 0.9320483296003028
+  },
+  "selected_test": {
+    "loss": {
+      "total": 0.9407213422335895,
+      "penetration": 0.6019876449663074,
+      "contact": 1.1228486606935841,
+      "displacement": 0.061210270373739065,
+      "velocity": 0.00033643732006006534,
+      "acceleration": 0.00018241884868136192
+    },
+    "vertices_deeper_than_2_mm": 8885,
+    "vertices_deeper_than_5_mm": 239,
+    "maximum_penetration_mm": 5.467984199523926,
+    "mean_vertex_displacement_mm": 0.37571312366864823,
+    "source_contact_retention": 0.9353695370769894
+  },
+  "original_refiner_unchanged": true,
+  "original_generator_unchanged": true,
+  "all_losses_and_gradients_finite": true
+}

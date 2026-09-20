@@ -1,0 +1,4819 @@
+{
+  "schema_version": 1,
+  "splits": {
+    "train": {
+      "subjects": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s6",
+        "s7"
+      ],
+      "clip_ids": [
+        "s1__mug_drink_1",
+        "s1__mug_drink_2",
+        "s1__mug_drink_3",
+        "s1__mug_drink_4",
+        "s1__mug_lift",
+        "s1__mug_offhand_1",
+        "s1__mug_pass_1",
+        "s1__mug_toast_1",
+        "s2__mug_drink_1",
+        "s2__mug_drink_2",
+        "s2__mug_lift",
+        "s2__mug_pass_1",
+        "s2__mug_toast_1",
+        "s3__mug_drink_1",
+        "s3__mug_drink_2",
+        "s3__mug_drink_3",
+        "s3__mug_drink_4",
+        "s3__mug_offhand_1",
+        "s3__mug_pass_1",
+        "s4__mug_drink_2",
+        "s4__mug_pass_1",
+        "s6__mug_drink_2",
+        "s6__mug_lift",
+        "s6__mug_pass_1",
+        "s6__mug_toast_1",
+        "s7__mug_drink_1",
+        "s7__mug_drink_2",
+        "s7__mug_lift"
+      ]
+    },
+    "validation": {
+      "subjects": [
+        "s5",
+        "s8"
+      ],
+      "clip_ids": [
+        "s5__mug_drink_1",
+        "s5__mug_pass_1",
+        "s5__mug_toast_1",
+        "s8__mug_drink_1",
+        "s8__mug_drink_2",
+        "s8__mug_lift",
+        "s8__mug_offhand_1",
+        "s8__mug_pass_1",
+        "s8__mug_toast_1"
+      ]
+    },
+    "test": {
+      "subjects": [
+        "s9",
+        "s10"
+      ],
+      "clip_ids": [
+        "s10__mug_drink_1",
+        "s10__mug_drink_2",
+        "s10__mug_lift",
+        "s10__mug_pass_1",
+        "s10__mug_toast_1",
+        "s9__mug_drink_2",
+        "s9__mug_pass_1"
+      ]
+    }
+  },
+  "clips": [
+    {
+      "clip_id": "s10__mug_drink_1",
+      "subject": "s10",
+      "split": "test",
+      "action": "drink",
+      "path": "clips/s10__mug_drink_1.npz",
+      "nframes": 202,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 6,
+          "end": 168,
+          "contact_start": 36
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 132,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 162,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004712731375941289,
+      "retarget_joint_difference_max_m": 0.010759618265101387,
+      "table_alignment": {
+        "source_table_normal": [
+          0.009662207671633448,
+          -0.0014781705499036537,
+          0.9999522272362493
+        ],
+        "source_table_top_point_m": [
+          -0.06539811296415245,
+          -0.27998378439586746,
+          1.0377229431341395
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999533197564331,
+            7.141365995026125e-06,
+            -0.009662207671633448
+          ],
+          [
+            7.141365995026125e-06,
+            0.9999989074798165,
+            0.0014781705499036537
+          ],
+          [
+            0.009662207671633448,
+            -0.0014781705499036537,
+            0.9999522272362494
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.1036401091774202,
+          0.23160190195017177,
+          -0.5374553418768906
+        ],
+        "source_table_normal_deviation_median_deg": 0.004822992704597568,
+        "source_table_normal_deviation_max_deg": 0.032529030305309174,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s10__mug_drink_1.npz",
+      "source_reference_sha256": "11ab6d00b324f08fd2d1ca74e087f2260c1324ca5f49cdbd9f29dc59bec3f06f",
+      "sha256": "bc2f7135a14eeade3085f0db01733eac539c893055f67f1016175efed206dd6e",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s10.zip",
+      "source_member": "s10/mug_drink_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.06754675467546754,
+        "maximum_excess_before_rad": 0.40427106618881226,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s10__mug_drink_1",
+        "frames": 202,
+        "naive_clipping_mean_joint_error_mm": 0.46496946015395224,
+        "fitted_mean_joint_error_mm": 0.010898754226218443,
+        "fitted_max_joint_error_mm": 0.2135602553607896,
+        "naive_clipping_mean_tip_error_mm": 1.2002071598544717,
+        "fitted_mean_tip_error_mm": 0.022322128643281758,
+        "original_proximity_joint_samples": 1605,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.008781396395163281,
+        "clipped_mean_contact_distance_change_mm": 0.2867156296800064
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0282163619995117,
+        -0.0468481108546257,
+        0.4972594976425171,
+        0.016780946403741837,
+        0.0,
+        0.0,
+        0.9998592138290405
+      ]
+    },
+    {
+      "clip_id": "s10__mug_drink_2",
+      "subject": "s10",
+      "split": "test",
+      "action": "drink",
+      "path": "clips/s10__mug_drink_2.npz",
+      "nframes": 220,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 11,
+          "end": 177,
+          "contact_start": 41
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 133,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 166,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004520980337616638,
+      "retarget_joint_difference_max_m": 0.013263393813080839,
+      "table_alignment": {
+        "source_table_normal": [
+          0.009670634532727223,
+          -0.001465012631603907,
+          0.9999521651387749
+        ],
+        "source_table_top_point_m": [
+          -0.065408245600852,
+          -0.2799619608463582,
+          1.0377273309417996
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999532382954474,
+            7.083970303403358e-06,
+            -0.009670634532727224
+          ],
+          [
+            7.083970303403358e-06,
+            0.9999989268433275,
+            0.0014650126316039069
+          ],
+          [
+            0.009670634532727224,
+            -0.0014650126316039069,
+            0.9999521651387748
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.108250812177052,
+          0.24702888430532036,
+          -0.5374552999693103
+        ],
+        "source_table_normal_deviation_median_deg": 0.007464459907335404,
+        "source_table_normal_deviation_max_deg": 0.029244932203592772,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s10__mug_drink_2.npz",
+      "source_reference_sha256": "1b3176214e1c725fe1be315475274fc4c7a23739b42ba1ecc5865e7e4c8729fb",
+      "sha256": "4ec8e16e59b4c010d0ba51f35daaad68b1771e5864e2d9dfcab2cbfa4fcd3b99",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s10.zip",
+      "source_member": "s10/mug_drink_2.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.11,
+        "maximum_excess_before_rad": 0.44548189640045166,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s10__mug_drink_2",
+        "frames": 220,
+        "naive_clipping_mean_joint_error_mm": 1.1819518404081464,
+        "fitted_mean_joint_error_mm": 0.07927769183879718,
+        "fitted_max_joint_error_mm": 2.5297014508396387,
+        "naive_clipping_mean_tip_error_mm": 2.928236499428749,
+        "fitted_mean_tip_error_mm": 0.05704681825591251,
+        "original_proximity_joint_samples": 933,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.025892400158980595,
+        "clipped_mean_contact_distance_change_mm": 1.361192880164646
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0328081846237183,
+        -0.03141295537352562,
+        0.4972594976425171,
+        0.01679094508290291,
+        0.0,
+        0.0,
+        0.9998590350151062
+      ]
+    },
+    {
+      "clip_id": "s10__mug_lift",
+      "subject": "s10",
+      "split": "test",
+      "action": "lift",
+      "path": "clips/s10__mug_lift.npz",
+      "nframes": 571,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 17,
+          "end": 82,
+          "contact_start": 47
+        }
+      ],
+      "excluded_episodes": [
+        {
+          "start": 56,
+          "end": 120,
+          "contact_start": 86,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.5294417320015303
+        },
+        {
+          "start": 103,
+          "end": 166,
+          "contact_start": 133,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.5557625612446592
+        },
+        {
+          "start": 144,
+          "end": 204,
+          "contact_start": 174,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.5734175621142673
+        },
+        {
+          "start": 186,
+          "end": 259,
+          "contact_start": 216,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.562399217817103
+        }
+      ],
+      "right_contact_frames": 175,
+      "left_contact_frames": 189,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 65,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004510482574319162,
+      "retarget_joint_difference_max_m": 0.011234668782539732,
+      "table_alignment": {
+        "source_table_normal": [
+          0.009745970010589888,
+          -0.0014437441705022912,
+          0.9999514646578217
+        ],
+        "source_table_top_point_m": [
+          -0.06538473531020647,
+          -0.27996801842093894,
+          1.0377302483155941
+        ],
+        "world_to_training_rotation": [
+          [
+            0.999952506881729,
+            7.03551442988978e-06,
+            -0.009745970010589888
+          ],
+          [
+            7.03551442988978e-06,
+            0.9999989577760928,
+            0.0014437441705022912
+          ],
+          [
+            0.009745970010589888,
+            -0.0014437441705022912,
+            0.9999514646578217
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.0982080287818212,
+          0.26114285238169666,
+          -0.537446846247942
+        ],
+        "source_table_normal_deviation_median_deg": 0.009868276318376383,
+        "source_table_normal_deviation_max_deg": 0.03068016070185672,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s10__mug_lift.npz",
+      "source_reference_sha256": "4f77fc8b4977d41903e7c0b0b956341d2093bd8957c9c4b46aa9eb481f8f1ec0",
+      "sha256": "2c9adc9032c565a76ae7bd8b10072b4fe2ea85396450a46cc1ee6c67fb20d99b",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s10.zip",
+      "source_member": "s10/mug_lift.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.06678342089900759,
+        "maximum_excess_before_rad": 0.5795013308525085,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s10__mug_lift",
+        "frames": 571,
+        "naive_clipping_mean_joint_error_mm": 0.4138405784033239,
+        "fitted_mean_joint_error_mm": 0.016274070731014945,
+        "fitted_max_joint_error_mm": 3.8119705859571695,
+        "naive_clipping_mean_tip_error_mm": 1.1552368523553014,
+        "fitted_mean_tip_error_mm": 0.024348531951545738,
+        "original_proximity_joint_samples": 1010,
+        "fitted_proximity_retention": 0.998019801980198,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.01001913190225299,
+        "clipped_mean_contact_distance_change_mm": 0.2638486940526617
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0227108001708984,
+        -0.017327116802334785,
+        0.4972594976425171,
+        0.01677909679710865,
+        0.0,
+        0.0,
+        0.9998592138290405
+      ]
+    },
+    {
+      "clip_id": "s10__mug_pass_1",
+      "subject": "s10",
+      "split": "test",
+      "action": "pass",
+      "path": "clips/s10__mug_pass_1.npz",
+      "nframes": 196,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 16,
+          "end": 154,
+          "contact_start": 46
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 108,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 138,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004487284555625397,
+      "retarget_joint_difference_max_m": 0.013346170054612421,
+      "table_alignment": {
+        "source_table_normal": [
+          0.009682981904659209,
+          -0.0014514081479521546,
+          0.9999520654890524
+        ],
+        "source_table_top_point_m": [
+          -0.06537258316785144,
+          -0.27995751603919133,
+          1.0377242899986785
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999531188071034,
+            7.027147837895308e-06,
+            -0.009682981904659209
+          ],
+          [
+            7.027147837895308e-06,
+            0.9999989466819488,
+            0.0014514081479521546
+          ],
+          [
+            0.009682981904659209,
+            -0.0014514081479521546,
+            0.9999520654890522
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.0983500482981041,
+          0.23155846886308862,
+          -0.5374478782723233
+        ],
+        "source_table_normal_deviation_median_deg": 0.006295856691522304,
+        "source_table_normal_deviation_max_deg": 0.022743287288456357,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s10__mug_pass_1.npz",
+      "source_reference_sha256": "2399cd7cc0b6ad926578a826349b489e99cb7d7b0125a61bb0b9dfb414308178",
+      "sha256": "ba3da9f886eeb69b6d6744fb4e39f7763f3b44ce9323b27073121bd17b2c6a56",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s10.zip",
+      "source_member": "s10/mug_pass_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.07154195011337869,
+        "maximum_excess_before_rad": 0.4545919895172119,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s10__mug_pass_1",
+        "frames": 196,
+        "naive_clipping_mean_joint_error_mm": 0.5053341155871749,
+        "fitted_mean_joint_error_mm": 0.01576290924276691,
+        "fitted_max_joint_error_mm": 0.42999451397918165,
+        "naive_clipping_mean_tip_error_mm": 1.338090281933546,
+        "fitted_mean_tip_error_mm": 0.02855590901162941,
+        "original_proximity_joint_samples": 804,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 0.9850746268656716,
+        "fitted_mean_contact_distance_change_mm": 0.009717495165421973,
+        "clipped_mean_contact_distance_change_mm": 0.4964695241248269
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0229302644729614,
+        -0.04689304903149605,
+        0.4972594976425171,
+        0.016774123534560204,
+        0.0,
+        0.0,
+        0.9998593330383301
+      ]
+    },
+    {
+      "clip_id": "s10__mug_toast_1",
+      "subject": "s10",
+      "split": "test",
+      "action": "toast",
+      "path": "clips/s10__mug_toast_1.npz",
+      "nframes": 181,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 10,
+          "end": 139,
+          "contact_start": 40
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 99,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 129,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004522626111977058,
+      "retarget_joint_difference_max_m": 0.013935476586212206,
+      "table_alignment": {
+        "source_table_normal": [
+          0.009520228240383372,
+          -0.0008027326499103099,
+          0.9999543593957395
+        ],
+        "source_table_top_point_m": [
+          -0.057070638168119144,
+          -0.28021520324794097,
+          1.0319636875244433
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999546815929458,
+            3.821186222201042e-06,
+            -0.00952022824038337
+          ],
+          [
+            3.821186222201042e-06,
+            0.9999996778027936,
+            0.0008027326499103099
+          ],
+          [
+            0.00952022824038337,
+            -0.0008027326499103099,
+            0.9999543593957394
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.0942038945069281,
+          0.2340518534001776,
+          -0.5315982004696334
+        ],
+        "source_table_normal_deviation_median_deg": 0.007357705403895205,
+        "source_table_normal_deviation_max_deg": 3.4099430414748233,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s10__mug_toast_1.npz",
+      "source_reference_sha256": "f01b22d45101c779da8fccb4715c6ded31184b6c33a5e6c398f56dde99a59ab8",
+      "sha256": "3892ac69b378ce61474c6f5ba37cfef3ed2a477214390f16f6de846289d71e7c",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s10.zip",
+      "source_member": "s10/mug_toast_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.07869858809085328,
+        "maximum_excess_before_rad": 0.4786759614944458,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s10__mug_toast_1",
+        "frames": 181,
+        "naive_clipping_mean_joint_error_mm": 0.7703378796577454,
+        "fitted_mean_joint_error_mm": 0.044414555304683745,
+        "fitted_max_joint_error_mm": 3.90750914812088,
+        "naive_clipping_mean_tip_error_mm": 1.946167671121657,
+        "fitted_mean_tip_error_mm": 0.030424600481637754,
+        "original_proximity_joint_samples": 1007,
+        "fitted_proximity_retention": 0.9990069513406157,
+        "clipped_proximity_retention": 0.9930486593843099,
+        "fitted_mean_contact_distance_change_mm": 0.07817557311215814,
+        "clipped_mean_contact_distance_change_mm": 0.5372107817079742
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0273102521896362,
+        -0.045335087925195694,
+        0.4972594976425171,
+        0.9998912811279297,
+        0.0,
+        0.0,
+        -0.014745356515049934
+      ]
+    },
+    {
+      "clip_id": "s1__mug_drink_1",
+      "subject": "s1",
+      "split": "train",
+      "action": "drink",
+      "path": "clips/s1__mug_drink_1.npz",
+      "nframes": 334,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 13,
+          "end": 275,
+          "contact_start": 43
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 232,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 262,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004249058343710466,
+      "retarget_joint_difference_max_m": 0.013328641671161906,
+      "table_alignment": {
+        "source_table_normal": [
+          0.0020502910538690877,
+          0.003500727197488897,
+          0.9999917705739798
+        ],
+        "source_table_top_point_m": [
+          0.03531365216522989,
+          -0.7014777436564702,
+          0.7492389864180058
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999978981446488,
+            -3.5887695942807845e-06,
+            -0.002050291053869088
+          ],
+          [
+            -3.5887695942807845e-06,
+            0.9999938724293312,
+            -0.003500727197488897
+          ],
+          [
+            0.002050291053869088,
+            0.003500727197488897,
+            0.9999917705739799
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9709875641071036,
+          0.733672948775327,
+          -0.2468495416606582
+        ],
+        "source_table_normal_deviation_median_deg": 0.003231894644497602,
+        "source_table_normal_deviation_max_deg": 12.629833752080296,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_drink_1.npz",
+      "source_reference_sha256": "13dc5734b2bd2b1500d99a82ee4dea4fd8a3280f6f2bcad9cabec3db303975a3",
+      "sha256": "7d1d2bbbdd4807a0e47411ff17bc70af5744057f907061763977b9a00b81ac25",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_drink_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.10359281437125749,
+        "maximum_excess_before_rad": 0.5990433096885681,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s1__mug_drink_1",
+        "frames": 334,
+        "naive_clipping_mean_joint_error_mm": 1.0849538957700133,
+        "fitted_mean_joint_error_mm": 0.10295483662048355,
+        "fitted_max_joint_error_mm": 9.489461779594421,
+        "naive_clipping_mean_tip_error_mm": 2.492285566404462,
+        "fitted_mean_tip_error_mm": 0.07159257802413777,
+        "original_proximity_joint_samples": 2169,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.029380989071287302,
+        "clipped_mean_contact_distance_change_mm": 0.6000732469740253
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0047675371170044,
+        0.02957649528980255,
+        0.4972594976425171,
+        0.9999970197677612,
+        0.0,
+        0.0,
+        0.002441015560179949
+      ]
+    },
+    {
+      "clip_id": "s1__mug_drink_2",
+      "subject": "s1",
+      "split": "train",
+      "action": "drink",
+      "path": "clips/s1__mug_drink_2.npz",
+      "nframes": 377,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 28,
+          "end": 112,
+          "contact_start": 58
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 261,
+      "left_contact_frames": 208,
+      "simultaneous_hand_contact_frames": 207,
+      "rl_supported_frames": 84,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004042451302404258,
+      "retarget_joint_difference_max_m": 0.011546722148848568,
+      "table_alignment": {
+        "source_table_normal": [
+          0.002025217459786277,
+          0.0034942773461166545,
+          0.9999918442267762
+        ],
+        "source_table_top_point_m": [
+          0.035312902883707864,
+          -0.701471925229556,
+          0.7492399438281921
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999979492387575,
+            -3.538350174336356e-06,
+            -0.002025217459786277
+          ],
+          [
+            -3.538350174336356e-06,
+            0.9999938949880186,
+            -0.003494277346116654
+          ],
+          [
+            0.002025217459786277,
+            0.003494277346116654,
+            0.9999918442267761
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9491655696051922,
+          0.7033606494060963,
+          -0.24685421204732938
+        ],
+        "source_table_normal_deviation_median_deg": 0.0028905433820014424,
+        "source_table_normal_deviation_max_deg": 12.35180141835209,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_drink_2.npz",
+      "source_reference_sha256": "960c8d1b4d1e8ff06a5e91afb792d004545dfd04991bc0303f5d7833fd708c33",
+      "sha256": "8ea707501706a62b5931c7f51a9ab0cd26923066d242110b1786ee265056eed6",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_drink_2.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.11517830828175656,
+        "maximum_excess_before_rad": 0.7632743716239929,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s1__mug_drink_2",
+        "frames": 377,
+        "naive_clipping_mean_joint_error_mm": 1.751848729327321,
+        "fitted_mean_joint_error_mm": 0.4387099470477551,
+        "fitted_max_joint_error_mm": 19.31939460337162,
+        "naive_clipping_mean_tip_error_mm": 3.713247599080205,
+        "fitted_mean_tip_error_mm": 0.5199076258577406,
+        "original_proximity_joint_samples": 1777,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 0.9786156443444006,
+        "fitted_mean_contact_distance_change_mm": 0.14984493501372123,
+        "clipped_mean_contact_distance_change_mm": 0.8131053383327782
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        0.982963502407074,
+        -0.0007251704228110611,
+        0.4972594976425171,
+        0.9999970197677612,
+        0.0,
+        0.0,
+        0.002437399234622717
+      ]
+    },
+    {
+      "clip_id": "s1__mug_drink_3",
+      "subject": "s1",
+      "split": "train",
+      "action": "drink",
+      "path": "clips/s1__mug_drink_3.npz",
+      "nframes": 309,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 11,
+          "end": 250,
+          "contact_start": 41
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 209,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 239,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.0043001464268402016,
+      "retarget_joint_difference_max_m": 0.01411620492490049,
+      "table_alignment": {
+        "source_table_normal": [
+          0.0020339589451134135,
+          0.0035048070779420517,
+          0.9999917896354729
+        ],
+        "source_table_top_point_m": [
+          0.03531532086698496,
+          -0.7014751652955062,
+          0.7492454769133785
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999979314970132,
+            -3.5643314857689167e-06,
+            -0.002033958945113413
+          ],
+          [
+            -3.5643314857689167e-06,
+            0.9999938581384596,
+            -0.0035048070779420512
+          ],
+          [
+            0.002033958945113413,
+            0.0035048070779420512,
+            0.9999917896354729
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9440512153413835,
+          0.6895539241775693,
+          -0.24685262012334142
+        ],
+        "source_table_normal_deviation_median_deg": 0.004321230336688317,
+        "source_table_normal_deviation_max_deg": 12.175347548931144,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_drink_3.npz",
+      "source_reference_sha256": "5f0128040b5a339a8016c847e523a783ac14c5e2340e095b004e3faed263ca7c",
+      "sha256": "ff3603b0e4159509d93a0bbab40d4ae1de7eac6e4b130e51d8a59f21e718ca6d",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_drink_3.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.1096727795756922,
+        "maximum_excess_before_rad": 1.0134623050689697,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s1__mug_drink_3",
+        "frames": 309,
+        "naive_clipping_mean_joint_error_mm": 2.023510867729783,
+        "fitted_mean_joint_error_mm": 0.22916158195585012,
+        "fitted_max_joint_error_mm": 10.07029227912426,
+        "naive_clipping_mean_tip_error_mm": 4.381416831165552,
+        "fitted_mean_tip_error_mm": 0.11790476855821908,
+        "original_proximity_joint_samples": 2061,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 0.9349830179524503,
+        "fitted_mean_contact_distance_change_mm": 0.20123289227587607,
+        "clipped_mean_contact_distance_change_mm": 1.10032477239231
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        0.9778450131416321,
+        -0.014543019235134125,
+        0.4972594976425171,
+        0.9999970197677612,
+        0.0,
+        0.0,
+        0.00244002602994442
+      ]
+    },
+    {
+      "clip_id": "s1__mug_drink_4",
+      "subject": "s1",
+      "split": "train",
+      "action": "drink",
+      "path": "clips/s1__mug_drink_4.npz",
+      "nframes": 300,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 11,
+          "end": 249,
+          "contact_start": 41
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 208,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 238,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004009756614069995,
+      "retarget_joint_difference_max_m": 0.009998247808694391,
+      "table_alignment": {
+        "source_table_normal": [
+          0.002039534943174133,
+          0.0034771128833974803,
+          0.9999918749585978
+        ],
+        "source_table_top_point_m": [
+          0.03530736896750433,
+          -0.7014716952886754,
+          0.7492409229637357
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999979201401583,
+            -3.5458610186588536e-06,
+            -0.0020395349431741325
+          ],
+          [
+            -3.5458610186588536e-06,
+            0.9999939548184393,
+            -0.00347711288339748
+          ],
+          [
+            0.0020395349431741325,
+            0.00347711288339748,
+            0.9999918749585976
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9509080342421152,
+          0.6868830495936175,
+          -0.2468677496939501
+        ],
+        "source_table_normal_deviation_median_deg": 0.0033069643228967934,
+        "source_table_normal_deviation_max_deg": 11.854560255262788,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_drink_4.npz",
+      "source_reference_sha256": "27e07aeac06e2a1aaf85339247ba3e12f5134dc5c7d58ae02d21d4abfada01dc",
+      "sha256": "b272ccf4ae9d1b88a524d8f27c2a9349718a5c24191fca7977e1e094c52b9406",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_drink_4.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.08014814814814815,
+        "maximum_excess_before_rad": 0.9101869463920593,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s1__mug_drink_4",
+        "frames": 300,
+        "naive_clipping_mean_joint_error_mm": 1.046166755259037,
+        "fitted_mean_joint_error_mm": 0.30553119722753763,
+        "fitted_max_joint_error_mm": 17.592813819646835,
+        "naive_clipping_mean_tip_error_mm": 2.1636532619595528,
+        "fitted_mean_tip_error_mm": 0.23520219838246703,
+        "original_proximity_joint_samples": 2174,
+        "fitted_proximity_retention": 0.9986200551977921,
+        "clipped_proximity_retention": 0.9949402023919043,
+        "fitted_mean_contact_distance_change_mm": 0.14776056476823446,
+        "clipped_mean_contact_distance_change_mm": 0.5653807796446317
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        0.9846897125244141,
+        -0.01718972623348236,
+        0.4972594976425171,
+        0.9999970197677612,
+        0.0,
+        0.0,
+        0.0024374837521463633
+      ]
+    },
+    {
+      "clip_id": "s1__mug_lift",
+      "subject": "s1",
+      "split": "train",
+      "action": "lift",
+      "path": "clips/s1__mug_lift.npz",
+      "nframes": 1062,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 16,
+          "end": 182,
+          "contact_start": 46
+        },
+        {
+          "start": 668,
+          "end": 769,
+          "contact_start": 698
+        }
+      ],
+      "excluded_episodes": [
+        {
+          "start": 161,
+          "end": 257,
+          "contact_start": 191,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.5288765284795328
+        },
+        {
+          "start": 234,
+          "end": 309,
+          "contact_start": 264,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.5919128806230746
+        },
+        {
+          "start": 294,
+          "end": 380,
+          "contact_start": 324,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.5436442730977338
+        },
+        {
+          "start": 362,
+          "end": 451,
+          "contact_start": 392,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.5292871262182326
+        },
+        {
+          "start": 427,
+          "end": 554,
+          "contact_start": 457,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.696865622773475
+        },
+        {
+          "start": 537,
+          "end": 605,
+          "contact_start": 567,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.5301881731406133
+        },
+        {
+          "start": 586,
+          "end": 683,
+          "contact_start": 616,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.6405444534890535
+        },
+        {
+          "start": 747,
+          "end": 872,
+          "contact_start": 777,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.5322086815800835
+        },
+        {
+          "start": 852,
+          "end": 1005,
+          "contact_start": 882,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.5480842132208659
+        }
+      ],
+      "right_contact_frames": 851,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 267,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004149159894844265,
+      "retarget_joint_difference_max_m": 0.012241753952430651,
+      "table_alignment": {
+        "source_table_normal": [
+          0.0021369354611020823,
+          0.0034710505980177966,
+          0.9999916926227843
+        ],
+        "source_table_top_point_m": [
+          0.035312174983563135,
+          -0.7014664533978604,
+          0.7492413347788391
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999977167439337,
+            -3.708720959963909e-06,
+            -0.002136935461102082
+          ],
+          [
+            -3.708720959963909e-06,
+            0.9999939758788506,
+            -0.003471050598017796
+          ],
+          [
+            0.002136935461102082,
+            0.003471050598017796,
+            0.9999916926227843
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9722862316736834,
+          0.5696854953401915,
+          -0.24687574483482055
+        ],
+        "source_table_normal_deviation_median_deg": 0.004228565638012728,
+        "source_table_normal_deviation_max_deg": 12.676646101537951,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_lift.npz",
+      "source_reference_sha256": "8a3b79c7b31f3c9d9f18d32de548cc26d2073bd09248de1ea756daa34f38c3c9",
+      "sha256": "9e050761246f6329171549b793c0ea8966677efd2eedf91716197cc409f77e17",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_lift.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.07472274534421428,
+        "maximum_excess_before_rad": 0.6956402659416199,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s1__mug_lift",
+        "frames": 1062,
+        "naive_clipping_mean_joint_error_mm": 0.8813211461529136,
+        "fitted_mean_joint_error_mm": 0.16053968283813447,
+        "fitted_max_joint_error_mm": 12.478257529437542,
+        "naive_clipping_mean_tip_error_mm": 1.961441244930029,
+        "fitted_mean_tip_error_mm": 0.11355341848684475,
+        "original_proximity_joint_samples": 7318,
+        "fitted_proximity_retention": 0.9968570647717956,
+        "clipped_proximity_retention": 0.9965837660562995,
+        "fitted_mean_contact_distance_change_mm": 0.08548682014818894,
+        "clipped_mean_contact_distance_change_mm": 0.4043074797241256
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0059998035430908,
+        -0.13437752425670624,
+        0.4972594976425171,
+        0.9999969601631165,
+        0.0,
+        0.0,
+        0.0024698928464204073
+      ]
+    },
+    {
+      "clip_id": "s1__mug_offhand_1",
+      "subject": "s1",
+      "split": "train",
+      "action": "offhand",
+      "path": "clips/s1__mug_offhand_1.npz",
+      "nframes": 274,
+      "fps": 30,
+      "episodes": [],
+      "excluded_episodes": [
+        {
+          "start": 111,
+          "end": 163,
+          "contact_start": 111,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.9294687554551017
+        }
+      ],
+      "right_contact_frames": 81,
+      "left_contact_frames": 109,
+      "simultaneous_hand_contact_frames": 29,
+      "rl_supported_frames": 0,
+      "unsupported_reason": "No right-only grasp episode starting with mug on table; retained for refiner and reporting.",
+      "retarget_joint_difference_mean_m": 0.004047731893044351,
+      "retarget_joint_difference_max_m": 0.009678885798848062,
+      "table_alignment": {
+        "source_table_normal": [
+          0.0020722463169640247,
+          0.0034911802745241955,
+          0.9999917586937869
+        ],
+        "source_table_top_point_m": [
+          0.0353248709975429,
+          -0.7014721731501349,
+          0.7492448411605394
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999978528887534,
+            -3.6173076385400657e-06,
+            -0.0020722463169640247
+          ],
+          [
+            -3.6173076385400657e-06,
+            0.9999939058050333,
+            -0.003491180274524195
+          ],
+          [
+            0.0020722463169640247,
+            0.003491180274524195,
+            0.9999917586937868
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9392751856059013,
+          0.6718638393482648,
+          -0.2468629024241672
+        ],
+        "source_table_normal_deviation_median_deg": 0.003324525403729251,
+        "source_table_normal_deviation_max_deg": 12.471070363365605,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_offhand_1.npz",
+      "source_reference_sha256": "4f6df264932a2ec1e3b299b88d5f1adef6878f9208af7f2bcdfeb71b4943b487",
+      "sha256": "c66542557723cb81d41c46a073bd8b87a2edf2f5f5d2c3c435808cab4667954c",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_offhand_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.07639902676399027,
+        "maximum_excess_before_rad": 0.7706672549247742,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s1__mug_offhand_1",
+        "frames": 274,
+        "naive_clipping_mean_joint_error_mm": 1.195813063532114,
+        "fitted_mean_joint_error_mm": 0.2240959438495338,
+        "fitted_max_joint_error_mm": 12.272550724446774,
+        "naive_clipping_mean_tip_error_mm": 2.6357078459113836,
+        "fitted_mean_tip_error_mm": 0.15106484352145344,
+        "original_proximity_joint_samples": 822,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 0.9987834549878345,
+        "fitted_mean_contact_distance_change_mm": 0.009964706300366909,
+        "clipped_mean_contact_distance_change_mm": 0.20946273361242576
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        0.9730498790740967,
+        -0.032219935208559036,
+        0.4972594976425171,
+        0.9999970197677612,
+        0.0,
+        0.0,
+        0.0024499110877513885
+      ]
+    },
+    {
+      "clip_id": "s1__mug_pass_1",
+      "subject": "s1",
+      "split": "train",
+      "action": "pass",
+      "path": "clips/s1__mug_pass_1.npz",
+      "nframes": 234,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 18,
+          "end": 184,
+          "contact_start": 48
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 136,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 166,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.003998370374969552,
+      "retarget_joint_difference_max_m": 0.009837799122221678,
+      "table_alignment": {
+        "source_table_normal": [
+          0.002084893454649866,
+          0.003467464095616155,
+          0.9999918149225164
+        ],
+        "source_table_top_point_m": [
+          0.03532781123628391,
+          -0.7014675771099546,
+          0.7492468530165144
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999978266007467,
+            -3.6146613917335535e-06,
+            -0.002084893454649866
+          ],
+          [
+            -3.6146613917335535e-06,
+            0.9999939883217698,
+            -0.003467464095616155
+          ],
+          [
+            0.002084893454649866,
+            0.003467464095616155,
+            0.9999918149225164
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.0038365450140811,
+          0.6046186354901188,
+          -0.24688206145751412
+        ],
+        "source_table_normal_deviation_median_deg": 0.0034482063008892186,
+        "source_table_normal_deviation_max_deg": 12.331280789933261,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_pass_1.npz",
+      "source_reference_sha256": "1498e27efef324e18c21a1810150871e31f1ec414cf4c79e753fa7f8dc027612",
+      "sha256": "a8cd14787d1b277b5385247a2d6b21289bb4240015bcd93f18808fca6bb63e5d",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_pass_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.07065527065527065,
+        "maximum_excess_before_rad": 0.6115860342979431,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s1__mug_pass_1",
+        "frames": 234,
+        "naive_clipping_mean_joint_error_mm": 1.0444505605846643,
+        "fitted_mean_joint_error_mm": 0.2238295564893633,
+        "fitted_max_joint_error_mm": 12.560256756842136,
+        "naive_clipping_mean_tip_error_mm": 2.3963660933077335,
+        "fitted_mean_tip_error_mm": 0.12959046580363065,
+        "original_proximity_joint_samples": 1259,
+        "fitted_proximity_retention": 0.9984114376489277,
+        "clipped_proximity_retention": 0.9753772835583797,
+        "fitted_mean_contact_distance_change_mm": 0.04798384937726363,
+        "clipped_mean_contact_distance_change_mm": 0.328329629335978
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0376046895980835,
+        -0.09944283962249756,
+        0.4972594976425171,
+        0.9999970197677612,
+        0.0,
+        0.0,
+        0.0024390597827732563
+      ]
+    },
+    {
+      "clip_id": "s1__mug_toast_1",
+      "subject": "s1",
+      "split": "train",
+      "action": "toast",
+      "path": "clips/s1__mug_toast_1.npz",
+      "nframes": 337,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 26,
+          "end": 286,
+          "contact_start": 56
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 230,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 260,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004194713770928771,
+      "retarget_joint_difference_max_m": 0.011379817093018994,
+      "table_alignment": {
+        "source_table_normal": [
+          0.0020138719518156115,
+          0.0035331810891590675,
+          0.9999917304413837
+        ],
+        "source_table_top_point_m": [
+          0.03532172967697397,
+          -0.7014646231626714,
+          0.7492273211021422
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999979721514962,
+            -3.557701858383417e-06,
+            -0.002013871951815611
+          ],
+          [
+            -3.557701858383417e-06,
+            0.9999937582898877,
+            -0.003533181089159067
+          ],
+          [
+            0.002013871951815611,
+            0.003533181089159067,
+            0.9999917304413838
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9595560966805472,
+          0.7232440406078714,
+          -0.2468138572223071
+        ],
+        "source_table_normal_deviation_median_deg": 0.0031463182965688814,
+        "source_table_normal_deviation_max_deg": 12.554606444532315,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s1__mug_toast_1.npz",
+      "source_reference_sha256": "4a3718e7477c5f4a1f7242aee51525054fd1c8ae2bd59b0b33d174ba3536d73a",
+      "sha256": "ff82d9bd8d036896470fefab0d00db95179bb923114d130b4c197c50b5b9c0d7",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s1.zip",
+      "source_member": "s1/mug_toast_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.14177382129904384,
+        "maximum_excess_before_rad": 0.5810706615447998,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s1__mug_toast_1",
+        "frames": 337,
+        "naive_clipping_mean_joint_error_mm": 3.0942109879106283,
+        "fitted_mean_joint_error_mm": 0.6279020453803241,
+        "fitted_max_joint_error_mm": 13.40422872453928,
+        "naive_clipping_mean_tip_error_mm": 6.4558531157672405,
+        "fitted_mean_tip_error_mm": 0.24331643362529576,
+        "original_proximity_joint_samples": 1827,
+        "fitted_proximity_retention": 0.9989053092501369,
+        "clipped_proximity_retention": 0.9983579638752053,
+        "fitted_mean_contact_distance_change_mm": 0.24145897676825143,
+        "clipped_mean_contact_distance_change_mm": 2.5623193101330974
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        0.9933714270591736,
+        0.019136514514684677,
+        0.4972594976425171,
+        0.999997079372406,
+        0.0,
+        0.0,
+        0.002423901343718171
+      ]
+    },
+    {
+      "clip_id": "s2__mug_drink_1",
+      "subject": "s2",
+      "split": "train",
+      "action": "drink",
+      "path": "clips/s2__mug_drink_1.npz",
+      "nframes": 249,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 31,
+          "end": 186,
+          "contact_start": 61
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 125,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 155,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004587553889163231,
+      "retarget_joint_difference_max_m": 0.012729949722506673,
+      "table_alignment": {
+        "source_table_normal": [
+          0.013326292091906364,
+          0.0022326559781395165,
+          0.9999087084261065
+        ],
+        "source_table_top_point_m": [
+          0.13160036981325907,
+          -0.25185419366417927,
+          0.8703893893385904
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999112009162365,
+            -1.4877191933847432e-05,
+            -0.013326292091906364
+          ],
+          [
+            -1.4877191933847432e-05,
+            0.9999975075098699,
+            -0.0022326559781395165
+          ],
+          [
+            0.013326292091906364,
+            0.0022326559781395165,
+            0.9999087084261065
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9127427558912072,
+          0.16782429291099327,
+          -0.37150137131776806
+        ],
+        "source_table_normal_deviation_median_deg": 0.006905327862469965,
+        "source_table_normal_deviation_max_deg": 7.983531202368251,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s2__mug_drink_1.npz",
+      "source_reference_sha256": "9eaa1d93c95e669e646f1a6fb286fc9fe104401ac9f447d075d4ce37bc613081",
+      "sha256": "85ca61e60a596b90adede6721db23da378ffee20638519870ba8d3b29a345902",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s2.zip",
+      "source_member": "s2/mug_drink_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.10825524319500224,
+        "maximum_excess_before_rad": 0.5688008069992065,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s2__mug_drink_1",
+        "frames": 249,
+        "naive_clipping_mean_joint_error_mm": 1.4515971997752786,
+        "fitted_mean_joint_error_mm": 0.2489004109520465,
+        "fitted_max_joint_error_mm": 9.976347908377647,
+        "naive_clipping_mean_tip_error_mm": 3.4865697380155325,
+        "fitted_mean_tip_error_mm": 0.15836337115615606,
+        "original_proximity_joint_samples": 1510,
+        "fitted_proximity_retention": 0.9993377483443708,
+        "clipped_proximity_retention": 0.9993377483443708,
+        "fitted_mean_contact_distance_change_mm": 0.1553127538110418,
+        "clipped_mean_contact_distance_change_mm": 1.108994818490427
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0327361822128296,
+        -0.08597451448440552,
+        0.4972594976425171,
+        0.9999978542327881,
+        0.0,
+        0.0,
+        0.0020576720125973225
+      ]
+    },
+    {
+      "clip_id": "s2__mug_drink_2",
+      "subject": "s2",
+      "split": "train",
+      "action": "drink",
+      "path": "clips/s2__mug_drink_2.npz",
+      "nframes": 286,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 41,
+          "end": 225,
+          "contact_start": 71
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 154,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 184,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004397222632236225,
+      "retarget_joint_difference_max_m": 0.012722634598640014,
+      "table_alignment": {
+        "source_table_normal": [
+          0.013345463928131353,
+          0.002108600481832156,
+          0.9999087220324417
+        ],
+        "source_table_top_point_m": [
+          0.13150364634077785,
+          -0.25191919042116895,
+          0.8703890146549543
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999109452319023,
+            -1.4070768010118691e-05,
+            -0.013345463928131355
+          ],
+          [
+            -1.4070768010118691e-05,
+            0.9999977768005394,
+            -0.002108600481832156
+          ],
+          [
+            0.013345463928131355,
+            0.002108600481832156,
+            0.9999087220324417
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.896200633387304,
+          0.23633905112771997,
+          -0.37153334755706535
+        ],
+        "source_table_normal_deviation_median_deg": 0.0050213580330829705,
+        "source_table_normal_deviation_max_deg": 7.635571684238571,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s2__mug_drink_2.npz",
+      "source_reference_sha256": "2a123d8f2e3bfeb6395c4f77a77525933190716cda2df4e26bb584609a7ec34a",
+      "sha256": "498b89d0ce204c32cd599d5b6c6ef5e1707e68450e52697c0131a29d4e96dd5d",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s2.zip",
+      "source_member": "s2/mug_drink_2.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.16293706293706295,
+        "maximum_excess_before_rad": 1.0593291521072388,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s2__mug_drink_2",
+        "frames": 286,
+        "naive_clipping_mean_joint_error_mm": 3.54285491630435,
+        "fitted_mean_joint_error_mm": 0.8580844150856137,
+        "fitted_max_joint_error_mm": 22.038569673895836,
+        "naive_clipping_mean_tip_error_mm": 7.482931483536959,
+        "fitted_mean_tip_error_mm": 0.5663424381054938,
+        "original_proximity_joint_samples": 1115,
+        "fitted_proximity_retention": 0.9847533632286996,
+        "clipped_proximity_retention": 0.9937219730941704,
+        "fitted_mean_contact_distance_change_mm": 0.4706085959557302,
+        "clipped_mean_contact_distance_change_mm": 1.900055877584251
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.016080379486084,
+        -0.017416732385754585,
+        0.4972594976425171,
+        0.9999978542327881,
+        0.0,
+        0.0,
+        0.002079956466332078
+      ]
+    },
+    {
+      "clip_id": "s2__mug_lift",
+      "subject": "s2",
+      "split": "train",
+      "action": "lift",
+      "path": "clips/s2__mug_lift.npz",
+      "nframes": 502,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 29,
+          "end": 159,
+          "contact_start": 59
+        },
+        {
+          "start": 201,
+          "end": 284,
+          "contact_start": 231
+        },
+        {
+          "start": 270,
+          "end": 339,
+          "contact_start": 300
+        }
+      ],
+      "excluded_episodes": [
+        {
+          "start": 137,
+          "end": 212,
+          "contact_start": 167,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.5642252976815137
+        },
+        {
+          "start": 323,
+          "end": 356,
+          "contact_start": 353,
+          "reason": "right_only_contact_shorter_than_0.5_seconds"
+        }
+      ],
+      "right_contact_frames": 336,
+      "left_contact_frames": 97,
+      "simultaneous_hand_contact_frames": 96,
+      "rl_supported_frames": 268,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.00450013763553661,
+      "retarget_joint_difference_max_m": 0.015093623333079117,
+      "table_alignment": {
+        "source_table_normal": [
+          0.0131608498348881,
+          0.0021037228630761216,
+          0.9999111792463063
+        ],
+        "source_table_top_point_m": [
+          0.13149121609676526,
+          -0.2519456999781896,
+          0.8703897677679454
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999133921695254,
+            -1.3844005165069297e-05,
+            -0.0131608498348881
+          ],
+          [
+            -1.3844005165069297e-05,
+            0.9999977870767809,
+            -0.002103722863076121
+          ],
+          [
+            0.0131608498348881,
+            0.002103722863076121,
+            0.9999111792463062
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9209643114190678,
+          0.23419596191038594,
+          -0.37151297131312344
+        ],
+        "source_table_normal_deviation_median_deg": 0.005745934384438647,
+        "source_table_normal_deviation_max_deg": 7.39111173803621,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s2__mug_lift.npz",
+      "source_reference_sha256": "106a0bd830ae2e7b7e5aee537f8f1919e82b3de5affd827ad7bac8570b3ab106",
+      "sha256": "eab65f0687650549a80173f43d51bcd31ee77d84a2facdcc11ad854be3f46642",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s2.zip",
+      "source_member": "s2/mug_lift.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.1355909694555113,
+        "maximum_excess_before_rad": 2.6162734031677246,
+        "equivalent_branch_replacements": 20,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s2__mug_lift",
+        "frames": 502,
+        "naive_clipping_mean_joint_error_mm": 2.6611469220370054,
+        "fitted_mean_joint_error_mm": 0.4029007686767727,
+        "fitted_max_joint_error_mm": 23.169830441474915,
+        "naive_clipping_mean_tip_error_mm": 5.781003274023533,
+        "fitted_mean_tip_error_mm": 0.3002153825946152,
+        "original_proximity_joint_samples": 3254,
+        "fitted_proximity_retention": 0.9953902888752305,
+        "clipped_proximity_retention": 0.9631223110018439,
+        "fitted_mean_contact_distance_change_mm": 0.3308872684001685,
+        "clipped_mean_contact_distance_change_mm": 1.929271146441121
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0409926176071167,
+        -0.019582059234380722,
+        0.4972594976425171,
+        0.9999979138374329,
+        0.0,
+        0.0,
+        0.0020428502466529608
+      ]
+    },
+    {
+      "clip_id": "s2__mug_pass_1",
+      "subject": "s2",
+      "split": "train",
+      "action": "pass",
+      "path": "clips/s2__mug_pass_1.npz",
+      "nframes": 259,
+      "fps": 30,
+      "episodes": [],
+      "excluded_episodes": [
+        {
+          "start": 86,
+          "end": 159,
+          "contact_start": 86,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.6741834771023821
+        },
+        {
+          "start": 187,
+          "end": 188,
+          "contact_start": 187,
+          "reason": "right_only_contact_shorter_than_0.5_seconds"
+        }
+      ],
+      "right_contact_frames": 113,
+      "left_contact_frames": 53,
+      "simultaneous_hand_contact_frames": 39,
+      "rl_supported_frames": 0,
+      "unsupported_reason": "No right-only grasp episode starting with mug on table; retained for refiner and reporting.",
+      "retarget_joint_difference_mean_m": 0.0046706091961293975,
+      "retarget_joint_difference_max_m": 0.012650462360753607,
+      "table_alignment": {
+        "source_table_normal": [
+          0.013286170347919152,
+          0.002114588462003629,
+          0.9999094990013458
+        ],
+        "source_table_top_point_m": [
+          0.1314788136272291,
+          -0.2519233522604167,
+          0.870398204006656
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999117348447008,
+            -1.4048026941195936e-05,
+            -0.013286170347919152
+          ],
+          [
+            -1.4048026941195936e-05,
+            0.9999977641566452,
+            -0.0021145884620036286
+          ],
+          [
+            0.013286170347919152,
+            0.0021145884620036286,
+            0.9999094990013458
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.913119400163927,
+          0.2202977442084978,
+          -0.37153356780096114
+        ],
+        "source_table_normal_deviation_median_deg": 0.005008300507661351,
+        "source_table_normal_deviation_max_deg": 7.233376736109441,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s2__mug_pass_1.npz",
+      "source_reference_sha256": "f4e9b66c243156242dacf5e0ce9e8ead4edd04f6562258d6f8c78db6949c89fc",
+      "sha256": "c745e68a671cc205be250fc6b1da5ca3eb1a70b6af1965721e81e78b7ab6ab97",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s2.zip",
+      "source_member": "s2/mug_pass_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.07378807378807378,
+        "maximum_excess_before_rad": 0.45798152685165405,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s2__mug_pass_1",
+        "frames": 259,
+        "naive_clipping_mean_joint_error_mm": 0.8090721094049513,
+        "fitted_mean_joint_error_mm": 0.1139266460086219,
+        "fitted_max_joint_error_mm": 9.573877789080143,
+        "naive_clipping_mean_tip_error_mm": 2.0161219872534275,
+        "fitted_mean_tip_error_mm": 0.0835187966004014,
+        "original_proximity_joint_samples": 1191,
+        "fitted_proximity_retention": 0.9991603694374476,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.010167691915526824,
+        "clipped_mean_contact_distance_change_mm": 0.42111242198275123
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.033025860786438,
+        -0.033467426896095276,
+        0.4972594976425171,
+        0.9999977946281433,
+        0.0,
+        0.0,
+        0.002106820000335574
+      ]
+    },
+    {
+      "clip_id": "s2__mug_toast_1",
+      "subject": "s2",
+      "split": "train",
+      "action": "toast",
+      "path": "clips/s2__mug_toast_1.npz",
+      "nframes": 239,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 34,
+          "end": 175,
+          "contact_start": 64
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 111,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 141,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.0046952828688758864,
+      "retarget_joint_difference_max_m": 0.012742154383823765,
+      "table_alignment": {
+        "source_table_normal": [
+          0.013325667601956743,
+          0.002108957132092471,
+          0.9999089852995506
+        ],
+        "source_table_top_point_m": [
+          0.1315036557412761,
+          -0.25191649184119397,
+          0.8703947153964317
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999112092508493,
+            -1.4052270346108219e-05,
+            -0.013325667601956744
+          ],
+          [
+            -1.4052270346108219e-05,
+            0.9999977760487013,
+            -0.002108957132092471
+          ],
+          [
+            0.013325667601956744,
+            0.002108957132092471,
+            0.9999089852995506
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.900383513261082,
+          0.2490315189435332,
+          -0.3715365896048274
+        ],
+        "source_table_normal_deviation_median_deg": 0.004401306468457733,
+        "source_table_normal_deviation_max_deg": 7.226457381816901,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s2__mug_toast_1.npz",
+      "source_reference_sha256": "9647437fac84578655c04bcd6ed0dc11d5a08fcb9e460f1b93f65fa93b6956d9",
+      "sha256": "9afba3ebd7cad26557d654039d56e85459ee6aa2b8a190e956b7b37aaaaeb9fc",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s2.zip",
+      "source_member": "s2/mug_toast_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.08228730822873083,
+        "maximum_excess_before_rad": 0.45130079984664917,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s2__mug_toast_1",
+        "frames": 239,
+        "naive_clipping_mean_joint_error_mm": 0.8199704461731017,
+        "fitted_mean_joint_error_mm": 0.13899597979616374,
+        "fitted_max_joint_error_mm": 8.636919781565666,
+        "naive_clipping_mean_tip_error_mm": 1.9995153415948153,
+        "fitted_mean_tip_error_mm": 0.10259006376145408,
+        "original_proximity_joint_samples": 1290,
+        "fitted_proximity_retention": 0.9992248062015504,
+        "clipped_proximity_retention": 0.9968992248062015,
+        "fitted_mean_contact_distance_change_mm": 0.029546339050673154,
+        "clipped_mean_contact_distance_change_mm": 0.47104024298651664
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0202804803848267,
+        -0.004721885547041893,
+        0.4972594976425171,
+        0.9999978542327881,
+        0.0,
+        0.0,
+        0.002074387390166521
+      ]
+    },
+    {
+      "clip_id": "s3__mug_drink_1",
+      "subject": "s3",
+      "split": "train",
+      "action": "drink",
+      "path": "clips/s3__mug_drink_1.npz",
+      "nframes": 239,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 20,
+          "end": 156,
+          "contact_start": 50
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 106,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 136,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.00803021757236253,
+      "retarget_joint_difference_max_m": 0.014199234675692358,
+      "table_alignment": {
+        "source_table_normal": [
+          0.016911002621065582,
+          0.006035055654557064,
+          0.9998387850516687
+        ],
+        "source_table_top_point_m": [
+          -0.0895616302719217,
+          -0.6714945887423476,
+          0.8268984727842367
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998569974681022,
+            -5.103353468057393e-05,
+            -0.01691100262106558
+          ],
+          [
+            -5.103353468057393e-05,
+            0.9999817875835662,
+            -0.006035055654557064
+          ],
+          [
+            0.01691100262106558,
+            0.006035055654557064,
+            0.9998387850516685
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.118535620625745,
+          0.6771066847685886,
+          -0.32119808021060203
+        ],
+        "source_table_normal_deviation_median_deg": 0.00455409864529983,
+        "source_table_normal_deviation_max_deg": 0.020701934622995678,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s3__mug_drink_1.npz",
+      "source_reference_sha256": "4f04a14c00e3df0990f71279773e1faa0342ea2cc622f30fdf13d6bc91245148",
+      "sha256": "9c0485eaa96663aecf96384f9a7dd5b658a746ff5e6061feb36df26566756303",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s3.zip",
+      "source_member": "s3/mug_drink_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.0795908879590888,
+        "maximum_excess_before_rad": 0.4533483386039734,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s3__mug_drink_1",
+        "frames": 239,
+        "naive_clipping_mean_joint_error_mm": 1.3550794683396816,
+        "fitted_mean_joint_error_mm": 0.28815268888138235,
+        "fitted_max_joint_error_mm": 8.365219458937645,
+        "naive_clipping_mean_tip_error_mm": 3.10138170607388,
+        "fitted_mean_tip_error_mm": 0.15487245400436223,
+        "original_proximity_joint_samples": 1476,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 0.9986449864498645,
+        "fitted_mean_contact_distance_change_mm": 0.22384614897380528,
+        "clipped_mean_contact_distance_change_mm": 0.705451513332166
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0150374174118042,
+        0.0006385179003700614,
+        0.4972594976425171,
+        0.9996160268783569,
+        0.0,
+        0.0,
+        -0.02771003358066082
+      ]
+    },
+    {
+      "clip_id": "s3__mug_drink_2",
+      "subject": "s3",
+      "split": "train",
+      "action": "drink",
+      "path": "clips/s3__mug_drink_2.npz",
+      "nframes": 206,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 20,
+          "end": 148,
+          "contact_start": 50
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 98,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 128,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.00748898085893436,
+      "retarget_joint_difference_max_m": 0.01416294211845538,
+      "table_alignment": {
+        "source_table_normal": [
+          0.01698283508132423,
+          0.006063354228325515,
+          0.9998373963040703
+        ],
+        "source_table_top_point_m": [
+          -0.08956570512215715,
+          -0.6714904748172315,
+          0.8268995461402382
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998557799309422,
+            -5.1490658735359185e-05,
+            -0.01698283508132423
+          ],
+          [
+            -5.1490658735359185e-05,
+            0.9999816163731281,
+            -0.006063354228325514
+          ],
+          [
+            0.01698283508132423,
+            0.006063354228325514,
+            0.9998373963040703
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.1504083780300174,
+          0.6594863329086182,
+          -0.3211725250090778
+        ],
+        "source_table_normal_deviation_median_deg": 0.004335816608890536,
+        "source_table_normal_deviation_max_deg": 0.01726293034865033,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s3__mug_drink_2.npz",
+      "source_reference_sha256": "4744090073d5546133f163fdfd52512bd073bce57d22c73c3686d07623ce975d",
+      "sha256": "54fc3e08ba5a4d288e48da59286136a539fa92f9ed19e61750e37c9303983ad8",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s3.zip",
+      "source_member": "s3/mug_drink_2.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.15846817691477885,
+        "maximum_excess_before_rad": 0.8015915155410767,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s3__mug_drink_2",
+        "frames": 206,
+        "naive_clipping_mean_joint_error_mm": 3.4159820061177015,
+        "fitted_mean_joint_error_mm": 1.5258844941854477,
+        "fitted_max_joint_error_mm": 19.536184147000313,
+        "naive_clipping_mean_tip_error_mm": 7.14049581438303,
+        "fitted_mean_tip_error_mm": 1.7258247826248407,
+        "original_proximity_joint_samples": 1048,
+        "fitted_proximity_retention": 0.9675572519083969,
+        "clipped_proximity_retention": 0.8282442748091603,
+        "fitted_mean_contact_distance_change_mm": 1.9814562810016512,
+        "clipped_mean_contact_distance_change_mm": 4.405682348444637
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0468471050262451,
+        -0.017000971361994743,
+        0.4972594976425171,
+        0.9996156096458435,
+        0.0,
+        0.0,
+        -0.0277249813079834
+      ]
+    },
+    {
+      "clip_id": "s3__mug_drink_3",
+      "subject": "s3",
+      "split": "train",
+      "action": "drink",
+      "path": "clips/s3__mug_drink_3.npz",
+      "nframes": 229,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 22,
+          "end": 161,
+          "contact_start": 52
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 109,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 139,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.007454861224144652,
+      "retarget_joint_difference_max_m": 0.013926311331127844,
+      "table_alignment": {
+        "source_table_normal": [
+          0.01692127553399415,
+          0.0060380078074462286,
+          0.9998385934219682
+        ],
+        "source_table_top_point_m": [
+          -0.08955953737062974,
+          -0.6715000528617969,
+          0.8269042073025875
+        ],
+        "world_to_training_rotation": [
+          [
+            0.99985682366235,
+            -5.1089519985399836e-05,
+            -0.01692127553399415
+          ],
+          [
+            -5.1089519985399836e-05,
+            0.9999817697596183,
+            -0.006038007807446229
+          ],
+          [
+            0.01692127553399415,
+            0.006038007807446229,
+            0.9998385934219682
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.173903286856357,
+          0.6440436473268376,
+          -0.3212007553537012
+        ],
+        "source_table_normal_deviation_median_deg": 0.004935362477461366,
+        "source_table_normal_deviation_max_deg": 0.02105880948943426,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s3__mug_drink_3.npz",
+      "source_reference_sha256": "22aeb24f2628acb285074e5df11515da41bc3552dd63aeeaccad3bdb9de52c29",
+      "sha256": "400d28516cca4f873440f0d83996376b7a414d06cbbd0540f4c23ca2a63120c8",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s3.zip",
+      "source_member": "s3/mug_drink_3.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.12091217855409996,
+        "maximum_excess_before_rad": 0.34865081310272217,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s3__mug_drink_3",
+        "frames": 229,
+        "naive_clipping_mean_joint_error_mm": 1.4235698617994785,
+        "fitted_mean_joint_error_mm": 0.08205798076232895,
+        "fitted_max_joint_error_mm": 2.329921815544367,
+        "naive_clipping_mean_tip_error_mm": 3.262587822973728,
+        "fitted_mean_tip_error_mm": 0.06471919914474711,
+        "original_proximity_joint_samples": 952,
+        "fitted_proximity_retention": 0.9957983193277311,
+        "clipped_proximity_retention": 0.9548319327731093,
+        "fitted_mean_contact_distance_change_mm": 0.06403558524787246,
+        "clipped_mean_contact_distance_change_mm": 1.221341821718321
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0703985691070557,
+        -0.0324324406683445,
+        0.4972594976425171,
+        0.9996157884597778,
+        0.0,
+        0.0,
+        -0.027718493714928627
+      ]
+    },
+    {
+      "clip_id": "s3__mug_drink_4",
+      "subject": "s3",
+      "split": "train",
+      "action": "drink",
+      "path": "clips/s3__mug_drink_4.npz",
+      "nframes": 226,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 27,
+          "end": 169,
+          "contact_start": 57
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 112,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 142,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.008278044255640082,
+      "retarget_joint_difference_max_m": 0.014311165008342409,
+      "table_alignment": {
+        "source_table_normal": [
+          0.01697804547282199,
+          0.006042216047065894,
+          0.9998376056126131
+        ],
+        "source_table_top_point_m": [
+          -0.08955564577629029,
+          -0.6714981669147153,
+          0.8268959559126047
+        ],
+        "world_to_training_rotation": [
+          [
+            0.999855861282302,
+            -5.129667454786885e-05,
+            -0.01697804547282199
+          ],
+          [
+            -5.129667454786885e-05,
+            0.9999817443303111,
+            -0.006042216047065895
+          ],
+          [
+            0.01697804547282199,
+            0.006042216047065895,
+            0.9998376056126131
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.1579958036320463,
+          0.6326474324982113,
+          -0.32118385582436637
+        ],
+        "source_table_normal_deviation_median_deg": 0.005528571826738947,
+        "source_table_normal_deviation_max_deg": 0.013190442671314192,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s3__mug_drink_4.npz",
+      "source_reference_sha256": "694c86758ea295f3151c58f1138de7efb39f0c7563dbb1255db05f65c691a46f",
+      "sha256": "94ede5a033906856f02937ba3383e040c7b190968b21a4263309bb83ff97fcf5",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s3.zip",
+      "source_member": "s3/mug_drink_4.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.0895771878072763,
+        "maximum_excess_before_rad": 0.7142495512962341,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s3__mug_drink_4",
+        "frames": 226,
+        "naive_clipping_mean_joint_error_mm": 1.9372759852558374,
+        "fitted_mean_joint_error_mm": 0.33141890889965,
+        "fitted_max_joint_error_mm": 9.438811801373959,
+        "naive_clipping_mean_tip_error_mm": 4.467666149139404,
+        "fitted_mean_tip_error_mm": 0.17217716958839446,
+        "original_proximity_joint_samples": 488,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 0.9959016393442623,
+        "fitted_mean_contact_distance_change_mm": 0.013334479121229604,
+        "clipped_mean_contact_distance_change_mm": 0.24043974176691754
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0544484853744507,
+        -0.04383016750216484,
+        0.4972594976425171,
+        0.9996156692504883,
+        0.0,
+        0.0,
+        -0.02772183157503605
+      ]
+    },
+    {
+      "clip_id": "s3__mug_offhand_1",
+      "subject": "s3",
+      "split": "train",
+      "action": "offhand",
+      "path": "clips/s3__mug_offhand_1.npz",
+      "nframes": 246,
+      "fps": 30,
+      "episodes": [],
+      "excluded_episodes": [
+        {
+          "start": 96,
+          "end": 173,
+          "contact_start": 96,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.8065860856705437
+        }
+      ],
+      "right_contact_frames": 93,
+      "left_contact_frames": 39,
+      "simultaneous_hand_contact_frames": 16,
+      "rl_supported_frames": 0,
+      "unsupported_reason": "No right-only grasp episode starting with mug on table; retained for refiner and reporting.",
+      "retarget_joint_difference_mean_m": 0.007700087024966932,
+      "retarget_joint_difference_max_m": 0.014308819982824468,
+      "table_alignment": {
+        "source_table_normal": [
+          0.016975478369568205,
+          0.006084996629927724,
+          0.999837389754023
+        ],
+        "source_table_top_point_m": [
+          -0.0895679361365944,
+          -0.6714969366295205,
+          0.8268834448246157
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998559048513884,
+            -5.165206391252577e-05,
+            -0.016975478369568205
+          ],
+          [
+            -5.165206391252577e-05,
+            0.9999814849026347,
+            -0.006084996629927724
+          ],
+          [
+            0.016975478369568205,
+            0.006084996629927724,
+            0.999837389754023
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.149692294064179,
+          0.6597959745179602,
+          -0.32114246994536744
+        ],
+        "source_table_normal_deviation_median_deg": 0.005839299447765477,
+        "source_table_normal_deviation_max_deg": 0.02830321110094334,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s3__mug_offhand_1.npz",
+      "source_reference_sha256": "d9ed93e8d846faa3199310cb46736937aabec088da52937fdcc2eafd79064efb",
+      "sha256": "375846ddd34d782e9e17208a8c834014b756cd158088ab58bc8ea81e097a5bbd",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s3.zip",
+      "source_member": "s3/mug_offhand_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.13197831978319782,
+        "maximum_excess_before_rad": 2.716132402420044,
+        "equivalent_branch_replacements": 13,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s3__mug_offhand_1",
+        "frames": 246,
+        "naive_clipping_mean_joint_error_mm": 2.691752975806594,
+        "fitted_mean_joint_error_mm": 0.7239764090627432,
+        "fitted_max_joint_error_mm": 15.199491754174232,
+        "naive_clipping_mean_tip_error_mm": 5.75836468487978,
+        "fitted_mean_tip_error_mm": 0.6189379491843283,
+        "original_proximity_joint_samples": 933,
+        "fitted_proximity_retention": 0.9389067524115756,
+        "clipped_proximity_retention": 0.8252947481243301,
+        "fitted_mean_contact_distance_change_mm": 1.6260752783921943,
+        "clipped_mean_contact_distance_change_mm": 6.193098707654443
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0461351871490479,
+        -0.016715485602617264,
+        0.4972594976425171,
+        0.999615490436554,
+        0.0,
+        0.0,
+        -0.027727965265512466
+      ]
+    },
+    {
+      "clip_id": "s3__mug_pass_1",
+      "subject": "s3",
+      "split": "train",
+      "action": "pass",
+      "path": "clips/s3__mug_pass_1.npz",
+      "nframes": 283,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 28,
+          "end": 157,
+          "contact_start": 58
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 99,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 129,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.008021294346561361,
+      "retarget_joint_difference_max_m": 0.014211469972019414,
+      "table_alignment": {
+        "source_table_normal": [
+          0.016870074600239867,
+          0.006092242876805722,
+          0.9998391296402198
+        ],
+        "source_table_top_point_m": [
+          -0.08957592154998124,
+          -0.6715033793950472,
+          0.826896290768163
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998576888446677,
+            -5.139242966657146e-05,
+            -0.016870074600239867
+          ],
+          [
+            -5.139242966657146e-05,
+            0.9999814407955521,
+            -0.006092242876805723
+          ],
+          [
+            0.016870074600239867,
+            0.006092242876805723,
+            0.9998391296402198
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.1541783689433014,
+          0.6527500130721783,
+          -0.3211611535055623
+        ],
+        "source_table_normal_deviation_median_deg": 0.004770369906464652,
+        "source_table_normal_deviation_max_deg": 0.017337727453341605,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s3__mug_pass_1.npz",
+      "source_reference_sha256": "e987f2fde04a6139e20d7b04e47f0ba0246136da363bee90e6dea9d1d79474e1",
+      "sha256": "68bc724f18ef1ca49ece3be5cb15be53845adfe38c3dc5a29c9df2b0fa98f93f",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s3.zip",
+      "source_member": "s3/mug_pass_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.08661170003926187,
+        "maximum_excess_before_rad": 0.5945421457290649,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s3__mug_pass_1",
+        "frames": 283,
+        "naive_clipping_mean_joint_error_mm": 0.9752623736858368,
+        "fitted_mean_joint_error_mm": 0.1724294706946239,
+        "fitted_max_joint_error_mm": 5.214941222220659,
+        "naive_clipping_mean_tip_error_mm": 2.7401677798479795,
+        "fitted_mean_tip_error_mm": 0.08970743510872126,
+        "original_proximity_joint_samples": 1137,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.013413381336052247,
+        "clipped_mean_contact_distance_change_mm": 0.36172136562774587
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0506999492645264,
+        -0.023773953318595886,
+        0.4972594976425171,
+        0.9996151328086853,
+        0.0,
+        0.0,
+        -0.027741942554712296
+      ]
+    },
+    {
+      "clip_id": "s4__mug_drink_2",
+      "subject": "s4",
+      "split": "train",
+      "action": "drink",
+      "path": "clips/s4__mug_drink_2.npz",
+      "nframes": 181,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 48,
+          "end": 142,
+          "contact_start": 48
+        }
+      ],
+      "excluded_episodes": [
+        {
+          "start": 2,
+          "end": 35,
+          "contact_start": 32,
+          "reason": "right_only_contact_shorter_than_0.5_seconds"
+        }
+      ],
+      "right_contact_frames": 110,
+      "left_contact_frames": 13,
+      "simultaneous_hand_contact_frames": 13,
+      "rl_supported_frames": 94,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.008222194815034271,
+      "retarget_joint_difference_max_m": 0.014095976207299167,
+      "table_alignment": {
+        "source_table_normal": [
+          0.015115845699168136,
+          0.004506449477902984,
+          0.9998755938225025
+        ],
+        "source_table_top_point_m": [
+          0.026379230753486495,
+          -0.2634551532514582,
+          0.8476265797391542
+        ],
+        "world_to_training_rotation": [
+          [
+            0.999885748497603,
+            -3.406151621105494e-05,
+            -0.015115845699168134
+          ],
+          [
+            -3.406151621105494e-05,
+            0.9999898453248993,
+            -0.004506449477902983
+          ],
+          [
+            0.015115845699168134,
+            0.004506449477902983,
+            0.9998755938225025
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.0126486059972903,
+          0.22191105466245115,
+          -0.3467326268003351
+        ],
+        "source_table_normal_deviation_median_deg": 0.002500456460897392,
+        "source_table_normal_deviation_max_deg": 0.04985313444274952,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s4__mug_drink_2.npz",
+      "source_reference_sha256": "5ab9d1c5b76557aeb0b9b6a911055ac0161b972cfc3fc0aeb40b8b069cfb8391",
+      "sha256": "317d7125aac0eb7a2b2235b6481b6cccdac0e61426f6d84d3c867bd305d35495",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s4.zip",
+      "source_member": "s4/mug_drink_2.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 0.994475138121547,
+        "out_of_bounds_coordinate_fraction_before": 0.05979128299570288,
+        "maximum_excess_before_rad": 0.3306657671928406,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s4__mug_drink_2",
+        "frames": 181,
+        "naive_clipping_mean_joint_error_mm": 0.7593024056404829,
+        "fitted_mean_joint_error_mm": 0.08006490679690614,
+        "fitted_max_joint_error_mm": 3.9941295981407166,
+        "naive_clipping_mean_tip_error_mm": 1.783530111424625,
+        "fitted_mean_tip_error_mm": 0.06576158193638548,
+        "original_proximity_joint_samples": 1215,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.07065716239776608,
+        "clipped_mean_contact_distance_change_mm": 0.5039275972370271
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0262211561203003,
+        -0.04536210745573044,
+        0.4972594976425171,
+        0.9999934434890747,
+        0.0,
+        0.0,
+        0.0036179726012051105
+      ]
+    },
+    {
+      "clip_id": "s4__mug_pass_1",
+      "subject": "s4",
+      "split": "train",
+      "action": "pass",
+      "path": "clips/s4__mug_pass_1.npz",
+      "nframes": 156,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 0,
+          "end": 111,
+          "contact_start": 26
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 85,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 111,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.007619356815185308,
+      "retarget_joint_difference_max_m": 0.014142629802468366,
+      "table_alignment": {
+        "source_table_normal": [
+          0.015115969617357393,
+          0.004501503072011178,
+          0.9998756142304
+        ],
+        "source_table_top_point_m": [
+          0.026381112202101636,
+          -0.26346910464498685,
+          0.8476336121775081
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998857466255165,
+            -3.4024407910562544e-05,
+            -0.015115969617357394
+          ],
+          [
+            -3.4024407910562544e-05,
+            0.9999898676048834,
+            -0.004501503072011178
+          ],
+          [
+            0.015115969617357394,
+            0.004501503072011178,
+            0.9998756142304001
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.0182005785157848,
+          0.23959439640330835,
+          -0.3467409477248983
+        ],
+        "source_table_normal_deviation_median_deg": 0.002527287392447238,
+        "source_table_normal_deviation_max_deg": 0.012413970336083307,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s4__mug_pass_1.npz",
+      "source_reference_sha256": "2d6fb404e029368860c39916f653aa5dcac4e1c5e70eea5953e27a2714fd042c",
+      "sha256": "6fcfa4fa2105b3fcc19e7204d46bb80ec1afb4ff5cb4aa98001a3f388ed7a41f",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s4.zip",
+      "source_member": "s4/mug_pass_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.0707977207977208,
+        "maximum_excess_before_rad": 0.24908123910427094,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s4__mug_pass_1",
+        "frames": 156,
+        "naive_clipping_mean_joint_error_mm": 0.3629035782068968,
+        "fitted_mean_joint_error_mm": 0.03319541065138765,
+        "fitted_max_joint_error_mm": 1.7659422010183334,
+        "naive_clipping_mean_tip_error_mm": 1.1658513685688376,
+        "fitted_mean_tip_error_mm": 0.031068142561707646,
+        "original_proximity_joint_samples": 634,
+        "fitted_proximity_retention": 0.998422712933754,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.023991250674453048,
+        "clipped_mean_contact_distance_change_mm": 0.14911437953462844
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.031774878501892,
+        -0.027688561007380486,
+        0.4972594976425171,
+        0.9999935626983643,
+        0.0,
+        0.0,
+        0.0035955372732132673
+      ]
+    },
+    {
+      "clip_id": "s5__mug_drink_1",
+      "subject": "s5",
+      "split": "validation",
+      "action": "drink",
+      "path": "clips/s5__mug_drink_1.npz",
+      "nframes": 182,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 12,
+          "end": 131,
+          "contact_start": 42
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 89,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 119,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.008497009799442781,
+      "retarget_joint_difference_max_m": 0.014920149944810378,
+      "table_alignment": {
+        "source_table_normal": [
+          0.009669343531433307,
+          -0.0006406794829237731,
+          0.999953045560376
+        ],
+        "source_table_top_point_m": [
+          -0.023546260575829987,
+          -0.23754843761246694,
+          0.7387828961637924
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999532508002943,
+            3.0975477287744163e-06,
+            -0.009669343531433304
+          ],
+          [
+            3.0975477287744163e-06,
+            0.9999997947600815,
+            0.000640679482923773
+          ],
+          [
+            0.009669343531433304,
+            -0.000640679482923773,
+            0.9999530455603759
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.072421172718211,
+          0.11931776738940303,
+          -0.23867272255468974
+        ],
+        "source_table_normal_deviation_median_deg": 0.004578164588827538,
+        "source_table_normal_deviation_max_deg": 0.014082301933109838,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s5__mug_drink_1.npz",
+      "source_reference_sha256": "de4a55508678c450145a4f1b8bcdd78aa47d51f55f559af0857d90eaf741cca2",
+      "sha256": "ca3978b37a200269e78c4d4e7bc967f72592a0916a577c972814e48537cba31b",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s5.zip",
+      "source_member": "s5/mug_drink_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.11330891330891331,
+        "maximum_excess_before_rad": 0.9593154788017273,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s5__mug_drink_1",
+        "frames": 182,
+        "naive_clipping_mean_joint_error_mm": 2.1778682712465525,
+        "fitted_mean_joint_error_mm": 1.334009924903512,
+        "fitted_max_joint_error_mm": 23.11561070382595,
+        "naive_clipping_mean_tip_error_mm": 4.209098406136036,
+        "fitted_mean_tip_error_mm": 1.5384025173261762,
+        "original_proximity_joint_samples": 985,
+        "fitted_proximity_retention": 0.9989847715736041,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.3575780448497154,
+        "clipped_mean_contact_distance_change_mm": 0.656350676660989
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0417317152023315,
+        -0.11775737255811691,
+        0.4972594976425171,
+        0.9993090629577637,
+        0.0,
+        0.0,
+        0.03716719150543213
+      ]
+    },
+    {
+      "clip_id": "s5__mug_pass_1",
+      "subject": "s5",
+      "split": "validation",
+      "action": "pass",
+      "path": "clips/s5__mug_pass_1.npz",
+      "nframes": 202,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 29,
+          "end": 142,
+          "contact_start": 59
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 83,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 113,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.008606282228976544,
+      "retarget_joint_difference_max_m": 0.014919027279385256,
+      "table_alignment": {
+        "source_table_normal": [
+          0.009693346416356415,
+          -0.0006508653300372406,
+          0.9999528065911784
+        ],
+        "source_table_top_point_m": [
+          -0.02353952973109923,
+          -0.2375485878120985,
+          0.7387936532513908
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9999530184090155,
+            3.1546059955287697e-06,
+            -0.009693346416356415
+          ],
+          [
+            3.1546059955287697e-06,
+            0.999999788182163,
+            0.0006508653300372406
+          ],
+          [
+            0.009693346416356415,
+            -0.0006508653300372406,
+            0.9999528065911785
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.0869530393158287,
+          0.2069884004777458,
+          -0.23868522238432266
+        ],
+        "source_table_normal_deviation_median_deg": 0.00428852249290201,
+        "source_table_normal_deviation_max_deg": 0.01617166727366411,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s5__mug_pass_1.npz",
+      "source_reference_sha256": "5175623e55c285f6079fc2cc81b36c5efdf8d21a74f84bbe15aa923d4d0173fd",
+      "sha256": "ba94eae1d83613b89ce7d6b82e8f9cad1c60064377ddb83bd545cf14b2daaa81",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s5.zip",
+      "source_member": "s5/mug_pass_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.04378437843784379,
+        "maximum_excess_before_rad": 0.3229278326034546,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s5__mug_pass_1",
+        "frames": 202,
+        "naive_clipping_mean_joint_error_mm": 0.5916453083045781,
+        "fitted_mean_joint_error_mm": 0.02838981890818104,
+        "fitted_max_joint_error_mm": 5.80013869330287,
+        "naive_clipping_mean_tip_error_mm": 1.4701546169817448,
+        "fitted_mean_tip_error_mm": 0.02826438685588073,
+        "original_proximity_joint_samples": 852,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.009253108389122055,
+        "clipped_mean_contact_distance_change_mm": 0.07370452582196572
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0562524795532227,
+        -0.030079355463385582,
+        0.4972594976425171,
+        0.9993078708648682,
+        0.0,
+        0.0,
+        0.037199925631284714
+      ]
+    },
+    {
+      "clip_id": "s5__mug_toast_1",
+      "subject": "s5",
+      "split": "validation",
+      "action": "toast",
+      "path": "clips/s5__mug_toast_1.npz",
+      "nframes": 201,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 25,
+          "end": 146,
+          "contact_start": 55
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 91,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 121,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.008337646610821486,
+      "retarget_joint_difference_max_m": 0.013622180738097192,
+      "table_alignment": {
+        "source_table_normal": [
+          0.009770225370532497,
+          -0.0006783934691582416,
+          0.9999520400891785
+        ],
+        "source_table_top_point_m": [
+          -0.023525946619155056,
+          -0.23754396551893717,
+          0.7387951759974596
+        ],
+        "world_to_training_rotation": [
+          [
+            0.999952270203546,
+            3.3141080139491054e-06,
+            -0.009770225370532497
+          ],
+          [
+            3.3141080139491054e-06,
+            0.9999997698856323,
+            0.0006783934691582417
+          ],
+          [
+            0.009770225370532497,
+            -0.0006783934691582417,
+            0.9999520400891784
+          ]
+        ],
+        "world_to_training_translation_m": [
+          1.0849812853364063,
+          0.19308959449664753,
+          -0.23869103792102508
+        ],
+        "source_table_normal_deviation_median_deg": 0.006686577245620912,
+        "source_table_normal_deviation_max_deg": 0.016294628732765385,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s5__mug_toast_1.npz",
+      "source_reference_sha256": "8403654ca898737be3a92ba1fc0d69365838f1bcfb91be24aea18b7aedcc60e6",
+      "sha256": "d82c191effed7b3f5de8d7fc15e70c6cee20d028fc5dd86579e2d9f91fc6a016",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s5.zip",
+      "source_member": "s5/mug_toast_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.10757324488667772,
+        "maximum_excess_before_rad": 0.8924229145050049,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s5__mug_toast_1",
+        "frames": 201,
+        "naive_clipping_mean_joint_error_mm": 1.2050748337060213,
+        "fitted_mean_joint_error_mm": 0.10676695819711313,
+        "fitted_max_joint_error_mm": 4.677117802202702,
+        "naive_clipping_mean_tip_error_mm": 3.1735957600176334,
+        "fitted_mean_tip_error_mm": 0.06041209417162463,
+        "original_proximity_joint_samples": 994,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 0.993963782696177,
+        "fitted_mean_contact_distance_change_mm": 0.15349576903932396,
+        "clipped_mean_contact_distance_change_mm": 1.1465211826372197
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0542374849319458,
+        -0.043953198939561844,
+        0.4972594976425171,
+        0.9993088245391846,
+        0.0,
+        0.0,
+        0.0371742844581604
+      ]
+    },
+    {
+      "clip_id": "s6__mug_drink_2",
+      "subject": "s6",
+      "split": "train",
+      "action": "drink",
+      "path": "clips/s6__mug_drink_2.npz",
+      "nframes": 259,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 27,
+          "end": 188,
+          "contact_start": 57
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 131,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 161,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.007264637814352949,
+      "retarget_joint_difference_max_m": 0.013508128713955288,
+      "table_alignment": {
+        "source_table_normal": [
+          0.016529869581628068,
+          0.006788081085959083,
+          0.9998403299361278
+        ],
+        "source_table_top_point_m": [
+          0.12421682933201159,
+          -0.6718026614606195,
+          0.7761580551160001
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998633707980105,
+            -5.610752687640996e-05,
+            -0.016529869581628068
+          ],
+          [
+            -5.610752687640996e-05,
+            0.9999769591381173,
+            -0.006788081085959082
+          ],
+          [
+            0.016529869581628068,
+            0.006788081085959082,
+            0.9998403299361278
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.8902372631413671,
+          0.6219190830005795,
+          -0.2735271629587085
+        ],
+        "source_table_normal_deviation_median_deg": 0.0035153703481057503,
+        "source_table_normal_deviation_max_deg": 0.015691877565628235,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s6__mug_drink_2.npz",
+      "source_reference_sha256": "9b387b5ce1f0afd642b2fe4d5a9570baf80abe48e24cf0ee10bde85d86bad14f",
+      "sha256": "71b76bfc5a93fccf86a2133b148c004266be9a7a4a594fd65b9533ad73383557",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s6.zip",
+      "source_member": "s6/mug_drink_2.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.087001287001287,
+        "maximum_excess_before_rad": 0.26689407229423523,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s6__mug_drink_2",
+        "frames": 259,
+        "naive_clipping_mean_joint_error_mm": 0.9305799612775445,
+        "fitted_mean_joint_error_mm": 0.10347927309339866,
+        "fitted_max_joint_error_mm": 4.369435366243124,
+        "naive_clipping_mean_tip_error_mm": 2.0951097831130028,
+        "fitted_mean_tip_error_mm": 0.09820087143452838,
+        "original_proximity_joint_samples": 945,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 0.9851851851851852,
+        "fitted_mean_contact_distance_change_mm": 0.10448598103078816,
+        "clipped_mean_contact_distance_change_mm": 1.416146255617381
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0016449689865112,
+        -0.05514369159936905,
+        0.4972594976425171,
+        0.9999294877052307,
+        0.0,
+        0.0,
+        0.01187326293438673
+      ]
+    },
+    {
+      "clip_id": "s6__mug_lift",
+      "subject": "s6",
+      "split": "train",
+      "action": "lift",
+      "path": "clips/s6__mug_lift.npz",
+      "nframes": 581,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 34,
+          "end": 114,
+          "contact_start": 64
+        },
+        {
+          "start": 159,
+          "end": 213,
+          "contact_start": 189
+        },
+        {
+          "start": 192,
+          "end": 246,
+          "contact_start": 222
+        },
+        {
+          "start": 355,
+          "end": 400,
+          "contact_start": 369
+        }
+      ],
+      "excluded_episodes": [
+        {
+          "start": 91,
+          "end": 122,
+          "contact_start": 121,
+          "reason": "right_only_contact_shorter_than_0.5_seconds"
+        },
+        {
+          "start": 96,
+          "end": 181,
+          "contact_start": 126,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.546481894025101
+        },
+        {
+          "start": 230,
+          "end": 271,
+          "contact_start": 260,
+          "reason": "right_only_contact_shorter_than_0.5_seconds"
+        },
+        {
+          "start": 450,
+          "end": 492,
+          "contact_start": 450,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.6409426762203416
+        }
+      ],
+      "right_contact_frames": 326,
+      "left_contact_frames": 124,
+      "simultaneous_hand_contact_frames": 89,
+      "rl_supported_frames": 212,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.007573485952486202,
+      "retarget_joint_difference_max_m": 0.01511891076409936,
+      "table_alignment": {
+        "source_table_normal": [
+          0.01645608792558368,
+          0.006871957598850609,
+          0.9998409740398446
+        ],
+        "source_table_top_point_m": [
+          0.12422786633536287,
+          -0.6718080062333615,
+          0.7761370116620553
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998645878180666,
+            -5.654726547537744e-05,
+            -0.016456087925583677
+          ],
+          [
+            -5.654726547537744e-05,
+            0.999976386221778,
+            -0.006871957598850608
+          ],
+          [
+            0.016456087925583677,
+            0.006871957598850608,
+            0.9998409740398446
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.918559078364592,
+          0.6366619123001508,
+          -0.273441254286382
+        ],
+        "source_table_normal_deviation_median_deg": 0.005917134047734118,
+        "source_table_normal_deviation_max_deg": 0.02274176120971608,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s6__mug_lift.npz",
+      "source_reference_sha256": "dfffbe100f3097f8fb7d14c005517faa6eb0dcb1d01d5a23a26a83ff995026a8",
+      "sha256": "472662325243e5526aaccc7ad012ee63e29f0a099bcd333ba9171c5cad30d7fb",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s6.zip",
+      "source_member": "s6/mug_lift.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.08387837062535858,
+        "maximum_excess_before_rad": 1.1570963859558105,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s6__mug_lift",
+        "frames": 581,
+        "naive_clipping_mean_joint_error_mm": 1.0068027768284082,
+        "fitted_mean_joint_error_mm": 0.3369866462890059,
+        "fitted_max_joint_error_mm": 36.60447150468826,
+        "naive_clipping_mean_tip_error_mm": 2.284639049321413,
+        "fitted_mean_tip_error_mm": 0.42238322203047574,
+        "original_proximity_joint_samples": 3071,
+        "fitted_proximity_retention": 0.9970693585151417,
+        "clipped_proximity_retention": 0.9873005535656139,
+        "fitted_mean_contact_distance_change_mm": 0.2382561471536293,
+        "clipped_mean_contact_distance_change_mm": 0.729890853537694
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0300359725952148,
+        -0.04047083482146263,
+        0.4972594976425171,
+        0.9999290108680725,
+        0.0,
+        0.0,
+        0.011916723102331161
+      ]
+    },
+    {
+      "clip_id": "s6__mug_pass_1",
+      "subject": "s6",
+      "split": "train",
+      "action": "pass",
+      "path": "clips/s6__mug_pass_1.npz",
+      "nframes": 283,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 37,
+          "end": 204,
+          "contact_start": 67
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 137,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 167,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.0074191234921637235,
+      "retarget_joint_difference_max_m": 0.013177564600326415,
+      "table_alignment": {
+        "source_table_normal": [
+          0.016504772019540384,
+          0.006795840302133604,
+          0.9998406918380403
+        ],
+        "source_table_top_point_m": [
+          0.12421305300881143,
+          -0.6718015162997043,
+          0.7761500200645386
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998637854002428,
+            -5.6086364941814715e-05,
+            -0.016504772019540384
+          ],
+          [
+            -5.6086364941814715e-05,
+            0.9999769064377975,
+            -0.006795840302133603
+          ],
+          [
+            0.016504772019540384,
+            0.006795840302133603,
+            0.9998406918380403
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9138458751201234,
+          0.6213166909099498,
+          -0.27351102533369465
+        ],
+        "source_table_normal_deviation_median_deg": 0.003587223512147174,
+        "source_table_normal_deviation_max_deg": 0.014928534397228695,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s6__mug_pass_1.npz",
+      "source_reference_sha256": "30c57a26bd343f5268599c60669ca5d4e00fb9f9c0905088d98c12cdbef06e36",
+      "sha256": "975120db369a11aaea58f35f884869ba9ffa25e257461f29873dc80f8f98e1cb",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s6.zip",
+      "source_member": "s6/mug_pass_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.09140164899882214,
+        "maximum_excess_before_rad": 0.2615244388580322,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s6__mug_pass_1",
+        "frames": 283,
+        "naive_clipping_mean_joint_error_mm": 0.647601904347539,
+        "fitted_mean_joint_error_mm": 0.012117204278183635,
+        "fitted_max_joint_error_mm": 0.9571773116476834,
+        "naive_clipping_mean_tip_error_mm": 1.572730136103928,
+        "fitted_mean_tip_error_mm": 0.02259921166114509,
+        "original_proximity_joint_samples": 1063,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 0.9981185324553151,
+        "fitted_mean_contact_distance_change_mm": 0.008210236882562236,
+        "clipped_mean_contact_distance_change_mm": 0.7133864611905673
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0252695083618164,
+        -0.05575086921453476,
+        0.4972594976425171,
+        0.9999291300773621,
+        0.0,
+        0.0,
+        0.011906033381819725
+      ]
+    },
+    {
+      "clip_id": "s6__mug_toast_1",
+      "subject": "s6",
+      "split": "train",
+      "action": "toast",
+      "path": "clips/s6__mug_toast_1.npz",
+      "nframes": 224,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 24,
+          "end": 157,
+          "contact_start": 54
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 103,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 133,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.007386630257395562,
+      "retarget_joint_difference_max_m": 0.013594953410917024,
+      "table_alignment": {
+        "source_table_normal": [
+          0.016548838041283695,
+          0.006800374449688551,
+          0.999839932622631
+        ],
+        "source_table_top_point_m": [
+          0.12421369123815656,
+          -0.6718036104566887,
+          0.776155682538446
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998630570196897,
+            -5.62736514818936e-05,
+            -0.01654883804128369
+          ],
+          [
+            -5.62736514818936e-05,
+            0.9999768756029411,
+            -0.00680037444968855
+          ],
+          [
+            0.01654883804128369,
+            0.00680037444968855,
+            0.9998399326226309
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.8922566745807057,
+          0.6119252866392039,
+          -0.27351852148496414
+        ],
+        "source_table_normal_deviation_median_deg": 0.0037809824529225584,
+        "source_table_normal_deviation_max_deg": 0.016820742213781735,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s6__mug_toast_1.npz",
+      "source_reference_sha256": "92d148c7bbe752e18dd9b37e0b3135ef1a94f288930c48ba5ec089fd2d6d2d8a",
+      "sha256": "7ece6a7960c3da967735223a5a9cb77e700551cb20f1b84bd87757b02e4021a4",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s6.zip",
+      "source_member": "s6/mug_toast_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.1244047619047619,
+        "maximum_excess_before_rad": 0.47249725461006165,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s6__mug_toast_1",
+        "frames": 224,
+        "naive_clipping_mean_joint_error_mm": 1.3885112712159753,
+        "fitted_mean_joint_error_mm": 0.48880057875066996,
+        "fitted_max_joint_error_mm": 8.965161629021168,
+        "naive_clipping_mean_tip_error_mm": 3.486605593934655,
+        "fitted_mean_tip_error_mm": 0.4792508261743933,
+        "original_proximity_joint_samples": 1022,
+        "fitted_proximity_retention": 0.9931506849315068,
+        "clipped_proximity_retention": 0.9931506849315068,
+        "fitted_mean_contact_distance_change_mm": 0.5975734906911494,
+        "clipped_mean_contact_distance_change_mm": 1.557104709231376
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.003646731376648,
+        -0.06514792889356613,
+        0.4972594976425171,
+        0.9999293684959412,
+        0.0,
+        0.0,
+        0.01188664510846138
+      ]
+    },
+    {
+      "clip_id": "s7__mug_drink_1",
+      "subject": "s7",
+      "split": "train",
+      "action": "drink",
+      "path": "clips/s7__mug_drink_1.npz",
+      "nframes": 228,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 23,
+          "end": 162,
+          "contact_start": 53
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 109,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 139,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.010952644924631848,
+      "retarget_joint_difference_max_m": 0.01770114632562863,
+      "table_alignment": {
+        "source_table_normal": [
+          0.014980511448826214,
+          0.005339641642614166,
+          0.9998735282543787
+        ],
+        "source_table_top_point_m": [
+          0.19720319564720043,
+          -0.5980359796598053,
+          0.9301932092512754
+        ],
+        "world_to_training_rotation": [
+          [
+            0.999887785042355,
+            -3.999781067637401e-05,
+            -0.014980511448826216
+          ],
+          [
+            -3.999781067637401e-05,
+            0.9999857432120237,
+            -0.005339641642614167
+          ],
+          [
+            0.014980511448826216,
+            0.005339641642614167,
+            0.9998735282543787
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.8388971646575507,
+          0.5219297885754676,
+          -0.42983647300170125
+        ],
+        "source_table_normal_deviation_median_deg": 0.004565964342491855,
+        "source_table_normal_deviation_max_deg": 0.023345080138834497,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s7__mug_drink_1.npz",
+      "source_reference_sha256": "36fc86f936842ed92a1cb94dbf112403dc7f9c3494eb0c7164d4c2e0c4eb62b6",
+      "sha256": "0d230750b777071b794631d5112805fe1e09bae7462b2c8126f3b5874788e7a5",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s7.zip",
+      "source_member": "s7/mug_drink_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.07358674463937621,
+        "maximum_excess_before_rad": 0.9572436213493347,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s7__mug_drink_1",
+        "frames": 228,
+        "naive_clipping_mean_joint_error_mm": 1.9864283967763186,
+        "fitted_mean_joint_error_mm": 0.43286196887493134,
+        "fitted_max_joint_error_mm": 15.09725209325552,
+        "naive_clipping_mean_tip_error_mm": 4.214347805827856,
+        "fitted_mean_tip_error_mm": 0.3567492822185159,
+        "original_proximity_joint_samples": 1484,
+        "fitted_proximity_retention": 0.9993261455525606,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.11565676156553874,
+        "clipped_mean_contact_distance_change_mm": 1.332872571013915
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0221673250198364,
+        -0.08107244968414307,
+        0.4972594976425171,
+        0.9999985098838806,
+        0.0,
+        0.0,
+        0.0017166724428534508
+      ]
+    },
+    {
+      "clip_id": "s7__mug_drink_2",
+      "subject": "s7",
+      "split": "train",
+      "action": "drink",
+      "path": "clips/s7__mug_drink_2.npz",
+      "nframes": 268,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 17,
+          "end": 193,
+          "contact_start": 47
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 146,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 176,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.010205348808455946,
+      "retarget_joint_difference_max_m": 0.017853943291020576,
+      "table_alignment": {
+        "source_table_normal": [
+          0.014953865276577426,
+          0.0053649343500906665,
+          0.9998737917320912
+        ],
+        "source_table_top_point_m": [
+          0.19720420921484655,
+          -0.5980357153031272,
+          0.9301947431626076
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998881839005868,
+            -4.0115784216290015e-05,
+            -0.014953865276577424
+          ],
+          [
+            -4.0115784216290015e-05,
+            0.9999856078315043,
+            -0.005364934350090666
+          ],
+          [
+            0.014953865276577424,
+            0.005364934350090666,
+            0.9998737917320911
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.8438462818066814,
+          0.5524706500034431,
+          -0.4298178877202171
+        ],
+        "source_table_normal_deviation_median_deg": 0.0057227785831341325,
+        "source_table_normal_deviation_max_deg": 0.022412265156591324,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s7__mug_drink_2.npz",
+      "source_reference_sha256": "5f5e4a3cdd6078b821916bc0bd4128b2954f351177285260633d5774fc55af2b",
+      "sha256": "ca3c7072b85688e6b191ccdac1047b6fd3c41da83f5a378fd5b9dbc0757a8b2d",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s7.zip",
+      "source_member": "s7/mug_drink_2.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.08665008291873963,
+        "maximum_excess_before_rad": 0.7014927864074707,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s7__mug_drink_2",
+        "frames": 268,
+        "naive_clipping_mean_joint_error_mm": 1.6104159876704216,
+        "fitted_mean_joint_error_mm": 0.2038654056377709,
+        "fitted_max_joint_error_mm": 16.183147206902504,
+        "naive_clipping_mean_tip_error_mm": 3.765770932659507,
+        "fitted_mean_tip_error_mm": 0.12071359378751367,
+        "original_proximity_joint_samples": 1410,
+        "fitted_proximity_retention": 0.9921985815602837,
+        "clipped_proximity_retention": 0.975177304964539,
+        "fitted_mean_contact_distance_change_mm": 0.09923589103849462,
+        "clipped_mean_contact_distance_change_mm": 0.7252439658353925
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0271424055099487,
+        -0.050554804503917694,
+        0.4972594976425171,
+        0.9999985098838806,
+        0.0,
+        0.0,
+        0.0017125813756138086
+      ]
+    },
+    {
+      "clip_id": "s7__mug_lift",
+      "subject": "s7",
+      "split": "train",
+      "action": "lift",
+      "path": "clips/s7__mug_lift.npz",
+      "nframes": 682,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 25,
+          "end": 95,
+          "contact_start": 55
+        }
+      ],
+      "excluded_episodes": [
+        {
+          "start": 73,
+          "end": 150,
+          "contact_start": 103,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.6686875444445014
+        },
+        {
+          "start": 128,
+          "end": 282,
+          "contact_start": 158,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.6040804350667801
+        },
+        {
+          "start": 262,
+          "end": 348,
+          "contact_start": 292,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.5411150941845215
+        },
+        {
+          "start": 327,
+          "end": 438,
+          "contact_start": 357,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.5470094483735792
+        },
+        {
+          "start": 415,
+          "end": 446,
+          "contact_start": 445,
+          "reason": "right_only_contact_shorter_than_0.5_seconds"
+        },
+        {
+          "start": 489,
+          "end": 490,
+          "contact_start": 489,
+          "reason": "right_only_contact_shorter_than_0.5_seconds"
+        }
+      ],
+      "right_contact_frames": 491,
+      "left_contact_frames": 155,
+      "simultaneous_hand_contact_frames": 143,
+      "rl_supported_frames": 70,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.01046405087600481,
+      "retarget_joint_difference_max_m": 0.017437888717034247,
+      "table_alignment": {
+        "source_table_normal": [
+          0.014953894872891636,
+          0.005284607389939251,
+          0.9998742190660106
+        ],
+        "source_table_top_point_m": [
+          0.19735338681164874,
+          -0.5976713215378402,
+          0.9301993015960017
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998881834818721,
+            -3.95152168072673e-05,
+            -0.014953894872891633
+          ],
+          [
+            -3.95152168072673e-05,
+            0.9999860355841385,
+            -0.00528460738993925
+          ],
+          [
+            0.014953894872891633,
+            0.00528460738993925,
+            0.9998742190660106
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.8571282182705601,
+          0.5264593470499229,
+          -0.4298750437756875
+        ],
+        "source_table_normal_deviation_median_deg": 0.006000888481727043,
+        "source_table_normal_deviation_max_deg": 0.11174068015795109,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s7__mug_lift.npz",
+      "source_reference_sha256": "37a9ff777d35a58f45592c998c6755b62c6bf32562f78326af2cd67e496d0cd4",
+      "sha256": "a2256d173c9f989a0503d31bc6d9330a298d8d32646c677f9115e78e4255701f",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s7.zip",
+      "source_member": "s7/mug_lift.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.09182144020853698,
+        "maximum_excess_before_rad": 0.9806830286979675,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s7__mug_lift",
+        "frames": 682,
+        "naive_clipping_mean_joint_error_mm": 2.440110547468066,
+        "fitted_mean_joint_error_mm": 0.5246320506557822,
+        "fitted_max_joint_error_mm": 13.498607091605663,
+        "naive_clipping_mean_tip_error_mm": 4.937948659062386,
+        "fitted_mean_tip_error_mm": 0.466297788079828,
+        "original_proximity_joint_samples": 4778,
+        "fitted_proximity_retention": 0.9836751778987024,
+        "clipped_proximity_retention": 0.9750941816659691,
+        "fitted_mean_contact_distance_change_mm": 0.3505751481836496,
+        "clipped_mean_contact_distance_change_mm": 2.010124285448757
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.040573000907898,
+        -0.07612716406583786,
+        0.4972594976425171,
+        0.9999992251396179,
+        0.0,
+        0.0,
+        0.0012675269972532988
+      ]
+    },
+    {
+      "clip_id": "s8__mug_drink_1",
+      "subject": "s8",
+      "split": "validation",
+      "action": "drink",
+      "path": "clips/s8__mug_drink_1.npz",
+      "nframes": 220,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 13,
+          "end": 150,
+          "contact_start": 43
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 107,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 137,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004387005138933034,
+      "retarget_joint_difference_max_m": 0.01155948615592285,
+      "table_alignment": {
+        "source_table_normal": [
+          0.01628096275164651,
+          0.006217010892002215,
+          0.999848127981169
+        ],
+        "source_table_top_point_m": [
+          0.05404272870674711,
+          0.05812421656977695,
+          0.9207776067407067
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998674550610062,
+            -5.061330475202056e-05,
+            -0.01628096275164651
+          ],
+          [
+            -5.061330475202056e-05,
+            0.9999806729201631,
+            -0.006217010892002217
+          ],
+          [
+            0.01628096275164651,
+            0.006217010892002217,
+            0.9998481279811692
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9954946571773903,
+          -0.08282378915070504,
+          -0.42187899292725206
+        ],
+        "source_table_normal_deviation_median_deg": 0.003587253198003853,
+        "source_table_normal_deviation_max_deg": 0.015282219225232166,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s8__mug_drink_1.npz",
+      "source_reference_sha256": "fc01e6460b4a4811463e6574899e5402045479ba5528d3a345a08b241540dea5",
+      "sha256": "3821a733f8780bf3ea4b73760dd42a977f5339c29090ff5365b49ec836a1bace",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s8.zip",
+      "source_member": "s8/mug_drink_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.05828282828282828,
+        "maximum_excess_before_rad": 0.24635052680969238,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s8__mug_drink_1",
+        "frames": 220,
+        "naive_clipping_mean_joint_error_mm": 0.36889713373966515,
+        "fitted_mean_joint_error_mm": 0.03363936775713228,
+        "fitted_max_joint_error_mm": 2.761850832030177,
+        "naive_clipping_mean_tip_error_mm": 0.9403993608430028,
+        "fitted_mean_tip_error_mm": 0.042233183194184676,
+        "original_proximity_joint_samples": 907,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.027432341234863503,
+        "clipped_mean_contact_distance_change_mm": 0.22382042491520093
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0345361232757568,
+        -0.03042791597545147,
+        0.4972594976425171,
+        0.9999282360076904,
+        0.0,
+        0.0,
+        -0.011977613903582096
+      ]
+    },
+    {
+      "clip_id": "s8__mug_drink_2",
+      "subject": "s8",
+      "split": "validation",
+      "action": "drink",
+      "path": "clips/s8__mug_drink_2.npz",
+      "nframes": 263,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 11,
+          "end": 185,
+          "contact_start": 41
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 143,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 174,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004319452005453109,
+      "retarget_joint_difference_max_m": 0.011823181345355644,
+      "table_alignment": {
+        "source_table_normal": [
+          0.0162524608163803,
+          0.006283540378172222,
+          0.9998481757935691
+        ],
+        "source_table_top_point_m": [
+          0.0540466559912568,
+          0.05812067515670353,
+          0.9207632251788
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998679187321393,
+            -5.106537337208789e-05,
+            -0.0162524608163803
+          ],
+          [
+            -5.106537337208789e-05,
+            0.99998025706143,
+            -0.006283540378172221
+          ],
+          [
+            0.0162524608163803,
+            0.006283540378172221,
+            0.9998481757935692
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9857057190301467,
+          -0.09326394569549575,
+          -0.42186702580073465
+        ],
+        "source_table_normal_deviation_median_deg": 0.0036407586702985944,
+        "source_table_normal_deviation_max_deg": 0.01933848355213462,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s8__mug_drink_2.npz",
+      "source_reference_sha256": "2d36d8ec1cd4c95e55408c8614f2b40a604ad9f802b99e2be6582f1a9240d03d",
+      "sha256": "ded3ce1251d0b5dabf6f11570bc026ae51700dae8892656350a34b8239149cb4",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s8.zip",
+      "source_member": "s8/mug_drink_2.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.09640895648500211,
+        "maximum_excess_before_rad": 0.22702479362487793,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s8__mug_drink_2",
+        "frames": 263,
+        "naive_clipping_mean_joint_error_mm": 0.6824771990068257,
+        "fitted_mean_joint_error_mm": 0.025137002012343146,
+        "fitted_max_joint_error_mm": 1.5899721765890718,
+        "naive_clipping_mean_tip_error_mm": 1.6606952995061874,
+        "fitted_mean_tip_error_mm": 0.030502782465191558,
+        "original_proximity_joint_samples": 1396,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.01869250902803225,
+        "clipped_mean_contact_distance_change_mm": 0.7433701997628988
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0247776508331299,
+        -0.040932830423116684,
+        0.4972594976425171,
+        0.9999281167984009,
+        0.0,
+        0.0,
+        -0.011990857310593128
+      ]
+    },
+    {
+      "clip_id": "s8__mug_lift",
+      "subject": "s8",
+      "split": "validation",
+      "action": "lift",
+      "path": "clips/s8__mug_lift.npz",
+      "nframes": 459,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 21,
+          "end": 170,
+          "contact_start": 51
+        },
+        {
+          "start": 144,
+          "end": 257,
+          "contact_start": 174
+        }
+      ],
+      "excluded_episodes": [
+        {
+          "start": 232,
+          "end": 305,
+          "contact_start": 262,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.5342696007056312
+        },
+        {
+          "start": 280,
+          "end": 312,
+          "contact_start": 310,
+          "reason": "right_only_contact_shorter_than_0.5_seconds"
+        }
+      ],
+      "right_contact_frames": 279,
+      "left_contact_frames": 79,
+      "simultaneous_hand_contact_frames": 34,
+      "rl_supported_frames": 236,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004389423771033957,
+      "retarget_joint_difference_max_m": 0.014392677358788023,
+      "table_alignment": {
+        "source_table_normal": [
+          0.016317482813231095,
+          0.0063215400066108434,
+          0.9998468772199995
+        ],
+        "source_table_top_point_m": [
+          0.05404878507635874,
+          0.05812525714726297,
+          0.9207771820925855
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998668596839123,
+            -5.157975922357463e-05,
+            -0.01631748281323109
+          ],
+          [
+            -5.157975922357463e-05,
+            0.9999800175360872,
+            -0.0063215400066108434
+          ],
+          [
+            0.01631748281323109,
+            0.0063215400066108434,
+            0.9998468772199995
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9904234567867204,
+          -0.09191699260208358,
+          -0.42188557139071303
+        ],
+        "source_table_normal_deviation_median_deg": 0.004021292907372177,
+        "source_table_normal_deviation_max_deg": 0.0261081565874614,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s8__mug_lift.npz",
+      "source_reference_sha256": "3c62c3c9acbf8a88d5e18c12cf845ef24874ba0f0a89fa7627bb2bec6f84a904",
+      "sha256": "e2e6e37618172415c8150dd86d2b6c5fd2f91c85de16a127fe16ed5c09a2af72",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s8.zip",
+      "source_member": "s8/mug_lift.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.07058823529411765,
+        "maximum_excess_before_rad": 0.7441360950469971,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s8__mug_lift",
+        "frames": 459,
+        "naive_clipping_mean_joint_error_mm": 0.5592746310867369,
+        "fitted_mean_joint_error_mm": 0.04236449603922665,
+        "fitted_max_joint_error_mm": 3.775280434638262,
+        "naive_clipping_mean_tip_error_mm": 1.2213934678584337,
+        "fitted_mean_tip_error_mm": 0.03496616045595147,
+        "original_proximity_joint_samples": 1795,
+        "fitted_proximity_retention": 0.9988857938718663,
+        "clipped_proximity_retention": 0.9732590529247911,
+        "fitted_mean_contact_distance_change_mm": 0.01843379021141935,
+        "clipped_mean_contact_distance_change_mm": 0.6988118801865382
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0294373035430908,
+        -0.0396164134144783,
+        0.4972594976425171,
+        0.9999281764030457,
+        0.0,
+        0.0,
+        -0.011985880322754383
+      ]
+    },
+    {
+      "clip_id": "s8__mug_offhand_1",
+      "subject": "s8",
+      "split": "validation",
+      "action": "offhand",
+      "path": "clips/s8__mug_offhand_1.npz",
+      "nframes": 272,
+      "fps": 30,
+      "episodes": [],
+      "excluded_episodes": [
+        {
+          "start": 98,
+          "end": 191,
+          "contact_start": 98,
+          "reason": "object_already_airborne_at_episode_start",
+          "initial_bottom_m": 0.6281211765494024
+        }
+      ],
+      "right_contact_frames": 113,
+      "left_contact_frames": 50,
+      "simultaneous_hand_contact_frames": 20,
+      "rl_supported_frames": 0,
+      "unsupported_reason": "No right-only grasp episode starting with mug on table; retained for refiner and reporting.",
+      "retarget_joint_difference_mean_m": 0.004369340096552181,
+      "retarget_joint_difference_max_m": 0.014068897109977727,
+      "table_alignment": {
+        "source_table_normal": [
+          0.016266160014233904,
+          0.006295617735605738,
+          0.9998478770471627
+        ],
+        "source_table_top_point_m": [
+          0.054032656432909734,
+          0.05811518581290303,
+          0.9207685631721697
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998676959559546,
+            -5.120665759188484e-05,
+            -0.016266160014233907
+          ],
+          [
+            -5.120665759188484e-05,
+            0.999980181091208,
+            -0.006295617735605738
+          ],
+          [
+            0.016266160014233907,
+            0.006295617735605738,
+            0.9998478770471627
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9747373069431564,
+          -0.08566501920312596,
+          -0.42187326796950375
+        ],
+        "source_table_normal_deviation_median_deg": 0.004948084946689227,
+        "source_table_normal_deviation_max_deg": 0.01486274305313644,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s8__mug_offhand_1.npz",
+      "source_reference_sha256": "2b804004731eaee40626a964a2dea82208070e2fdc7e57b610d4619b049b57a3",
+      "sha256": "f5592039e52f9603fbb7cf7560de0d0d07039dcbc1b4a4cf47be2a97bb8deb04",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s8.zip",
+      "source_member": "s8/mug_offhand_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.09223856209150327,
+        "maximum_excess_before_rad": 0.6801106929779053,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s8__mug_offhand_1",
+        "frames": 272,
+        "naive_clipping_mean_joint_error_mm": 1.2424808228388429,
+        "fitted_mean_joint_error_mm": 0.0869492141646333,
+        "fitted_max_joint_error_mm": 4.750039428472519,
+        "naive_clipping_mean_tip_error_mm": 2.799414796754718,
+        "fitted_mean_tip_error_mm": 0.06257136556087062,
+        "original_proximity_joint_samples": 1006,
+        "fitted_proximity_retention": 0.9990059642147118,
+        "clipped_proximity_retention": 0.9473161033797217,
+        "fitted_mean_contact_distance_change_mm": 0.038182021632856174,
+        "clipped_mean_contact_distance_change_mm": 0.8828204869389081
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0137825012207031,
+        -0.03335055708885193,
+        0.4972594976425171,
+        0.99992835521698,
+        0.0,
+        0.0,
+        -0.011971165426075459
+      ]
+    },
+    {
+      "clip_id": "s8__mug_pass_1",
+      "subject": "s8",
+      "split": "validation",
+      "action": "pass",
+      "path": "clips/s8__mug_pass_1.npz",
+      "nframes": 245,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 17,
+          "end": 151,
+          "contact_start": 47
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 104,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 134,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.0043543593620071295,
+      "retarget_joint_difference_max_m": 0.01425580494102436,
+      "table_alignment": {
+        "source_table_normal": [
+          0.016309501103563554,
+          0.006274056998754229,
+          0.9998473065336173
+        ],
+        "source_table_top_point_m": [
+          0.054040058830734136,
+          0.05812315471119151,
+          0.92078404914961
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998669899319923,
+            -5.1167276226887575e-05,
+            -0.01630950110356355
+          ],
+          [
+            -5.1167276226887575e-05,
+            0.999980316601625,
+            -0.006274056998754229
+          ],
+          [
+            0.01630950110356355,
+            0.006274056998754229,
+            0.9998473065336173
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9949127060272656,
+          -0.047105249549140436,
+          -0.4218894858260973
+        ],
+        "source_table_normal_deviation_median_deg": 0.004956258773339942,
+        "source_table_normal_deviation_max_deg": 0.02397967698420186,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s8__mug_pass_1.npz",
+      "source_reference_sha256": "5dc94878d0f604bf2e52e6e24d5f643552eadc56e9625607228c96da45ef05f4",
+      "sha256": "002e597a7e46e1d5423e0a06e1355ba2cd3efd0d089a9f46b3a51bb1bfc482a1",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s8.zip",
+      "source_member": "s8/mug_pass_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.11709750566893425,
+        "maximum_excess_before_rad": 0.9053676128387451,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s8__mug_pass_1",
+        "frames": 245,
+        "naive_clipping_mean_joint_error_mm": 1.6460734186694026,
+        "fitted_mean_joint_error_mm": 0.09096480061998591,
+        "fitted_max_joint_error_mm": 3.7445600610226393,
+        "naive_clipping_mean_tip_error_mm": 3.407170530408621,
+        "fitted_mean_tip_error_mm": 0.06073786425986327,
+        "original_proximity_joint_samples": 742,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 0.8180592991913747,
+        "fitted_mean_contact_distance_change_mm": 0.07978600042039904,
+        "clipped_mean_contact_distance_change_mm": 2.6637161226524815
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0339250564575195,
+        0.005236944183707237,
+        0.4972594976425171,
+        0.9999282360076904,
+        0.0,
+        0.0,
+        -0.011979220435023308
+      ]
+    },
+    {
+      "clip_id": "s8__mug_toast_1",
+      "subject": "s8",
+      "split": "validation",
+      "action": "toast",
+      "path": "clips/s8__mug_toast_1.npz",
+      "nframes": 203,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 14,
+          "end": 131,
+          "contact_start": 44
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 87,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 117,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.004294678225024992,
+      "retarget_joint_difference_max_m": 0.013521446141707688,
+      "table_alignment": {
+        "source_table_normal": [
+          0.01628163038168958,
+          0.006255562540655412,
+          0.9998478766539508
+        ],
+        "source_table_top_point_m": [
+          0.05404258415171755,
+          0.058119430418196956,
+          0.9207766213878731
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998674441736392,
+            -5.092925232238474e-05,
+            -0.016281630381689585
+          ],
+          [
+            -5.092925232238474e-05,
+            0.9999804324803118,
+            -0.006255562540655411
+          ],
+          [
+            0.016281630381689585,
+            0.006255562540655411,
+            0.9998478766539508
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9757232938130485,
+          -0.08994438465218264,
+          -0.4218800208791016
+        ],
+        "source_table_normal_deviation_median_deg": 0.005034940983513296,
+        "source_table_normal_deviation_max_deg": 0.015439979492651721,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s8__mug_toast_1.npz",
+      "source_reference_sha256": "74431066776305c6ed03c0ca21ec4d3b7ec1162aabbddeec408cbedc929962c2",
+      "sha256": "398bee31f38f9a44a06e1f251816683b95fb70464fdceb2e165c4c5e4aadc06c",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s8.zip",
+      "source_member": "s8/mug_toast_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.11921182266009853,
+        "maximum_excess_before_rad": 0.7514426708221436,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s8__mug_toast_1",
+        "frames": 203,
+        "naive_clipping_mean_joint_error_mm": 1.651805592700839,
+        "fitted_mean_joint_error_mm": 0.07649994222447276,
+        "fitted_max_joint_error_mm": 3.9997571147978306,
+        "naive_clipping_mean_tip_error_mm": 3.6727336701005697,
+        "fitted_mean_tip_error_mm": 0.06000362554914318,
+        "original_proximity_joint_samples": 671,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 0.9746646795827124,
+        "fitted_mean_contact_distance_change_mm": 0.03904334478906959,
+        "clipped_mean_contact_distance_change_mm": 1.4151173944231086
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0147639513015747,
+        -0.03758881986141205,
+        0.4972594976425171,
+        0.9999281764030457,
+        0.0,
+        0.0,
+        -0.011985614895820618
+      ]
+    },
+    {
+      "clip_id": "s9__mug_drink_2",
+      "subject": "s9",
+      "split": "test",
+      "action": "drink",
+      "path": "clips/s9__mug_drink_2.npz",
+      "nframes": 273,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 39,
+          "end": 201,
+          "contact_start": 69
+        }
+      ],
+      "excluded_episodes": [
+        {
+          "start": 11,
+          "end": 49,
+          "contact_start": 41,
+          "reason": "right_only_contact_shorter_than_0.5_seconds"
+        }
+      ],
+      "right_contact_frames": 140,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 162,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.005334305328762165,
+      "retarget_joint_difference_max_m": 0.014621861413984338,
+      "table_alignment": {
+        "source_table_normal": [
+          0.015980921085541545,
+          0.007652769074037206,
+          0.9998430103204988
+        ],
+        "source_table_top_point_m": [
+          0.20408338034814422,
+          0.18653668310005744,
+          0.9183494665975207
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998722950564498,
+            -6.115394959850458e-05,
+            -0.015980921085541548
+          ],
+          [
+            -6.115394959850458e-05,
+            0.9999707152640491,
+            -0.007652769074037207
+          ],
+          [
+            0.015980921085541548,
+            0.007652769074037207,
+            0.9998430103204989
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.8285722107065978,
+          -0.2606683389005176,
+          -0.4228942577649054
+        ],
+        "source_table_normal_deviation_median_deg": 0.006407544520636006,
+        "source_table_normal_deviation_max_deg": 0.01790221557282534,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s9__mug_drink_2.npz",
+      "source_reference_sha256": "3c534c9cbc9e7df66cd0dc40df69cdc40d0ca6f3afaba14f3852c94e18eea516",
+      "sha256": "645a3bcaac2de6023a39724fcf03fa31d387adc853c6498f63e4e81800812c65",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s9.zip",
+      "source_member": "s9/mug_drink_2.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.10077330077330077,
+        "maximum_excess_before_rad": 0.5832606554031372,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s9__mug_drink_2",
+        "frames": 273,
+        "naive_clipping_mean_joint_error_mm": 1.3025410007685423,
+        "fitted_mean_joint_error_mm": 0.22142482339404523,
+        "fitted_max_joint_error_mm": 8.558432571589947,
+        "naive_clipping_mean_tip_error_mm": 3.2528238371014595,
+        "fitted_mean_tip_error_mm": 0.16762925952207297,
+        "original_proximity_joint_samples": 1420,
+        "fitted_proximity_retention": 1.0,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.16562834737088622,
+        "clipped_mean_contact_distance_change_mm": 0.45773320733172074
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.0179420709609985,
+        -0.08117751777172089,
+        0.4972594976425171,
+        0.9999707341194153,
+        0.0,
+        0.0,
+        0.007649737875908613
+      ]
+    },
+    {
+      "clip_id": "s9__mug_pass_1",
+      "subject": "s9",
+      "split": "test",
+      "action": "pass",
+      "path": "clips/s9__mug_pass_1.npz",
+      "nframes": 228,
+      "fps": 30,
+      "episodes": [
+        {
+          "start": 32,
+          "end": 172,
+          "contact_start": 62
+        }
+      ],
+      "excluded_episodes": [],
+      "right_contact_frames": 110,
+      "left_contact_frames": 0,
+      "simultaneous_hand_contact_frames": 0,
+      "rl_supported_frames": 140,
+      "unsupported_reason": null,
+      "retarget_joint_difference_mean_m": 0.005243043248429949,
+      "retarget_joint_difference_max_m": 0.01414680527456965,
+      "table_alignment": {
+        "source_table_normal": [
+          0.016005575435427414,
+          0.007615208790458825,
+          0.999842902735254
+        ],
+        "source_table_top_point_m": [
+          0.2040058410913808,
+          0.18652129956521793,
+          0.9183547357644245
+        ],
+        "world_to_training_rotation": [
+          [
+            0.9998719007154669,
+            -6.0947686733548565e-05,
+            -0.016005575435427414
+          ],
+          [
+            -6.0947686733548565e-05,
+            0.9999710020197873,
+            -0.007615208790458825
+          ],
+          [
+            0.016005575435427414,
+            0.007615208790458825,
+            0.9998429027352541
+          ]
+        ],
+        "world_to_training_translation_m": [
+          0.9451889196951231,
+          -0.2725597538517052,
+          -0.4228960942662823
+        ],
+        "source_table_normal_deviation_median_deg": 0.005689221328597241,
+        "source_table_normal_deviation_max_deg": 0.02503126325024496,
+        "table_top_m": 0.5,
+        "table_geometry_change": "Simulator uses a larger 2 m by 1 m static tabletop; original is about 0.45 m by 0.54 m."
+      },
+      "source_reference": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/references/s9__mug_pass_1.npz",
+      "source_reference_sha256": "47b3381b2d12b120261991bb1a24bd94cf76b0441a2072ecd68182dd6eae7e29",
+      "sha256": "29af6b5bed0d40504b27775a4bb7acaef35afc31f00f88a7998dfb5674865cf1",
+      "source_archive": "/home/nmt/Projects/Grab Dataset/grab__s9.zip",
+      "source_member": "s9/mug_pass_1.npz",
+      "retargeting": {
+        "out_of_bounds_frame_fraction_before": 1.0,
+        "out_of_bounds_coordinate_fraction_before": 0.08830409356725147,
+        "maximum_excess_before_rad": 0.46541348099708557,
+        "equivalent_branch_replacements": 0,
+        "joint_rotations_fully_fixed_by_equivalent_branch": 0,
+        "out_of_bounds_frame_fraction_after": 0.0,
+        "clip_id": "s9__mug_pass_1",
+        "frames": 228,
+        "naive_clipping_mean_joint_error_mm": 0.6851240759715438,
+        "fitted_mean_joint_error_mm": 0.10873935389099643,
+        "fitted_max_joint_error_mm": 5.301571451127529,
+        "naive_clipping_mean_tip_error_mm": 1.9520692294463515,
+        "fitted_mean_tip_error_mm": 0.08140244608512148,
+        "original_proximity_joint_samples": 1004,
+        "fitted_proximity_retention": 0.999003984063745,
+        "clipped_proximity_retention": 1.0,
+        "fitted_mean_contact_distance_change_mm": 0.020666538702989873,
+        "clipped_mean_contact_distance_change_mm": 0.08619259379627921
+      },
+      "table_dimensions": [
+        0.45001497864723206,
+        0.5400180220603943,
+        0.005481000058352947
+      ],
+      "table_pose": [
+        1.1344584226608276,
+        -0.09304975718259811,
+        0.4972594976425171,
+        0.999970555305481,
+        0.0,
+        0.0,
+        0.007676238194108009
+      ]
+    }
+  ],
+  "sequences": 44,
+  "frames": 13171,
+  "fps": 30,
+  "object_urdf": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/prepared/assets/mug/mug.urdf",
+  "hand_urdf": "/home/nmt/Projects/GraspXL/rsc/mano_double/rhand_mano_low_mass.urdf",
+  "hand_urdf_sha256": "1e0ecf2924d4273933455b84ae129e7900b01541c569c6dcbeec77339ff65942",
+  "reference_kind": "validation_selected_text2hoi_refinement",
+  "source_manifest": "/home/nmt/Projects/IsaacLab/_local/grab_mug_refinement/prepared/manifest.json",
+  "source_manifest_sha256": "7576d16451e5e5e77641e2b41545035cea7a783bd4ef5c42d03f915a46df51b6",
+  "coordinate_convention": "World wrist joint xyz + intrinsic XYZ Euler16; object xyz+wxyz. Metres/radians. Table top z=0.5.",
+  "retarget_policy": "Projected Adam with original URDF finger bounds; fixed wrist and generic unbounded FK targets; 2x tip weight. This enforces joint bounds, not collision-free poses or physical holding.",
+  "episode_policy": "Right-only source contact, bridging <=3-frame label gaps; up to 1 s prior reach without left contact; >=0.5 s contact; start mug bottom <=table+0.02 m. Half-open start/end.",
+  "scene_limit": "Original GRAB thin tabletop approximated by its oriented bounding box; no body, head, recipient, other hand or table legs.",
+  "evaluation_limit": "Subjects split before windows. Existing all44 fine-tuned checkpoints excluded; released pretrained Text2HOI GRAB checkpoint exposure is unknown, so this is adaptation holdout, not proof of unseen pretraining data.",
+  "collision": {
+    "object_urdf": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/prepared/assets/mug/mug.urdf",
+    "visual_mesh": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/prepared/assets/mug/mug.obj",
+    "source_vertices": 30584,
+    "source_faces": 61168,
+    "source_watertight": true,
+    "source_geometry_sha256": "c347a94deb21f9dca03f1bc2c1310015974b323a4d38f9b7cacb53703fb03786",
+    "source_mesh_volume_m3": 0.00018119456296409708,
+    "collision_algorithm": "CoACD 1.0.5 compound convex decomposition, not one convex hull",
+    "normalized_concavity_threshold": 0.01,
+    "maximum_parts": 128,
+    "convex_parts": 128,
+    "mass_kg": 0.25,
+    "mass_policy": "Experiment parameter, not measured GRAB mug mass",
+    "random_probe_count": 12000,
+    "native_void_false_positive_fraction": 0.0036633764119263254,
+    "native_material_false_negative_fraction": 0.0,
+    "central_section_native_void_preserved_fraction": 0.9962196577795464,
+    "geometry_limit": "Convex decomposition is approximate; inspect collision_probe_audit.npz and contact behavior.",
+    "urdf_sha256": "9286ae92231a2751886274fafdc31cb36499f4d946c5ea8afbaa5fc8aad1d5a4",
+    "random_native_void_samples": 9827,
+    "random_falsely_filled_void_samples": 36,
+    "maximum_sampled_filled_void_depth_mm": 0.551361592719621,
+    "mean_sampled_filled_void_depth_mm": 0.0900851138761583,
+    "opening_probes_passed": true,
+    "opening_verification": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/prepared/assets/mug/opening_verification.json"
+  },
+  "parent_preparation": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/prepared_refined/manifest.json",
+  "parent_preparation_sha256": "b3e4bd0478129bf0d51d3c54bbba8902de5fc607ca1e0af106443a8a6cf84a77",
+  "table_geometry": "Per-clip captured center/yaw, 0.450015 x 0.540018 x 0.005481 m; upper plane z=0.5 m."
+}

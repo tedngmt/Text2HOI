@@ -1,0 +1,310 @@
+[
+  {
+    "clip": "s10__mug_drink_1",
+    "frames": 202,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.06523652365236524,
+    "max_excess_rad": 0.40645593643188477
+  },
+  {
+    "clip": "s10__mug_drink_2",
+    "frames": 220,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.09464646464646465,
+    "max_excess_rad": 0.4440779352188111
+  },
+  {
+    "clip": "s10__mug_lift",
+    "frames": 571,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.0610624635143024,
+    "max_excess_rad": 0.5828215503692626
+  },
+  {
+    "clip": "s10__mug_pass_1",
+    "frames": 196,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.06349206349206349,
+    "max_excess_rad": 0.4571503591537476
+  },
+  {
+    "clip": "s10__mug_toast_1",
+    "frames": 181,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.07403314917127071,
+    "max_excess_rad": 0.4788425827026368
+  },
+  {
+    "clip": "s1__mug_drink_1",
+    "frames": 334,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.09221556886227544,
+    "max_excess_rad": 0.6016593599319457
+  },
+  {
+    "clip": "s1__mug_drink_2",
+    "frames": 377,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.10946065428824049,
+    "max_excess_rad": 0.7686417126655578
+  },
+  {
+    "clip": "s1__mug_drink_3",
+    "frames": 309,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.09852571017619562,
+    "max_excess_rad": 1.0151947927474976
+  },
+  {
+    "clip": "s1__mug_drink_4",
+    "frames": 300,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.07481481481481482,
+    "max_excess_rad": 0.9091967368125915
+  },
+  {
+    "clip": "s1__mug_lift",
+    "frames": 1062,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.06997279765641348,
+    "max_excess_rad": 0.7003666186332702
+  },
+  {
+    "clip": "s1__mug_offhand_1",
+    "frames": 274,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.07234387672343877,
+    "max_excess_rad": 0.7728770399093627
+  },
+  {
+    "clip": "s1__mug_pass_1",
+    "frames": 234,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.06619183285849953,
+    "max_excess_rad": 0.6087150001525878
+  },
+  {
+    "clip": "s1__mug_toast_1",
+    "frames": 337,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.13432245301681503,
+    "max_excess_rad": 0.5854234886169434
+  },
+  {
+    "clip": "s2__mug_drink_1",
+    "frames": 249,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.10218652387327086,
+    "max_excess_rad": 0.5692667603492737
+  },
+  {
+    "clip": "s2__mug_drink_2",
+    "frames": 286,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.15687645687645688,
+    "max_excess_rad": 1.0591819524765014
+  },
+  {
+    "clip": "s2__mug_lift",
+    "frames": 502,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.1281983178397521,
+    "max_excess_rad": 2.708894329071045
+  },
+  {
+    "clip": "s2__mug_pass_1",
+    "frames": 259,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.07241527241527242,
+    "max_excess_rad": 0.45925140619277954
+  },
+  {
+    "clip": "s2__mug_toast_1",
+    "frames": 239,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.07624360762436076,
+    "max_excess_rad": 0.4538261318206787
+  },
+  {
+    "clip": "s3__mug_drink_1",
+    "frames": 239,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.07391910739191074,
+    "max_excess_rad": 0.45563870906829834
+  },
+  {
+    "clip": "s3__mug_drink_2",
+    "frames": 206,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.14865156418554476,
+    "max_excess_rad": 0.8033117008209228
+  },
+  {
+    "clip": "s3__mug_drink_3",
+    "frames": 229,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.10975254730713246,
+    "max_excess_rad": 0.3511900854110718
+  },
+  {
+    "clip": "s3__mug_drink_4",
+    "frames": 226,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.08426745329400197,
+    "max_excess_rad": 0.7139567160606384
+  },
+  {
+    "clip": "s3__mug_offhand_1",
+    "frames": 246,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.12475158084914183,
+    "max_excess_rad": 2.59357102394104
+  },
+  {
+    "clip": "s3__mug_pass_1",
+    "frames": 283,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.07506870828425599,
+    "max_excess_rad": 0.5964277625083924
+  },
+  {
+    "clip": "s4__mug_drink_2",
+    "frames": 181,
+    "out_of_limit_frame_fraction": 0.9834254143646409,
+    "coordinate_fraction": 0.056721915285451195,
+    "max_excess_rad": 0.3283092701435089
+  },
+  {
+    "clip": "s4__mug_pass_1",
+    "frames": 156,
+    "out_of_limit_frame_fraction": 0.9935897435897436,
+    "coordinate_fraction": 0.06481481481481481,
+    "max_excess_rad": 0.2505750513076782
+  },
+  {
+    "clip": "s5__mug_drink_1",
+    "frames": 182,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.10683760683760683,
+    "max_excess_rad": 0.9599311971664428
+  },
+  {
+    "clip": "s5__mug_pass_1",
+    "frames": 202,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.042244224422442245,
+    "max_excess_rad": 0.32695316791534423
+  },
+  {
+    "clip": "s5__mug_toast_1",
+    "frames": 201,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.10149253731343283,
+    "max_excess_rad": 0.8910719347000122
+  },
+  {
+    "clip": "s6__mug_drink_2",
+    "frames": 259,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.07850707850707851,
+    "max_excess_rad": 0.2676221239566803
+  },
+  {
+    "clip": "s6__mug_lift",
+    "frames": 581,
+    "out_of_limit_frame_fraction": 0.9948364888123924,
+    "coordinate_fraction": 0.0766877031937273,
+    "max_excess_rad": 1.1578616619110107
+  },
+  {
+    "clip": "s6__mug_pass_1",
+    "frames": 283,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.08574793875147232,
+    "max_excess_rad": 0.2637071800231934
+  },
+  {
+    "clip": "s6__mug_toast_1",
+    "frames": 224,
+    "out_of_limit_frame_fraction": 0.9955357142857143,
+    "coordinate_fraction": 0.11527777777777778,
+    "max_excess_rad": 0.4738552951812744
+  },
+  {
+    "clip": "s7__mug_drink_1",
+    "frames": 228,
+    "out_of_limit_frame_fraction": 0.9956140350877193,
+    "coordinate_fraction": 0.07056530214424951,
+    "max_excess_rad": 0.9609947824478149
+  },
+  {
+    "clip": "s7__mug_drink_2",
+    "frames": 268,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.08051409618573797,
+    "max_excess_rad": 0.7017586183547974
+  },
+  {
+    "clip": "s7__mug_lift",
+    "frames": 682,
+    "out_of_limit_frame_fraction": 0.9970674486803519,
+    "coordinate_fraction": 0.08761811665037471,
+    "max_excess_rad": 0.981214108467102
+  },
+  {
+    "clip": "s8__mug_drink_1",
+    "frames": 220,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.053636363636363635,
+    "max_excess_rad": 0.24675621509552004
+  },
+  {
+    "clip": "s8__mug_drink_2",
+    "frames": 263,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.08677651035065484,
+    "max_excess_rad": 0.22868587493896486
+  },
+  {
+    "clip": "s8__mug_lift",
+    "frames": 459,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.06569837811667877,
+    "max_excess_rad": 0.743980188369751
+  },
+  {
+    "clip": "s8__mug_offhand_1",
+    "frames": 272,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.08308823529411764,
+    "max_excess_rad": 0.6814718437194824
+  },
+  {
+    "clip": "s8__mug_pass_1",
+    "frames": 245,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.11156462585034013,
+    "max_excess_rad": 0.9072665166854859
+  },
+  {
+    "clip": "s8__mug_toast_1",
+    "frames": 203,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.11198686371100164,
+    "max_excess_rad": 0.7533847284317017
+  },
+  {
+    "clip": "s9__mug_drink_2",
+    "frames": 273,
+    "out_of_limit_frame_fraction": 0.9963369963369964,
+    "coordinate_fraction": 0.09255189255189256,
+    "max_excess_rad": 0.5858209371566773
+  },
+  {
+    "clip": "s9__mug_pass_1",
+    "frames": 228,
+    "out_of_limit_frame_fraction": 1.0,
+    "coordinate_fraction": 0.07914230019493178,
+    "max_excess_rad": 0.46523001194000246
+  }
+]

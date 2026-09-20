@@ -1,0 +1,16 @@
+{
+  "phase": "passed",
+  "actual_old_lower_loss_checkpoint_rejected": {
+    "eligible": false,
+    "baseline_contact_retention": 0.9832486829237516,
+    "minimum_contact_retention": 0.9632486829237515,
+    "candidate_contact_retention": 0.9320483296003028,
+    "baseline_penetration": 0.364844806707855,
+    "candidate_penetration": 0.30216946097071773,
+    "rejection_reasons": [
+      "contact_retention_below_baseline_minus_allowed_drop"
+    ]
+  },
+  "contact_preserving_lower_penetration_candidate_accepted": true,
+  "higher_penetration_candidate_rejected": true
+}

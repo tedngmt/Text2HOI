@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "epochs_completed": 2,
+  "resume_verified": "epoch 1 -> 2, optimizer update counters and observation moments continued",
+  "optimizer_updates": 162,
+  "environment_training_steps": 8030,
+  "policy_tensors_changed_after_resume": 13,
+  "all_policy_parameters_finite": true,
+  "all_57_train_and_18_validation_windows_visited_each_epoch": true,
+  "selected_epoch": 0,
+  "both_candidates_rejected_by_physical_validation_guard": true,
+  "test_evaluation_performed": false,
+  "prepared": "/home/nmt/Projects/IsaacLab/_local/grab_combined_training/runs/smoke_refiner_contact_guard/prepared_feasible",
+  "scope": "Integration and recovery check, not evidence of improved grasp quality"
+}

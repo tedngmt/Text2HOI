@@ -1,0 +1,21 @@
+{"api": "OpenGL ES 3 / EGL", "renderer": "llvmpipe (LLVM 15.0.7, 256 bits)", "native_meshes": true}
+{"rendered_window": 0, "clip": "s5__mug_drink_1", "frames": 97}
+{"rendered_window": 1, "clip": "s5__mug_drink_1", "frames": 23}
+{"rendered_window": 2, "clip": "s5__mug_pass_1", "frames": 97}
+{"rendered_window": 3, "clip": "s5__mug_pass_1", "frames": 17}
+{"rendered_window": 4, "clip": "s5__mug_toast_1", "frames": 97}
+{"rendered_window": 5, "clip": "s5__mug_toast_1", "frames": 25}
+{"rendered_window": 6, "clip": "s8__mug_drink_1", "frames": 97}
+{"rendered_window": 7, "clip": "s8__mug_drink_1", "frames": 41}
+{"rendered_window": 8, "clip": "s8__mug_drink_2", "frames": 97}
+{"rendered_window": 9, "clip": "s8__mug_drink_2", "frames": 78}
+{"rendered_window": 10, "clip": "s8__mug_lift", "frames": 97}
+{"rendered_window": 11, "clip": "s8__mug_lift", "frames": 53}
+{"rendered_window": 12, "clip": "s8__mug_lift", "frames": 97}
+{"rendered_window": 13, "clip": "s8__mug_lift", "frames": 17}
+{"rendered_window": 14, "clip": "s8__mug_pass_1", "frames": 97}
+{"rendered_window": 15, "clip": "s8__mug_pass_1", "frames": 38}
+{"rendered_window": 16, "clip": "s8__mug_toast_1", "frames": 97}
+{"rendered_window": 17, "clip": "s8__mug_toast_1", "frames": 21}
+_local/grab_combined_training/render_results.py:52: DeprecationWarning: Please use `csc_matrix` from the `scipy.sparse` namespace, the `scipy.sparse.csc` namespace is deprecated.
+  self.recorded_faces = np.asarray(pickle.load(stream, encoding="latin1")["f"])

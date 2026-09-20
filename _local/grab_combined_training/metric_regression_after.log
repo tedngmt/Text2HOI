@@ -1,0 +1,9 @@
+test_early_failure_preserves_future_contact_and_lift_targets (__main__.suite.<locals>.PolicyMetricRegression) ... ok
+test_equally_physical_candidate_remains_eligible (__main__.suite.<locals>.PolicyMetricRegression) ... ok
+test_rejects_fewer_completed_lifts_despite_unchanged_other_metrics (__main__.suite.<locals>.PolicyMetricRegression) ... ok
+test_rejects_more_object_penetration_despite_unchanged_other_metrics (__main__.suite.<locals>.PolicyMetricRegression) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.006s
+
+OK

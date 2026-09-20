@@ -1,0 +1,13 @@
+{
+  "checkpoint": "checkpoints/grab/seq_cvae.pth",
+  "download_bytes": 2502297,
+  "sha256": "bbe4cd18ac86efc2e75692d4651ea2b2422142203d4d811dedb7996147820749",
+  "top_level_keys": [
+    "model",
+    "epoch",
+    "loss"
+  ],
+  "state_tensor_count": 8,
+  "all_state_tensors_finite": true,
+  "scope": "Download and CPU tensor loading verified; no model inference or GPU memory test."
+}

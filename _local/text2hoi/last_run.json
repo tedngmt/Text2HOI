@@ -1,0 +1,28 @@
+{
+  "prompt": "Lift a mug with the right hand.",
+  "seed": 42,
+  "repo": "/home/nmt/Projects/Text2HOI",
+  "source_revision": "9643c209f08e28d7ed870095cea78c7244e4fd42",
+  "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+  "torch": "1.13.0+cu116",
+  "cuda_runtime": "11.6",
+  "output": "/home/nmt/Projects/Text2HOI/_local/text2hoi/outputs/20260917T025035Z_seed_42",
+  "render_batch_size": 8,
+  "fps": 30,
+  "mano_flat_hand_mean": true,
+  "mano_betas": "zero",
+  "motion_coordinates": "Upstream GRAB world coordinates before visualization recentering; meters.",
+  "scope": "One released-checkpoint GRAB mug demo; not a GraspXL benchmark or physical-stability test.",
+  "completed": true,
+  "phase": "completed",
+  "selected_object": "mug",
+  "selected_hands": {
+    "left": false,
+    "right": true
+  },
+  "frames": 147,
+  "all_arrays_finite": true,
+  "elapsed_seconds": 44.488404185000036,
+  "peak_cuda_allocated_mib": 1355.3740234375,
+  "peak_cuda_reserved_mib": 1468.0
+}

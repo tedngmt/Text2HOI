@@ -1,0 +1,101 @@
+-- pybind11 v2.9.0 
+-- raisim:
+--   Version: 1.1.6
+--   Includes: /home/nmt/raisim_build/include
+--   Libraries: raisim::raisimPng;raisim::raisimODE;raisim::raisimMine;raisim::raisim
+raisim os linux
+raisim arch 
+raisim os linux
+raisim arch 
+raisim os linux
+raisim arch 
+raisim os linux
+raisim arch 
+raisim os linux
+raisim arch 
+raisim os linux
+raisim arch 
+raisim os linux
+raisim arch 
+raisim os linux
+raisim arch 
+raisim os linux
+raisim arch 
+raisim os linux
+raisim arch 
+raisim os linux
+raisim arch 
+raisim os linux
+raisim arch 
+raisim os linux
+raisim arch 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nmt/Projects/GraspXL/raisimGymTorch/build/temp.linux-x86_64-cpython-38
+Consolidate compiler generated dependencies of target allegro_demo
+Consolidate compiler generated dependencies of target allegro_fixed
+[ 15%] Built target allegro_demo
+[ 15%] Built target allegro_fixed
+Consolidate compiler generated dependencies of target allegro_test
+Consolidate compiler generated dependencies of target allegro_floating
+[ 23%] Built target allegro_floating
+[ 30%] Built target allegro_test
+Consolidate compiler generated dependencies of target ours_fixed
+Consolidate compiler generated dependencies of target ours_demo
+[ 46%] Built target ours_demo
+[ 46%] Built target ours_fixed
+[ 48%] Building CXX object CMakeFiles/ours_grab_tracking.dir/raisimGymTorch/env/raisim_gym.cpp.o
+Consolidate compiler generated dependencies of target ours_floating
+[ 56%] Built target ours_floating
+[ 58%] Building CXX object CMakeFiles/ours_grab_tracking.dir/raisimGymTorch/env/Yaml.cpp.o
+Consolidate compiler generated dependencies of target ours_test
+[ 66%] Built target ours_test
+Consolidate compiler generated dependencies of target shadow_demo
+[ 74%] Built target shadow_demo
+Consolidate compiler generated dependencies of target shadow_fixed
+[ 82%] Built target shadow_fixed
+Consolidate compiler generated dependencies of target shadow_floating
+[ 89%] Built target shadow_floating
+Consolidate compiler generated dependencies of target shadow_test
+[ 97%] Built target shadow_test
+In file included from /home/nmt/Projects/GraspXL/raisimGymTorch/raisimGymTorch/env/envs/ours_grab_tracking/Environment.hpp:15,
+                 from /home/nmt/Projects/GraspXL/raisimGymTorch/raisimGymTorch/env/raisim_gym.cpp:9:
+/home/nmt/Projects/GraspXL/raisimGymTorch/raisimGymTorch/env/envs/ours_grab_tracking/../../RaisimGymEnv.hpp: In member function ‘virtual float* raisim::RaisimGymEnv::step2(const Eigen::Ref<Eigen::Matrix<float, -1, 1> >&, const Eigen::Ref<Eigen::Matrix<float, -1, 1> >&)’:
+/home/nmt/Projects/GraspXL/raisimGymTorch/raisimGymTorch/env/envs/ours_grab_tracking/../../RaisimGymEnv.hpp:101:101: warning: no return statement in function returning non-void [-Wreturn-type]
+  101 |   virtual float* step2(const Eigen::Ref<EigenVec>& action_r, const Eigen::Ref<EigenVec>& action_l) {};
+      |                                                                                                     ^
+In file included from /home/nmt/Projects/GraspXL/raisimGymTorch/raisimGymTorch/env/envs/ours_grab_tracking/Environment.hpp:15,
+                 from /home/nmt/Projects/GraspXL/raisimGymTorch/raisimGymTorch/env/raisim_gym.cpp:9:
+/home/nmt/Projects/GraspXL/raisimGymTorch/raisimGymTorch/env/envs/ours_grab_tracking/../../RaisimGymEnv.hpp: In member function ‘virtual float* raisim::RaisimGymEnv::step_imitate(const Eigen::Ref<Eigen::Matrix<float, -1, 1> >&, const Eigen::Ref<Eigen::Matrix<float, -1, 1> >&, const Eigen::Ref<Eigen::Matrix<float, -1, 1> >&, const Eigen::Ref<Eigen::Matrix<float, -1, 1> >&, const Eigen::Ref<Eigen::Matrix<float, -1, 1> >&, const Eigen::Ref<Eigen::Matrix<float, -1, 1> >&, const Eigen::Ref<Eigen::Matrix<float, -1, 1> >&, const Eigen::Ref<Eigen::Matrix<float, -1, 1> >&, bool, bool)’:
+/home/nmt/Projects/GraspXL/raisimGymTorch/raisimGymTorch/env/envs/ours_grab_tracking/../../RaisimGymEnv.hpp:102:399: warning: no return statement in function returning non-void [-Wreturn-type]
+  102 |   virtual float* step_imitate(const Eigen::Ref<EigenVec>& action_r, const Eigen::Ref<EigenVec>& action_l, const Eigen::Ref<EigenVec>& obj_pose_r, const Eigen::Ref<EigenVec>& hand_ee_r, const Eigen::Ref<EigenVec>& hand_pose_r, const Eigen::Ref<EigenVec>& obj_pose_l, const Eigen::Ref<EigenVec>& hand_ee_l, const Eigen::Ref<EigenVec>& hand_pose_l, const bool imitate_right, const bool imitate_left) {};
+      |                                                                                                                                                                                                                                                                                                                                                                                                               ^
+[100%] Linking CXX shared module ../../raisimGymTorch/env/bin/ours_grab_tracking.cpython-38-x86_64-linux-gnu.so
+lto-wrapper: warning: using serial compilation of 7 LTRANS jobs
+[100%] Built target ours_grab_tracking
+/home/nmt/miniconda3/envs/graspxl/lib/python3.8/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` and ``easy_install``.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://github.com/pypa/setuptools/issues/917 for details.
+        ********************************************************************************
+
+!!
+  easy_install.initialize_options(self)
+/home/nmt/miniconda3/envs/graspxl/lib/python3.8/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()

@@ -1,0 +1,29 @@
+{
+  "epochs": 650,
+  "updates": 13000,
+  "first_epoch": {
+    "epoch": 1,
+    "mean_training_loss": 0.07150328872588452
+  },
+  "last_epoch": {
+    "epoch": 650,
+    "mean_training_loss": 0.0348665538365875
+  },
+  "selected_epoch": {
+    "epoch": 581,
+    "mean_training_loss": 0.033636383081922336
+  },
+  "selection": "Lowest training loss; no held-out validation",
+  "available": [
+    "Combined training loss",
+    "Per-video mean vertex displacement in millimeters"
+  ],
+  "not_measured": [
+    "Held-out accuracy",
+    "Before/after penetration improvement",
+    "Contact accuracy",
+    "Physical grasp success",
+    "Text-to-motion generation quality"
+  ],
+  "logging_limitation": "Individual reconstruction, penetration, and contact loss histories were not saved"
+}

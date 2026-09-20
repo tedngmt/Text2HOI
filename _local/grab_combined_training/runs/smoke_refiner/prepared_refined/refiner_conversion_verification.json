@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "clips": 44,
+  "object_poses_bitwise_unchanged": true,
+  "source_frame_indices_unchanged": true,
+  "max_hand_qpos_difference_m_or_rad": 0.6682034730911255,
+  "max_joint_correction_m": 0.0016842710319906473
+}

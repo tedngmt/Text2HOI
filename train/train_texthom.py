@@ -92,6 +92,9 @@ def main(config):
     hand_nfeats = config.texthom.hand_nfeats
     obj_nfeats = config.texthom.obj_nfeats
     
+    # Each loss is a mean over its micro-batch, so accumulated gradients are the average of
+    # micro-batch means. That matches one large batch up to the per-batch mask normalization.
+    accum_steps = max(int(config.get("accum_steps", 1)), 1)
     nepoch = config.texthom.iteration / (data_config.data_num/data_config.text_num)
     nepoch = int(np.ceil(nepoch / 50.0) * 50)
     with tqdm.tqdm(range(nepoch)) as pbar:
@@ -101,7 +104,9 @@ def main(config):
             loss_simple_meter = AverageMeter()
             loss_dist_meter = AverageMeter()
             loss_rot_meter = AverageMeter()
-            for item in dataloader:
+            # Leftover micro-batches that do not fill an optimizer step are dropped each epoch.
+            optimizer.zero_grad()
+            for batch_idx, item in enumerate(dataloader):
                 if dataset_name == "arctic":
                     obj_pc_top_idx = item["obj_pc_top_idx"].cuda()
                 else:
@@ -155,9 +160,10 @@ def main(config):
                        + lambda_dist*dist_map_loss \
                        + lambda_ro*ro_loss
 
-                optimizer.zero_grad()
-                losses.backward()
-                optimizer.step()
+                (losses / accum_steps).backward()
+                if (batch_idx + 1) % accum_steps == 0:
+                    optimizer.step()
+                    optimizer.zero_grad()
                 loss_meter.update(losses.item(), bs)
                 loss_simple_meter.update(simple_loss.item(), bs)
                 loss_dist_meter.update(dist_map_loss.item(), bs)

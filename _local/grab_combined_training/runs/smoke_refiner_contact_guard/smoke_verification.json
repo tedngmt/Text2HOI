@@ -1,0 +1,22 @@
+{
+  "phase": "passed",
+  "epochs": 3,
+  "steps": 402,
+  "all_finite": true,
+  "contact_weight": 1.0,
+  "minimum_contact_retention": 0.9632486829237515,
+  "candidate_contact_retentions": [
+    0.9465125082810183,
+    0.9453768257673744,
+    0.9355026972459699
+  ],
+  "all_contact_losing_candidates_rejected": true,
+  "selected_epoch": 0,
+  "selected_model_exactly_equals_released_refiner": true,
+  "last_model_changed_tensors": 80,
+  "test_evaluations": 0,
+  "peak_allocated_mib": 1100.9990234375,
+  "peak_reserved_mib": 1208.0,
+  "total_seconds": 88.52011554099954,
+  "original_checkpoints_unchanged": true
+}

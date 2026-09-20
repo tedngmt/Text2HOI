@@ -1,0 +1,6 @@
+*.log
+*.lock
+pipeline_status.json
+probe_*/
+run_official/
+export_smoke*/

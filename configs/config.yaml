@@ -10,6 +10,10 @@ defaults:
   - refiner: refiner
 project_name: "texthom"
 batch_size: 64 # 64, 512
+# Gradient accumulation for small GPUs: optimizer steps every accum_steps batches, so the
+# effective batch is batch_size * accum_steps (e.g. batch_size=8 accum_steps=8 on an 8 GB GPU).
+# Used by train/train_texthom.py. 1 keeps the original behavior.
+accum_steps: 1
 shuffle: True
 drop_last: True
 num_workers: 4

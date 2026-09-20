@@ -1,0 +1,555 @@
+{
+  "split": "train",
+  "stage": "epoch_001",
+  "epoch": 1,
+  "frames": 9053,
+  "per_clip": [
+    {
+      "clip_id": "s1__mug_drink_1",
+      "frames": 334,
+      "loss": {
+        "total": 1.1273239850997925,
+        "penetration": 0.33579203486442566,
+        "contact": 0.7901493310928345,
+        "displacement": 0.045824531465768814,
+        "velocity": 6.938843580428511e-05,
+        "acceleration": 1.9221004549763165e-05
+      },
+      "vertices_deeper_than_2_mm": 1192,
+      "vertices_deeper_than_5_mm": 22,
+      "maximum_penetration_mm": 5.2896904945373535,
+      "mean_vertex_displacement_mm": 0.31864455342292786,
+      "maximum_vertex_displacement_mm": 1.1975454092025757,
+      "source_contact_vertices": 10972,
+      "retained_source_contact_vertices": 10297
+    },
+    {
+      "clip_id": "s1__mug_drink_2",
+      "frames": 377,
+      "loss": {
+        "total": 1.2502940893173218,
+        "penetration": 0.3386572301387787,
+        "contact": 0.9103617072105408,
+        "displacement": 0.04221087694168091,
+        "velocity": 8.012317994143814e-05,
+        "acceleration": 1.623810749151744e-05
+      },
+      "vertices_deeper_than_2_mm": 860,
+      "vertices_deeper_than_5_mm": 0,
+      "maximum_penetration_mm": 3.5494487285614014,
+      "mean_vertex_displacement_mm": 0.32309192419052124,
+      "maximum_vertex_displacement_mm": 1.0335407257080078,
+      "source_contact_vertices": 33368,
+      "retained_source_contact_vertices": 31676
+    },
+    {
+      "clip_id": "s1__mug_drink_3",
+      "frames": 309,
+      "loss": {
+        "total": 1.2081990242004395,
+        "penetration": 0.42816734313964844,
+        "contact": 0.7788791656494141,
+        "displacement": 0.03816556930541992,
+        "velocity": 6.811779167037457e-05,
+        "acceleration": 1.5371022527688183e-05
+      },
+      "vertices_deeper_than_2_mm": 1582,
+      "vertices_deeper_than_5_mm": 52,
+      "maximum_penetration_mm": 5.455089092254639,
+      "mean_vertex_displacement_mm": 0.2887994349002838,
+      "maximum_vertex_displacement_mm": 1.0178529024124146,
+      "source_contact_vertices": 15127,
+      "retained_source_contact_vertices": 14226
+    },
+    {
+      "clip_id": "s1__mug_drink_4",
+      "frames": 300,
+      "loss": {
+        "total": 1.476346731185913,
+        "penetration": 0.3672034740447998,
+        "contact": 1.107945203781128,
+        "displacement": 0.039686352014541626,
+        "velocity": 6.682810635538772e-05,
+        "acceleration": 1.782598701538518e-05
+      },
+      "vertices_deeper_than_2_mm": 732,
+      "vertices_deeper_than_5_mm": 6,
+      "maximum_penetration_mm": 5.392798900604248,
+      "mean_vertex_displacement_mm": 0.30163881182670593,
+      "maximum_vertex_displacement_mm": 1.065911054611206,
+      "source_contact_vertices": 21497,
+      "retained_source_contact_vertices": 20084
+    },
+    {
+      "clip_id": "s1__mug_lift",
+      "frames": 1062,
+      "loss": {
+        "total": 1.3076062202453613,
+        "penetration": 0.3255784809589386,
+        "contact": 0.9808918237686157,
+        "displacement": 0.03766801208257675,
+        "velocity": 5.09839337610174e-05,
+        "acceleration": 1.6039904949138872e-05
+      },
+      "vertices_deeper_than_2_mm": 2564,
+      "vertices_deeper_than_5_mm": 3,
+      "maximum_penetration_mm": 5.158150672912598,
+      "mean_vertex_displacement_mm": 0.29925408959388733,
+      "maximum_vertex_displacement_mm": 1.001717209815979,
+      "source_contact_vertices": 63840,
+      "retained_source_contact_vertices": 60551
+    },
+    {
+      "clip_id": "s1__mug_offhand_1",
+      "frames": 274,
+      "loss": {
+        "total": 1.5442495346069336,
+        "penetration": 0.4902408719062805,
+        "contact": 1.052903413772583,
+        "displacement": 0.036167025566101074,
+        "velocity": 0.00018615456065163016,
+        "acceleration": 3.3092463127104566e-05
+      },
+      "vertices_deeper_than_2_mm": 1018,
+      "vertices_deeper_than_5_mm": 48,
+      "maximum_penetration_mm": 5.474949836730957,
+      "mean_vertex_displacement_mm": 0.2958410084247589,
+      "maximum_vertex_displacement_mm": 0.9909140467643738,
+      "source_contact_vertices": 11209,
+      "retained_source_contact_vertices": 10554
+    },
+    {
+      "clip_id": "s1__mug_pass_1",
+      "frames": 234,
+      "loss": {
+        "total": 0.8944305777549744,
+        "penetration": 0.20728951692581177,
+        "contact": 0.6860163807868958,
+        "displacement": 0.03720027208328247,
+        "velocity": 7.701277354499325e-05,
+        "acceleration": 1.965074443432968e-05
+      },
+      "vertices_deeper_than_2_mm": 153,
+      "vertices_deeper_than_5_mm": 0,
+      "maximum_penetration_mm": 2.2491297721862793,
+      "mean_vertex_displacement_mm": 0.2866538465023041,
+      "maximum_vertex_displacement_mm": 1.0084137916564941,
+      "source_contact_vertices": 10166,
+      "retained_source_contact_vertices": 9652
+    },
+    {
+      "clip_id": "s1__mug_toast_1",
+      "frames": 337,
+      "loss": {
+        "total": 1.1984777450561523,
+        "penetration": 0.3464490473270416,
+        "contact": 0.8508708477020264,
+        "displacement": 0.038321781903505325,
+        "velocity": 7.095696491887793e-05,
+        "acceleration": 2.047883390332572e-05
+      },
+      "vertices_deeper_than_2_mm": 971,
+      "vertices_deeper_than_5_mm": 6,
+      "maximum_penetration_mm": 5.355520248413086,
+      "mean_vertex_displacement_mm": 0.2961463928222656,
+      "maximum_vertex_displacement_mm": 1.1571003198623657,
+      "source_contact_vertices": 12309,
+      "retained_source_contact_vertices": 11624
+    },
+    {
+      "clip_id": "s2__mug_drink_1",
+      "frames": 249,
+      "loss": {
+        "total": 1.0147024393081665,
+        "penetration": 0.17907321453094482,
+        "contact": 0.8344378471374512,
+        "displacement": 0.03920875862240791,
+        "velocity": 0.00013107374252285808,
+        "acceleration": 4.008020550827496e-05
+      },
+      "vertices_deeper_than_2_mm": 179,
+      "vertices_deeper_than_5_mm": 0,
+      "maximum_penetration_mm": 2.2269465923309326,
+      "mean_vertex_displacement_mm": 0.2954331636428833,
+      "maximum_vertex_displacement_mm": 1.1778533458709717,
+      "source_contact_vertices": 9592,
+      "retained_source_contact_vertices": 8700
+    },
+    {
+      "clip_id": "s2__mug_drink_2",
+      "frames": 286,
+      "loss": {
+        "total": 1.5453091859817505,
+        "penetration": 0.42596346139907837,
+        "contact": 1.118335247039795,
+        "displacement": 0.03321332111954689,
+        "velocity": 0.00012055708066327497,
+        "acceleration": 4.352320320322178e-05
+      },
+      "vertices_deeper_than_2_mm": 595,
+      "vertices_deeper_than_5_mm": 12,
+      "maximum_penetration_mm": 5.321290493011475,
+      "mean_vertex_displacement_mm": 0.2757870554924011,
+      "maximum_vertex_displacement_mm": 1.0730881690979004,
+      "source_contact_vertices": 3965,
+      "retained_source_contact_vertices": 3764
+    },
+    {
+      "clip_id": "s2__mug_lift",
+      "frames": 502,
+      "loss": {
+        "total": 1.1058223247528076,
+        "penetration": 0.27493584156036377,
+        "contact": 0.8295973539352417,
+        "displacement": 0.04247407987713814,
+        "velocity": 0.00012675246398430318,
+        "acceleration": 4.5027085434412584e-05
+      },
+      "vertices_deeper_than_2_mm": 1334,
+      "vertices_deeper_than_5_mm": 38,
+      "maximum_penetration_mm": 5.370519161224365,
+      "mean_vertex_displacement_mm": 0.31287682056427,
+      "maximum_vertex_displacement_mm": 1.0507653951644897,
+      "source_contact_vertices": 22107,
+      "retained_source_contact_vertices": 20781
+    },
+    {
+      "clip_id": "s2__mug_pass_1",
+      "frames": 259,
+      "loss": {
+        "total": 1.1194229125976562,
+        "penetration": 0.2275940626859665,
+        "contact": 0.890700101852417,
+        "displacement": 0.03678061440587044,
+        "velocity": 0.00022416275169234723,
+        "acceleration": 5.843540930072777e-05
+      },
+      "vertices_deeper_than_2_mm": 350,
+      "vertices_deeper_than_5_mm": 3,
+      "maximum_penetration_mm": 5.363429069519043,
+      "mean_vertex_displacement_mm": 0.2978508770465851,
+      "maximum_vertex_displacement_mm": 1.1214196681976318,
+      "source_contact_vertices": 8374,
+      "retained_source_contact_vertices": 7845
+    },
+    {
+      "clip_id": "s2__mug_toast_1",
+      "frames": 239,
+      "loss": {
+        "total": 1.3576699495315552,
+        "penetration": 0.33960792422294617,
+        "contact": 1.0169845819473267,
+        "displacement": 0.03555838391184807,
+        "velocity": 9.160884656012058e-05,
+        "acceleration": 2.823289469233714e-05
+      },
+      "vertices_deeper_than_2_mm": 490,
+      "vertices_deeper_than_5_mm": 3,
+      "maximum_penetration_mm": 5.2744646072387695,
+      "mean_vertex_displacement_mm": 0.2788410186767578,
+      "maximum_vertex_displacement_mm": 1.0361034870147705,
+      "source_contact_vertices": 8878,
+      "retained_source_contact_vertices": 8132
+    },
+    {
+      "clip_id": "s3__mug_drink_1",
+      "frames": 239,
+      "loss": {
+        "total": 1.2272590398788452,
+        "penetration": 0.2605932950973511,
+        "contact": 0.9657936096191406,
+        "displacement": 0.028692642226815224,
+        "velocity": 9.702298120828345e-05,
+        "acceleration": 3.266348721808754e-05
+      },
+      "vertices_deeper_than_2_mm": 386,
+      "vertices_deeper_than_5_mm": 2,
+      "maximum_penetration_mm": 5.047191619873047,
+      "mean_vertex_displacement_mm": 0.2593671679496765,
+      "maximum_vertex_displacement_mm": 0.9612399339675903,
+      "source_contact_vertices": 11275,
+      "retained_source_contact_vertices": 10630
+    },
+    {
+      "clip_id": "s3__mug_drink_2",
+      "frames": 206,
+      "loss": {
+        "total": 1.1246286630630493,
+        "penetration": 0.3072708547115326,
+        "contact": 0.8163038492202759,
+        "displacement": 0.03443189337849617,
+        "velocity": 0.0001769010123098269,
+        "acceleration": 6.731152825523168e-05
+      },
+      "vertices_deeper_than_2_mm": 649,
+      "vertices_deeper_than_5_mm": 3,
+      "maximum_penetration_mm": 5.293391227722168,
+      "mean_vertex_displacement_mm": 0.2914047837257385,
+      "maximum_vertex_displacement_mm": 0.9491779208183289,
+      "source_contact_vertices": 10516,
+      "retained_source_contact_vertices": 10111
+    },
+    {
+      "clip_id": "s3__mug_drink_3",
+      "frames": 229,
+      "loss": {
+        "total": 1.872562289237976,
+        "penetration": 0.861254870891571,
+        "contact": 1.0100563764572144,
+        "displacement": 0.041234761476516724,
+        "velocity": 0.0001233103103004396,
+        "acceleration": 3.677393760881387e-05
+      },
+      "vertices_deeper_than_2_mm": 1369,
+      "vertices_deeper_than_5_mm": 64,
+      "maximum_penetration_mm": 5.436034679412842,
+      "mean_vertex_displacement_mm": 0.29105478525161743,
+      "maximum_vertex_displacement_mm": 1.191955327987671,
+      "source_contact_vertices": 5856,
+      "retained_source_contact_vertices": 5403
+    },
+    {
+      "clip_id": "s3__mug_drink_4",
+      "frames": 226,
+      "loss": {
+        "total": 1.252819299697876,
+        "penetration": 0.338162899017334,
+        "contact": 0.9137567281723022,
+        "displacement": 0.02961215376853943,
+        "velocity": 9.915965347317979e-05,
+        "acceleration": 2.9292898034327663e-05
+      },
+      "vertices_deeper_than_2_mm": 173,
+      "vertices_deeper_than_5_mm": 0,
+      "maximum_penetration_mm": 2.2556869983673096,
+      "mean_vertex_displacement_mm": 0.2680671513080597,
+      "maximum_vertex_displacement_mm": 0.9766634106636047,
+      "source_contact_vertices": 5800,
+      "retained_source_contact_vertices": 5613
+    },
+    {
+      "clip_id": "s3__mug_offhand_1",
+      "frames": 246,
+      "loss": {
+        "total": 1.3271170854568481,
+        "penetration": 0.48071515560150146,
+        "contact": 0.84503173828125,
+        "displacement": 0.044839855283498764,
+        "velocity": 0.000209827529033646,
+        "acceleration": 8.101510320557281e-05
+      },
+      "vertices_deeper_than_2_mm": 1122,
+      "vertices_deeper_than_5_mm": 78,
+      "maximum_penetration_mm": 5.511770725250244,
+      "mean_vertex_displacement_mm": 0.3225535750389099,
+      "maximum_vertex_displacement_mm": 1.2288565635681152,
+      "source_contact_vertices": 8301,
+      "retained_source_contact_vertices": 7908
+    },
+    {
+      "clip_id": "s3__mug_pass_1",
+      "frames": 283,
+      "loss": {
+        "total": 1.3947936296463013,
+        "penetration": 0.3206993043422699,
+        "contact": 1.0731455087661743,
+        "displacement": 0.031048685312271118,
+        "velocity": 0.00014811927394475788,
+        "acceleration": 4.9675192713038996e-05
+      },
+      "vertices_deeper_than_2_mm": 403,
+      "vertices_deeper_than_5_mm": 0,
+      "maximum_penetration_mm": 4.5641608238220215,
+      "mean_vertex_displacement_mm": 0.2669350206851959,
+      "maximum_vertex_displacement_mm": 1.1104552745819092,
+      "source_contact_vertices": 9578,
+      "retained_source_contact_vertices": 9138
+    },
+    {
+      "clip_id": "s4__mug_drink_2",
+      "frames": 181,
+      "loss": {
+        "total": 1.29994535446167,
+        "penetration": 0.2914406955242157,
+        "contact": 1.0073686838150024,
+        "displacement": 0.03728258237242699,
+        "velocity": 0.00015606256783939898,
+        "acceleration": 3.808228939305991e-05
+      },
+      "vertices_deeper_than_2_mm": 331,
+      "vertices_deeper_than_5_mm": 0,
+      "maximum_penetration_mm": 3.8294906616210938,
+      "mean_vertex_displacement_mm": 0.2976449728012085,
+      "maximum_vertex_displacement_mm": 1.0692228078842163,
+      "source_contact_vertices": 10468,
+      "retained_source_contact_vertices": 10003
+    },
+    {
+      "clip_id": "s4__mug_pass_1",
+      "frames": 156,
+      "loss": {
+        "total": 1.9870153665542603,
+        "penetration": 0.848100483417511,
+        "contact": 1.1378666162490845,
+        "displacement": 0.034198932349681854,
+        "velocity": 0.00020236523414496332,
+        "acceleration": 4.1618430259404704e-05
+      },
+      "vertices_deeper_than_2_mm": 666,
+      "vertices_deeper_than_5_mm": 22,
+      "maximum_penetration_mm": 5.404141902923584,
+      "mean_vertex_displacement_mm": 0.2756904661655426,
+      "maximum_vertex_displacement_mm": 1.0605193376541138,
+      "source_contact_vertices": 2780,
+      "retained_source_contact_vertices": 2683
+    },
+    {
+      "clip_id": "s6__mug_drink_2",
+      "frames": 259,
+      "loss": {
+        "total": 1.7462302446365356,
+        "penetration": 0.749231219291687,
+        "contact": 0.995853066444397,
+        "displacement": 0.03773638606071472,
+        "velocity": 0.00011598311539273709,
+        "acceleration": 4.5249867980601266e-05
+      },
+      "vertices_deeper_than_2_mm": 1316,
+      "vertices_deeper_than_5_mm": 23,
+      "maximum_penetration_mm": 5.462152481079102,
+      "mean_vertex_displacement_mm": 0.2891351878643036,
+      "maximum_vertex_displacement_mm": 1.173607349395752,
+      "source_contact_vertices": 6776,
+      "retained_source_contact_vertices": 6280
+    },
+    {
+      "clip_id": "s6__mug_lift",
+      "frames": 581,
+      "loss": {
+        "total": 1.0835585594177246,
+        "penetration": 0.23313994705677032,
+        "contact": 0.8489704132080078,
+        "displacement": 0.047641243785619736,
+        "velocity": 0.0001546046551084146,
+        "acceleration": 6.833078077761456e-05
+      },
+      "vertices_deeper_than_2_mm": 1196,
+      "vertices_deeper_than_5_mm": 9,
+      "maximum_penetration_mm": 5.242958068847656,
+      "mean_vertex_displacement_mm": 0.3486156165599823,
+      "maximum_vertex_displacement_mm": 1.0290470123291016,
+      "source_contact_vertices": 25004,
+      "retained_source_contact_vertices": 23362
+    },
+    {
+      "clip_id": "s6__mug_pass_1",
+      "frames": 283,
+      "loss": {
+        "total": 1.1012136936187744,
+        "penetration": 0.3065696358680725,
+        "contact": 0.7935033440589905,
+        "displacement": 0.03763092681765556,
+        "velocity": 9.704000694910064e-05,
+        "acceleration": 4.179531606496312e-05
+      },
+      "vertices_deeper_than_2_mm": 689,
+      "vertices_deeper_than_5_mm": 0,
+      "maximum_penetration_mm": 4.486356258392334,
+      "mean_vertex_displacement_mm": 0.29169026017189026,
+      "maximum_vertex_displacement_mm": 1.1065458059310913,
+      "source_contact_vertices": 8217,
+      "retained_source_contact_vertices": 7441
+    },
+    {
+      "clip_id": "s6__mug_toast_1",
+      "frames": 224,
+      "loss": {
+        "total": 1.0160809755325317,
+        "penetration": 0.2278757095336914,
+        "contact": 0.7870262861251831,
+        "displacement": 0.03886501118540764,
+        "velocity": 0.00010901869245572016,
+        "acceleration": 4.392562186694704e-05
+      },
+      "vertices_deeper_than_2_mm": 446,
+      "vertices_deeper_than_5_mm": 0,
+      "maximum_penetration_mm": 4.959131717681885,
+      "mean_vertex_displacement_mm": 0.30431902408599854,
+      "maximum_vertex_displacement_mm": 0.904083788394928,
+      "source_contact_vertices": 10717,
+      "retained_source_contact_vertices": 10211
+    },
+    {
+      "clip_id": "s7__mug_drink_1",
+      "frames": 228,
+      "loss": {
+        "total": 1.3621833324432373,
+        "penetration": 0.37403371930122375,
+        "contact": 0.9871857166290283,
+        "displacement": 0.03146814554929733,
+        "velocity": 0.00015364539285656065,
+        "acceleration": 9.03857871890068e-05
+      },
+      "vertices_deeper_than_2_mm": 479,
+      "vertices_deeper_than_5_mm": 0,
+      "maximum_penetration_mm": 2.234469175338745,
+      "mean_vertex_displacement_mm": 0.27825742959976196,
+      "maximum_vertex_displacement_mm": 0.8960015773773193,
+      "source_contact_vertices": 18375,
+      "retained_source_contact_vertices": 17570
+    },
+    {
+      "clip_id": "s7__mug_drink_2",
+      "frames": 268,
+      "loss": {
+        "total": 2.0395514965057373,
+        "penetration": 0.8115453720092773,
+        "contact": 1.2268322706222534,
+        "displacement": 0.038488760590553284,
+        "velocity": 0.0001510460424469784,
+        "acceleration": 8.280438487417996e-05
+      },
+      "vertices_deeper_than_2_mm": 2066,
+      "vertices_deeper_than_5_mm": 103,
+      "maximum_penetration_mm": 5.486119270324707,
+      "mean_vertex_displacement_mm": 0.3032049536705017,
+      "maximum_vertex_displacement_mm": 1.0841747522354126,
+      "source_contact_vertices": 8686,
+      "retained_source_contact_vertices": 8395
+    },
+    {
+      "clip_id": "s7__mug_lift",
+      "frames": 682,
+      "loss": {
+        "total": 1.2324532270431519,
+        "penetration": 0.34778904914855957,
+        "contact": 0.8833375573158264,
+        "displacement": 0.043850842863321304,
+        "velocity": 9.522133768768981e-05,
+        "acceleration": 3.432316589169204e-05
+      },
+      "vertices_deeper_than_2_mm": 2935,
+      "vertices_deeper_than_5_mm": 45,
+      "maximum_penetration_mm": 5.484267234802246,
+      "mean_vertex_displacement_mm": 0.33981069922447205,
+      "maximum_vertex_displacement_mm": 0.956027626991272,
+      "source_contact_vertices": 62336,
+      "retained_source_contact_vertices": 58948
+    }
+  ],
+  "aggregate": {
+    "loss": {
+      "total": 1.3007233014070407,
+      "penetration": 0.3725574731326401,
+      "contact": 0.9269885832231295,
+      "displacement": 0.03879927686966711,
+      "velocity": 0.0001135637494617757,
+      "acceleration": 3.872049073337916e-05
+    },
+    "vertices_deeper_than_2_mm": 26246,
+    "vertices_deeper_than_5_mm": 542,
+    "maximum_penetration_mm": 5.511770725250244,
+    "mean_vertex_displacement_mm": 0.3018473250081391,
+    "source_contact_retention": 0.943802755859469
+  }
+}
